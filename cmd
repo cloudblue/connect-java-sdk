@@ -208,8 +208,8 @@ src/haxe/io/_ArrayBufferView/ArrayBufferView_Impl_.java
 src/connect/models/Marketplace.java
 src/haxe/io/BytesBuffer.java
 src/connect/Flow.java
-src/connect/Flow_process_326__Fun.java
-src/connect/Flow_getDataTable_551__Fun.java
+src/connect/Flow_process_346__Fun.java
+src/connect/Flow_getDataTable_571__Fun.java
 src/connect/_Flow/Step.java
 src/connect/api/impl/TierApiImpl.java
 src/haxe/ds/EnumValueMap.java
