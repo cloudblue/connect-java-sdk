@@ -23,7 +23,7 @@ public class StorageType extends haxe.lang.Enum
 	
 	@Override public java.lang.String getTag()
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/StepData.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/StepData.hx"
 		return connect.StorageType.__hx_constructs[this.index];
 	}
 	

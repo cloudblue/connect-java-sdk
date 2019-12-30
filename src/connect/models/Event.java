@@ -8,31 +8,31 @@ public class Event extends connect.models.Model
 {
 	public Event(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Event()
 	{
-		//line 21 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 21 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 21 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 21 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		connect.models.Event.__hx_ctor_connect_models_Event(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Event(connect.models.Event __hx_this)
 	{
-		//line 21 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 21 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
-		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		_g.set("at", "DateTime");
-		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		_g.set("by", "User");
-		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
@@ -43,48 +43,48 @@ public class Event extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 				switch (field.hashCode())
 				{
 					case 3159:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						if (field.equals("by")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							this.by = ((connect.models.User) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						break;
 					}
 					
 					
 					case 3123:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						if (field.equals("at")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							this.at = ((connect.DateTime) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						break;
 					}
 					
@@ -93,15 +93,15 @@ public class Event extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 				throw null;
 			}
 			
@@ -112,44 +112,44 @@ public class Event extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 				switch (field.hashCode())
 				{
 					case 3159:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						if (field.equals("by")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							return this.by;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						break;
 					}
 					
 					
 					case 3123:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						if (field.equals("at")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 							return this.at;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 						break;
 					}
 					
@@ -158,15 +158,15 @@ public class Event extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 				throw null;
 			}
 			
@@ -177,11 +177,11 @@ public class Event extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		baseArr.push("by");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		baseArr.push("at");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Event.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Event.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

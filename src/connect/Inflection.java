@@ -13,7 +13,7 @@ public class Inflection extends haxe.lang.HxObject
 	
 	public Inflection()
 	{
-		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		connect.Inflection.__hx_ctor_connect_Inflection(this);
 	}
 	
@@ -25,38 +25,38 @@ public class Inflection extends haxe.lang.HxObject
 	
 	public static java.lang.String toCamelCase(java.lang.String text, java.lang.Object capitalizeFirst)
 	{
-		//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		boolean capitalizeFirst1 = ( (haxe.lang.Runtime.eq(capitalizeFirst, null)) ? (false) : (haxe.lang.Runtime.toBool(((java.lang.Boolean) (capitalizeFirst) ))) );
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		haxe.root.StringBuf buffer = new haxe.root.StringBuf();
-		//line 21 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 21 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		boolean lastWasUnderscore = capitalizeFirst1;
-		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		{
-			//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+			//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 			int _g = 0;
-			//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+			//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 			int _g1 = text.length();
-			//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+			//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 			while (( _g < _g1 ))
 			{
-				//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+				//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 				int i = _g++;
-				//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+				//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 				java.lang.String _char = ( (lastWasUnderscore) ? (haxe.lang.StringExt.charAt(text, i).toUpperCase()) : (haxe.lang.StringExt.charAt(text, i)) );
-				//line 24 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+				//line 24 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 				if ( ! (haxe.lang.Runtime.valEq(_char, "_")) ) 
 				{
-					//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+					//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 					buffer.add(haxe.lang.Runtime.toString(_char));
-					//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+					//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 					java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-					//line 26 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+					//line 26 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 					lastWasUnderscore = false;
 				}
 				else
 				{
-					//line 28 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+					//line 28 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 					lastWasUnderscore = true;
 				}
 				
@@ -64,22 +64,22 @@ public class Inflection extends haxe.lang.HxObject
 			
 		}
 		
-		//line 31 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 31 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		return buffer.toString();
 	}
 	
 	
 	public static java.lang.String toSingular(java.lang.String text)
 	{
-		//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		if (haxe.lang.Runtime.valEq(haxe.lang.StringExt.charAt(text, ( text.length() - 1 )), "s")) 
 		{
-			//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+			//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 			return haxe.lang.StringExt.substr(text, 0, ( text.length() - 1 ));
 		}
 		else
 		{
-			//line 42 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+			//line 42 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 			return text;
 		}
 		
@@ -88,13 +88,13 @@ public class Inflection extends haxe.lang.HxObject
 	
 	public static java.lang.String toSnakeCase(java.lang.String text)
 	{
-		//line 52 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 52 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		haxe.root.EReg r1 = new haxe.root.EReg("(.)([A-Z][a-z]+)", "g");
-		//line 53 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 53 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		haxe.root.EReg r2 = new haxe.root.EReg("([a-z0-9])([A-Z])", "g");
-		//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		java.lang.String s1 = r1.replace(text, "$1_$2");
-		//line 55 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Inflection.hx"
+		//line 55 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Inflection.hx"
 		return r2.replace(s1, "$1_$2").toLowerCase();
 	}
 	

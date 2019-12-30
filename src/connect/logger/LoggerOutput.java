@@ -13,16 +13,16 @@ public class LoggerOutput extends haxe.lang.HxObject
 	
 	public LoggerOutput(connect.logger.ILoggerFormatter formatter, connect.logger.ILoggerWriter writer)
 	{
-		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		connect.logger.LoggerOutput.__hx_ctor_connect_logger_LoggerOutput(this, formatter, writer);
 	}
 	
 	
 	protected static void __hx_ctor_connect_logger_LoggerOutput(connect.logger.LoggerOutput __hx_this, connect.logger.ILoggerFormatter formatter, connect.logger.ILoggerWriter writer)
 	{
-		//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		__hx_this.formatter = formatter;
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		__hx_this.writer = writer;
 	}
 	
@@ -33,48 +33,48 @@ public class LoggerOutput extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		{
-			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+			//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 			boolean __temp_executeDef1 = true;
-			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+			//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 			if (( field != null )) 
 			{
-				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+				//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 				switch (field.hashCode())
 				{
 					case -779574157:
 					{
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						if (field.equals("writer")) 
 						{
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							__temp_executeDef1 = false;
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							this.writer = ((connect.logger.ILoggerWriter) (value) );
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							return value;
 						}
 						
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						break;
 					}
 					
 					
 					case 1811591370:
 					{
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						if (field.equals("formatter")) 
 						{
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							__temp_executeDef1 = false;
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							this.formatter = ((connect.logger.ILoggerFormatter) (value) );
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							return value;
 						}
 						
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						break;
 					}
 					
@@ -83,15 +83,15 @@ public class LoggerOutput extends haxe.lang.HxObject
 				
 			}
 			
-			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+			//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+				//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+				//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 				throw null;
 			}
 			
@@ -102,44 +102,44 @@ public class LoggerOutput extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		{
-			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+			//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 			boolean __temp_executeDef1 = true;
-			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+			//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 			if (( field != null )) 
 			{
-				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+				//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 				switch (field.hashCode())
 				{
 					case -779574157:
 					{
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						if (field.equals("writer")) 
 						{
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							__temp_executeDef1 = false;
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							return this.writer;
 						}
 						
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						break;
 					}
 					
 					
 					case 1811591370:
 					{
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						if (field.equals("formatter")) 
 						{
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							__temp_executeDef1 = false;
-							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+							//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 							return this.formatter;
 						}
 						
-						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+						//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 						break;
 					}
 					
@@ -148,15 +148,15 @@ public class LoggerOutput extends haxe.lang.HxObject
 				
 			}
 			
-			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+			//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+				//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+				//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 				throw null;
 			}
 			
@@ -167,11 +167,11 @@ public class LoggerOutput extends haxe.lang.HxObject
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		baseArr.push("writer");
-		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		baseArr.push("formatter");
-		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
+		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/LoggerOutput.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
