@@ -8,23 +8,23 @@ public class ExtIdHub extends connect.models.Model
 {
 	public ExtIdHub(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public ExtIdHub()
 	{
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.ExtIdHub.__hx_ctor_connect_models_ExtIdHub(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_ExtIdHub(connect.models.ExtIdHub __hx_this)
 	{
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
 	}
 	
@@ -35,48 +35,48 @@ public class ExtIdHub extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 				switch (field.hashCode())
 				{
 					case -1699764666:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						if (field.equals("externalId")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							this.externalId = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						break;
 					}
 					
 					
 					case 103669:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						if (field.equals("hub")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							this.hub = ((connect.models.Hub) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						break;
 					}
 					
@@ -85,15 +85,15 @@ public class ExtIdHub extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 				throw null;
 			}
 			
@@ -104,44 +104,44 @@ public class ExtIdHub extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 				switch (field.hashCode())
 				{
 					case -1699764666:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						if (field.equals("externalId")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							return this.externalId;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						break;
 					}
 					
 					
 					case 103669:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						if (field.equals("hub")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 							return this.hub;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 						break;
 					}
 					
@@ -150,15 +150,15 @@ public class ExtIdHub extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 				throw null;
 			}
 			
@@ -169,11 +169,11 @@ public class ExtIdHub extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 		baseArr.push("externalId");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 		baseArr.push("hub");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ExtIdHub.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ExtIdHub.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

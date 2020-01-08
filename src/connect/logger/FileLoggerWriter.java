@@ -8,46 +8,46 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 {
 	public FileLoggerWriter(haxe.lang.EmptyObject empty)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public FileLoggerWriter()
 	{
-		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		connect.logger.FileLoggerWriter.__hx_ctor_connect_logger_FileLoggerWriter(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_logger_FileLoggerWriter(connect.logger.FileLoggerWriter __hx_this)
 	{
-		//line 14 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 14 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		__hx_this.filename = null;
-		//line 15 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 15 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		__hx_this.file = null;
 	}
 	
 	
 	public boolean setFilename(java.lang.String filename)
 	{
-		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		java.lang.String currentFilename = this.filename;
-		//line 21 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 21 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		this.filename = filename;
-		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		if ((  ! (haxe.lang.Runtime.valEq(filename, currentFilename))  && ( this.file != null ) )) 
 		{
-			//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			this.file.close();
-			//line 24 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 24 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			this.file = null;
-			//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			return true;
 		}
 		else
 		{
-			//line 27 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 27 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			return false;
 		}
 		
@@ -56,33 +56,33 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 	
 	public java.lang.String getFilename()
 	{
-		//line 33 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 33 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		return this.filename;
 	}
 	
 	
 	public void writeLine(java.lang.String line)
 	{
-		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		if (( this.getFile() != null )) 
 		{
-			//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			this.getFile().writeString(( line + "\n" ), null);
-			//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			this.getFile().flush();
 		}
 		
-		//line 44 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 44 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		try 
 		{
-			//line 44 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 44 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			java.lang.System.out.println(((java.lang.Object) (line) ));
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 42 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 42 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 45 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 45 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
 		}
 		
@@ -96,71 +96,71 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 	
 	public sys.io.FileOutput getFile()
 	{
-		//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		if (( ( this.file == null ) && ( this.filename != null ) )) 
 		{
-			//line 55 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 55 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			java.lang.String path = haxe.io.Path.directory(this.filename);
-			//line 56 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 56 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if ((  ! (haxe.lang.Runtime.valEq(path, ""))  &&  ! (sys.FileSystem.exists(path))  )) 
 			{
-				//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				sys.FileSystem.createDirectory(path);
 			}
 			
-			//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			this.file = sys.io.File.append(this.filename, null);
 		}
 		
-		//line 72 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 72 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		return this.file;
 	}
 	
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		{
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			boolean __temp_executeDef1 = true;
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if (( field != null )) 
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				switch (field.hashCode())
 				{
 					case 3143036:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("file")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							this.file = ((sys.io.FileOutput) (value) );
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return value;
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case -734768633:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("filename")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							this.filename = haxe.lang.Runtime.toString(value);
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return value;
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
@@ -169,15 +169,15 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 				
 			}
 			
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				throw null;
 			}
 			
@@ -188,108 +188,108 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		{
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			boolean __temp_executeDef1 = true;
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if (( field != null )) 
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				switch (field.hashCode())
 				{
 					case -75538958:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("getFile")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getFile")) );
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case 1254551689:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("setFilename")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setFilename")) );
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case 3143036:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("file")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return this.file;
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case 1343131517:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("getFilename")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getFilename")) );
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case -734768633:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("filename")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return this.filename;
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case -1406569357:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("writeLine")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "writeLine")) );
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
@@ -298,15 +298,15 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 				
 			}
 			
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				throw null;
 			}
 			
@@ -317,76 +317,76 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		{
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			boolean __temp_executeDef1 = true;
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if (( field != null )) 
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				switch (field.hashCode())
 				{
 					case -75538958:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("getFile")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return this.getFile();
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case 1254551689:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("setFilename")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return this.setFilename(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case -1406569357:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("writeLine")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							this.writeLine(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
 					
 					case 1343131517:
 					{
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						if (field.equals("getFilename")) 
 						{
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							__temp_executeDef1 = false;
-							//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+							//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 							return this.getFilename();
 						}
 						
-						//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+						//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 						break;
 					}
 					
@@ -395,27 +395,27 @@ public class FileLoggerWriter extends connect.Base implements connect.logger.ILo
 				
 			}
 			
-			//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+			//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+				//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			
 		}
 		
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		return null;
 	}
 	
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		baseArr.push("file");
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		baseArr.push("filename");
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/FileLoggerWriter.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
