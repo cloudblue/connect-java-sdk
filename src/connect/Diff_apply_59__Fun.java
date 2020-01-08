@@ -8,18 +8,18 @@ public class Diff_apply_59__Fun extends haxe.lang.Function
 {
 	public Diff_apply_59__Fun(java.lang.Object out)
 	{
-		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Diff.hx"
+		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Diff.hx"
 		super(1, 0);
-		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Diff.hx"
+		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Diff.hx"
 		this.out = out;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Diff.hx"
+		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Diff.hx"
 		java.lang.String k5 = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toString(__fn_float1)) : (haxe.lang.Runtime.toString(__fn_dyn1)) );
-		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Diff.hx"
+		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Diff.hx"
 		return haxe.root.Reflect.deleteField(this.out, k5);
 	}
 	
