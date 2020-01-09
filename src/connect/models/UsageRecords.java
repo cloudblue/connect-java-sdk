@@ -8,23 +8,23 @@ public class UsageRecords extends connect.models.Model
 {
 	public UsageRecords(haxe.lang.EmptyObject empty)
 	{
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public UsageRecords()
 	{
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.UsageRecords.__hx_ctor_connect_models_UsageRecords(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_UsageRecords(connect.models.UsageRecords __hx_this)
 	{
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
 	}
 	
@@ -35,48 +35,48 @@ public class UsageRecords extends connect.models.Model
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		{
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			boolean __temp_executeDef1 = true;
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (( field != null )) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				switch (field.hashCode())
 				{
 					case 1959784951:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("invalid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							this.invalid = ((int) (value) );
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return value;
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
 					
 					case 111972348:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("valid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							this.valid = ((int) (value) );
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return value;
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
@@ -85,15 +85,15 @@ public class UsageRecords extends connect.models.Model
 				
 			}
 			
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				throw null;
 			}
 			
@@ -104,48 +104,48 @@ public class UsageRecords extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		{
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			boolean __temp_executeDef1 = true;
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (( field != null )) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				switch (field.hashCode())
 				{
 					case 1959784951:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("invalid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							this.invalid = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return value;
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
 					
 					case 111972348:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("valid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							this.valid = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return value;
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
@@ -154,15 +154,15 @@ public class UsageRecords extends connect.models.Model
 				
 			}
 			
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				throw null;
 			}
 			
@@ -173,44 +173,44 @@ public class UsageRecords extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		{
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			boolean __temp_executeDef1 = true;
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (( field != null )) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				switch (field.hashCode())
 				{
 					case 1959784951:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("invalid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return this.invalid;
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
 					
 					case 111972348:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("valid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return this.valid;
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
@@ -219,15 +219,15 @@ public class UsageRecords extends connect.models.Model
 				
 			}
 			
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				throw null;
 			}
 			
@@ -238,44 +238,44 @@ public class UsageRecords extends connect.models.Model
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		{
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			boolean __temp_executeDef1 = true;
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (( field != null )) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				switch (field.hashCode())
 				{
 					case 1959784951:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("invalid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return ((double) (this.invalid) );
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
 					
 					case 111972348:
 					{
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						if (field.equals("valid")) 
 						{
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							__temp_executeDef1 = false;
-							//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+							//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 							return ((double) (this.valid) );
 						}
 						
-						//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+						//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 						break;
 					}
 					
@@ -284,15 +284,15 @@ public class UsageRecords extends connect.models.Model
 				
 			}
 			
-			//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+			//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+				//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 				throw null;
 			}
 			
@@ -303,11 +303,11 @@ public class UsageRecords extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		baseArr.push("invalid");
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		baseArr.push("valid");
-		//line 8 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/UsageRecords.hx"
+		//line 8 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/UsageRecords.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

@@ -8,28 +8,28 @@ public class Logger_setFilename_59__Fun extends haxe.lang.Function
 {
 	public Logger_setFilename_59__Fun(java.lang.String fullname)
 	{
-		//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		super(2, 0);
-		//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		this.fullname = fullname;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke2_o(double __fn_float1, java.lang.Object __fn_dyn1, double __fn_float2, java.lang.Object __fn_dyn2)
 	{
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		boolean last = ( (( __fn_dyn2 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toBool(((java.lang.Boolean) (((java.lang.Object) (__fn_float2) )) ))) : (haxe.lang.Runtime.toBool(((java.lang.Boolean) (__fn_dyn2) ))) );
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		connect.logger.LoggerOutput o = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (((connect.logger.LoggerOutput) (((java.lang.Object) (__fn_float1) )) )) : (((connect.logger.LoggerOutput) (__fn_dyn1) )) );
-		//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		if (last) 
 		{
-			//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 			return o.writer.setFilename(this.fullname);
 		}
 		else
 		{
-			//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 			return false;
 		}
 		
