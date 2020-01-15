@@ -8,23 +8,23 @@ public class CustomerUiSettings extends connect.models.Model
 {
 	public CustomerUiSettings(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public CustomerUiSettings()
 	{
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.CustomerUiSettings.__hx_ctor_connect_models_CustomerUiSettings(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_CustomerUiSettings(connect.models.CustomerUiSettings __hx_this)
 	{
-		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
 	}
 	
@@ -39,84 +39,84 @@ public class CustomerUiSettings extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 				switch (field.hashCode())
 				{
 					case 943542968:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("documents")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							this.documents = ((connect.Collection<connect.models.Document>) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("description")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							this.description = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
 					
 					case 14003217:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("downloadLinks")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							this.downloadLinks = ((connect.Collection<connect.models.DownloadLink>) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
 					
 					case -1823368035:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("gettingStarted")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							this.gettingStarted = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
@@ -125,15 +125,15 @@ public class CustomerUiSettings extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 				throw null;
 			}
 			
@@ -144,76 +144,76 @@ public class CustomerUiSettings extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 				switch (field.hashCode())
 				{
 					case 943542968:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("documents")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return this.documents;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("description")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return this.description;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
 					
 					case 14003217:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("downloadLinks")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return this.downloadLinks;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
 					
 					case -1823368035:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						if (field.equals("gettingStarted")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 							return this.gettingStarted;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 						break;
 					}
 					
@@ -222,15 +222,15 @@ public class CustomerUiSettings extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 				throw null;
 			}
 			
@@ -241,15 +241,15 @@ public class CustomerUiSettings extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		baseArr.push("documents");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		baseArr.push("downloadLinks");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		baseArr.push("gettingStarted");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		baseArr.push("description");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/CustomerUiSettings.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
