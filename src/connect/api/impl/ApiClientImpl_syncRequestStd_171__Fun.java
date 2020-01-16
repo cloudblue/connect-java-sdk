@@ -8,20 +8,20 @@ public class ApiClientImpl_syncRequestStd_171__Fun extends haxe.lang.Function
 {
 	public ApiClientImpl_syncRequestStd_171__Fun(java.lang.Object[] status)
 	{
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		super(1, 0);
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		this.status = status;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		int status_ = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (((int) (__fn_float1) )) : (((int) (haxe.lang.Runtime.toInt(__fn_dyn1)) )) );
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		this.status[0] = status_;
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		return null;
 	}
 	

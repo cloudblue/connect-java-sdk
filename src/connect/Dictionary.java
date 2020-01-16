@@ -8,102 +8,102 @@ public class Dictionary extends connect.Base
 {
 	public Dictionary(haxe.lang.EmptyObject empty)
 	{
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Dictionary()
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		connect.Dictionary.__hx_ctor_connect_Dictionary(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_Dictionary(connect.Dictionary __hx_this)
 	{
-		//line 21 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 21 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		__hx_this.map = new haxe.ds.StringMap();
 	}
 	
 	
 	public static connect.Dictionary fromObject(java.lang.Object obj)
 	{
-		//line 280 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 280 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return ((connect.Dictionary) (connect.Dictionary.fromObject_r(obj)) );
 	}
 	
 	
 	public static java.lang.Object toObject_r(java.lang.Object x)
 	{
-		//line 288 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 288 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		haxe.root.ValueType _g = haxe.root.Type.typeof(x);
-		//line 288 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 288 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		switch (_g.index)
 		{
 			case 6:
 			{
-				//line 296 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 296 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				{
-					//line 296 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+					//line 296 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 					java.lang.Class __temp_switch1 = (((java.lang.Class) (_g.params[0]) ));
-					//line 289 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+					//line 289 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 					if (( ((java.lang.Object) (__temp_switch1) ) == ((java.lang.Object) (connect.Collection.class) ) )) 
 					{
-						//line 290 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 290 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						connect.Collection<connect.Dictionary> col = ((connect.Collection<connect.Dictionary>) (x) );
-						//line 291 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 291 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						haxe.root.Array arr = new haxe.root.Array();
-						//line 292 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 292 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						{
-							//line 292 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 292 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							java.util.Iterator<connect.Dictionary> elem = col.iterator();
-							//line 292 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 292 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							while (elem.hasNext())
 							{
-								//line 292 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 292 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								connect.Dictionary elem1 = elem.next();
-								//line 293 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 293 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								arr.push(connect.Dictionary.toObject_r(elem1));
 							}
 							
 						}
 						
-						//line 295 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 295 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						return arr;
 					}
 					else
 					{
-						//line 296 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 296 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (( ((java.lang.Object) (__temp_switch1) ) == ((java.lang.Object) (connect.Dictionary.class) ) )) 
 						{
-							//line 297 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 297 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							connect.Dictionary dict = ((connect.Dictionary) (x) );
-							//line 298 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 298 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							java.lang.Object obj = new haxe.lang.DynamicObject(new java.lang.String[]{}, new java.lang.Object[]{}, new java.lang.String[]{}, new double[]{});
-							//line 299 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 299 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							java.lang.Object keys = dict.keys();
-							//line 300 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 300 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							{
-								//line 300 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 300 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								java.lang.Object key = keys;
-								//line 300 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 300 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 								{
-									//line 300 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+									//line 300 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 									java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-									//line 301 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+									//line 301 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 									haxe.root.Reflect.setField(obj, key1, connect.Dictionary.toObject_r(dict.get(key1)));
 								}
 								
 							}
 							
-							//line 303 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 303 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return obj;
 						}
 						else
 						{
-							//line 305 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 305 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return x;
 						}
 						
@@ -116,7 +116,7 @@ public class Dictionary extends connect.Base
 			
 			default:
 			{
-				//line 305 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 305 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				return x;
 			}
 			
@@ -127,75 +127,75 @@ public class Dictionary extends connect.Base
 	
 	public static java.lang.Object fromObject_r(java.lang.Object x)
 	{
-		//line 312 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 312 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		haxe.root.ValueType _g = haxe.root.Type.typeof(x);
-		//line 312 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 312 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		switch (_g.index)
 		{
 			case 4:
 			{
-				//line 321 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 321 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				connect.Dictionary dict = new connect.Dictionary();
-				//line 322 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 322 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				haxe.root.Array<java.lang.String> fields = haxe.root.Reflect.fields(x);
-				//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				{
-					//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+					//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 					int _g1 = 0;
-					//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+					//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 					while (( _g1 < fields.length ))
 					{
-						//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						java.lang.String field = fields.__get(_g1);
-						//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						 ++ _g1;
-						//line 324 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 324 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						dict.set(field, connect.Dictionary.fromObject_r(haxe.root.Reflect.field(x, field)));
 					}
 					
 				}
 				
-				//line 326 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 326 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				return dict;
 			}
 			
 			
 			case 6:
 			{
-				//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				{
-					//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+					//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 					java.lang.Class __temp_switch1 = (((java.lang.Class) (_g.params[0]) ));
-					//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+					//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 					if (( ((java.lang.Object) (__temp_switch1) ) == ((java.lang.Object) (haxe.root.Array.class) ) )) 
 					{
-						//line 314 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 314 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						haxe.root.Array arr = ((haxe.root.Array) (x) );
-						//line 315 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 315 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						connect.Collection col = new connect.Collection();
-						//line 316 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 316 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						{
-							//line 316 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 316 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							int _g2 = 0;
-							//line 316 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 316 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							while (( _g2 < arr.length ))
 							{
-								//line 316 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 316 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								java.lang.Object elem = arr.__get(_g2);
-								//line 316 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 316 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								 ++ _g2;
-								//line 317 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+								//line 317 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 								col.push(connect.Dictionary.fromObject_r(elem));
 							}
 							
 						}
 						
-						//line 319 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 319 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						return col;
 					}
 					else
 					{
-						//line 328 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 328 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						return x;
 					}
 					
@@ -206,7 +206,7 @@ public class Dictionary extends connect.Base
 			
 			default:
 			{
-				//line 328 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 328 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				return x;
 			}
 			
@@ -217,62 +217,62 @@ public class Dictionary extends connect.Base
 	
 	public void clear()
 	{
-		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 29 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		this.map.clear();
-		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 29 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return ;
 	}
 	
 	
 	public connect.Dictionary copy()
 	{
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		connect.Dictionary cp = new connect.Dictionary();
-		//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		{
-			//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			java.lang.Object key = this.keys();
-			//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 			{
-				//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-				//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				cp.set(key1, this.get(key1));
 			}
 			
 		}
 		
-		//line 42 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 42 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return cp;
 	}
 	
 	
 	public boolean exists(java.lang.String key)
 	{
-		//line 51 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 51 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.map.exists(key);
 	}
 	
 	
 	public java.lang.Object get(java.lang.String key)
 	{
-		//line 70 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 70 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.map.get(key);
 	}
 	
 	
 	public boolean getBool(java.lang.String key)
 	{
-		//line 89 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 89 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		if (this.exists(key)) 
 		{
-			//line 90 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 90 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return haxe.lang.Runtime.toBool(((java.lang.Boolean) (this.get(key)) ));
 		}
 		else
 		{
-			//line 92 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 92 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return false;
 		}
 		
@@ -281,15 +281,15 @@ public class Dictionary extends connect.Base
 	
 	public int getInt(java.lang.String key)
 	{
-		//line 112 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 112 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		if (this.exists(key)) 
 		{
-			//line 113 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 113 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return ((int) (haxe.lang.Runtime.toInt(this.get(key))) );
 		}
 		else
 		{
-			//line 115 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 115 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return 0;
 		}
 		
@@ -298,15 +298,15 @@ public class Dictionary extends connect.Base
 	
 	public double getFloat(java.lang.String key)
 	{
-		//line 135 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 135 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		if (this.exists(key)) 
 		{
-			//line 136 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 136 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return ((double) (haxe.lang.Runtime.toDouble(this.get(key))) );
 		}
 		else
 		{
-			//line 138 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 138 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return 0.0;
 		}
 		
@@ -315,15 +315,15 @@ public class Dictionary extends connect.Base
 	
 	public java.lang.String getString(java.lang.String key)
 	{
-		//line 158 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 158 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		if (this.exists(key)) 
 		{
-			//line 159 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 159 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return haxe.lang.Runtime.toString(this.get(key));
 		}
 		else
 		{
-			//line 161 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 161 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			return "";
 		}
 		
@@ -332,72 +332,72 @@ public class Dictionary extends connect.Base
 	
 	public java.lang.Object iterator()
 	{
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return new haxe.ds._StringMap.StringMapValueIterator(((haxe.ds.StringMap<java.lang.Object>) (this.map) ));
 	}
 	
 	
 	public java.lang.Object keys()
 	{
-		//line 180 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 180 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return new haxe.ds._StringMap.StringMapKeyIterator(((haxe.ds.StringMap<java.lang.Object>) (this.map) ));
 	}
 	
 	
 	public boolean remove(java.lang.String key)
 	{
-		//line 190 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 190 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.map.remove(key);
 	}
 	
 	
 	public connect.Dictionary set(java.lang.String key, java.lang.Object value)
 	{
-		//line 200 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 200 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		this.map.set(key, value);
-		//line 201 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 201 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this;
 	}
 	
 	
 	public connect.Dictionary setBool(java.lang.String key, boolean x)
 	{
-		//line 211 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 211 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.set(key, x);
 	}
 	
 	
 	public connect.Dictionary setInt(java.lang.String key, int x)
 	{
-		//line 221 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 221 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.set(key, x);
 	}
 	
 	
 	public connect.Dictionary setFloat(java.lang.String key, double x)
 	{
-		//line 231 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 231 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.set(key, x);
 	}
 	
 	
 	public connect.Dictionary setString(java.lang.String key, java.lang.String x)
 	{
-		//line 241 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 241 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.set(key, x);
 	}
 	
 	
 	@Override public java.lang.String toString()
 	{
-		//line 250 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 250 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return this.map.toString();
 	}
 	
 	
 	public java.lang.Object toObject()
 	{
-		//line 265 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 265 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return connect.Dictionary.toObject_r(this);
 	}
 	
@@ -406,30 +406,30 @@ public class Dictionary extends connect.Base
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		{
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			boolean __temp_executeDef1 = true;
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			if (( field != null )) 
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				switch (field.hashCode())
 				{
 					case 107868:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("map")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							this.map = ((haxe.ds.StringMap) (value) );
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return value;
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
@@ -438,15 +438,15 @@ public class Dictionary extends connect.Base
 				
 			}
 			
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				throw null;
 			}
 			
@@ -457,316 +457,316 @@ public class Dictionary extends connect.Base
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		{
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			boolean __temp_executeDef1 = true;
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			if (( field != null )) 
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				switch (field.hashCode())
 				{
 					case 107868:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("map")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.map;
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 94746189:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("clear")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "clear")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1908304486:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("toObject")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "toObject")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 3059573:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("copy")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "copy")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1776922004:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("toString")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "toString")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1289358244:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("exists")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "exists")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 589412115:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setString")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setString")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 102230:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("get")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "get")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1392239386:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setFloat")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setFloat")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -75652256:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getBool")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getBool")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -905809875:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setInt")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setInt")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1249359687:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getInt")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getInt")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1984457324:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setBool")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setBool")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1953351846:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getFloat")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getFloat")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 113762:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("set")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "set")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 804029191:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getString")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getString")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -934610812:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("remove")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "remove")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1182533742:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("iterator")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "iterator")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 3288564:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("keys")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "keys")) );
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
@@ -775,15 +775,15 @@ public class Dictionary extends connect.Base
 				
 			}
 			
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				throw null;
 			}
 			
@@ -794,300 +794,300 @@ public class Dictionary extends connect.Base
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		{
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			boolean __temp_executeDef1 = true;
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			if (( field != null )) 
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				switch (field.hashCode())
 				{
 					case -1908304486:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("toObject")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.toObject();
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 94746189:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("clear")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							this.clear();
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1776922004:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("toString")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.toString();
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 3059573:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("copy")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.copy();
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 589412115:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setString")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.setString(haxe.lang.Runtime.toString(dynargs[0]), haxe.lang.Runtime.toString(dynargs[1]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1289358244:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("exists")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.exists(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1392239386:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setFloat")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.setFloat(haxe.lang.Runtime.toString(dynargs[0]), ((double) (haxe.lang.Runtime.toDouble(dynargs[1])) ));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 102230:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("get")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.get(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -905809875:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setInt")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.setInt(haxe.lang.Runtime.toString(dynargs[0]), ((int) (haxe.lang.Runtime.toInt(dynargs[1])) ));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -75652256:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getBool")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.getBool(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1984457324:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("setBool")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.setBool(haxe.lang.Runtime.toString(dynargs[0]), haxe.lang.Runtime.toBool(((java.lang.Boolean) (dynargs[1]) )));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -1249359687:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getInt")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.getInt(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 113762:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("set")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.set(haxe.lang.Runtime.toString(dynargs[0]), dynargs[1]);
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1953351846:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getFloat")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.getFloat(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case -934610812:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("remove")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.remove(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 804029191:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("getString")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.getString(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 3288564:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("keys")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.keys();
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
 					
 					case 1182533742:
 					{
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						if (field.equals("iterator")) 
 						{
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							__temp_executeDef1 = false;
-							//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+							//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 							return this.iterator();
 						}
 						
-						//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+						//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 						break;
 					}
 					
@@ -1096,25 +1096,25 @@ public class Dictionary extends connect.Base
 				
 			}
 			
-			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			
 		}
 		
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		return null;
 	}
 	
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		baseArr.push("map");
-		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Dictionary.hx"
+		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Dictionary.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
