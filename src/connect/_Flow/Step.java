@@ -13,16 +13,16 @@ public class Step extends haxe.lang.HxObject
 	
 	public Step(java.lang.String description, java.util.function.Consumer<connect.Flow> func)
 	{
-		//line 626 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 626 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect._Flow.Step.__hx_ctor_connect__Flow_Step(this, description, func);
 	}
 	
 	
 	protected static void __hx_ctor_connect__Flow_Step(connect._Flow.Step __hx_this, java.lang.String description, java.util.function.Consumer<connect.Flow> func)
 	{
-		//line 627 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 627 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		__hx_this.description = description;
-		//line 628 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 628 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		__hx_this.func = func;
 	}
 	
@@ -33,48 +33,48 @@ public class Step extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			boolean __temp_executeDef1 = true;
-			//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( field != null )) 
 			{
-				//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				switch (field.hashCode())
 				{
 					case 3154628:
 					{
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("func")) 
 						{
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.func = ((java.util.function.Consumer<connect.Flow>) (value) );
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("description")) 
 						{
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.description = haxe.lang.Runtime.toString(value);
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
@@ -83,15 +83,15 @@ public class Step extends haxe.lang.HxObject
 				
 			}
 			
-			//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				throw null;
 			}
 			
@@ -102,44 +102,44 @@ public class Step extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			boolean __temp_executeDef1 = true;
-			//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( field != null )) 
 			{
-				//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				switch (field.hashCode())
 				{
 					case 3154628:
 					{
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("func")) 
 						{
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.func;
 						}
 						
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("description")) 
 						{
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.description;
 						}
 						
-						//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
@@ -148,15 +148,15 @@ public class Step extends haxe.lang.HxObject
 				
 			}
 			
-			//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				throw null;
 			}
 			
@@ -167,11 +167,11 @@ public class Step extends haxe.lang.HxObject
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("func");
-		//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("description");
-		//line 622 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 622 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

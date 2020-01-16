@@ -1,4 +1,4 @@
-/home/travis/build/cloudblue/connect-haxe-sdk
+/home/travis/build/JaviCerveraIngram/connect-haxe-sdk
 begin defines
 dce
 haxe
