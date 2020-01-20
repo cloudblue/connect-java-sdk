@@ -15,16 +15,16 @@ public class Contact extends connect.models.Model
 	
 	public Contact()
 	{
-		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Contact.__hx_ctor_connect_models_Contact(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Contact(connect.models.Contact __hx_this)
 	{
-		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
 	}
 	

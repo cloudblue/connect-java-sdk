@@ -8,38 +8,38 @@ public class Renewal extends connect.models.Model
 {
 	public Renewal(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Renewal()
 	{
-		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 31 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 31 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		connect.models.Renewal.__hx_ctor_connect_models_Renewal(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Renewal(connect.models.Renewal __hx_this)
 	{
-		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 31 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
-		//line 30 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 32 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 30 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 32 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		_g.set("from", "DateTime");
-		//line 30 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 32 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		_g.set("to", "DateTime");
-		//line 30 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 32 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
 	
-	public connect.DateTime from;
+	public connect.util.DateTime from;
 	
-	public connect.DateTime to;
+	public connect.util.DateTime to;
 	
 	public int periodDelta;
 	
@@ -47,30 +47,30 @@ public class Renewal extends connect.models.Model
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				switch (field.hashCode())
 				{
 					case -985479561:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("periodDelta")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							this.periodDelta = ((int) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
@@ -79,15 +79,15 @@ public class Renewal extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				throw null;
 			}
 			
@@ -98,84 +98,84 @@ public class Renewal extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				switch (field.hashCode())
 				{
 					case 566588306:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("periodUom")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							this.periodUom = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
 					
 					case 3151786:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("from")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
-							this.from = ((connect.DateTime) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							this.from = ((connect.util.DateTime) (value) );
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
 					
 					case -985479561:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("periodDelta")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							this.periodDelta = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
 					
 					case 3707:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("to")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
-							this.to = ((connect.DateTime) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							this.to = ((connect.util.DateTime) (value) );
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
@@ -184,15 +184,15 @@ public class Renewal extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				throw null;
 			}
 			
@@ -203,76 +203,76 @@ public class Renewal extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				switch (field.hashCode())
 				{
 					case 566588306:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("periodUom")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return this.periodUom;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
 					
 					case 3151786:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("from")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return this.from;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
 					
 					case -985479561:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("periodDelta")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return this.periodDelta;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
 					
 					case 3707:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("to")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return this.to;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
@@ -281,15 +281,15 @@ public class Renewal extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				throw null;
 			}
 			
@@ -300,28 +300,28 @@ public class Renewal extends connect.models.Model
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				switch (field.hashCode())
 				{
 					case -985479561:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						if (field.equals("periodDelta")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 							return ((double) (this.periodDelta) );
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 						break;
 					}
 					
@@ -330,15 +330,15 @@ public class Renewal extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+			//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+				//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 				throw null;
 			}
 			
@@ -349,15 +349,15 @@ public class Renewal extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		baseArr.push("periodUom");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		baseArr.push("periodDelta");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		baseArr.push("to");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		baseArr.push("from");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Renewal.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

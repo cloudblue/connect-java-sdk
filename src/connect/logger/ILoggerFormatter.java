@@ -12,9 +12,9 @@ public interface ILoggerFormatter extends haxe.lang.IHxObject
 	
 	java.lang.String formatCodeBlock(java.lang.String text, java.lang.String language);
 	
-	java.lang.String formatList(connect.Collection<java.lang.String> list);
+	java.lang.String formatList(connect.util.Collection<java.lang.String> list);
 	
-	java.lang.String formatTable(connect.Collection<connect.Collection<java.lang.String>> table);
+	java.lang.String formatTable(connect.util.Collection<connect.util.Collection<java.lang.String>> table);
 	
 }
 

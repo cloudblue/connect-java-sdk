@@ -6,7 +6,7 @@ import haxe.root.*;
 @SuppressWarnings(value={"rawtypes", "unchecked"})
 public interface IApiClient extends haxe.lang.IHxObject
 {
-	connect.api.Response syncRequest(java.lang.String method, java.lang.String url, connect.Dictionary headers, java.lang.String body, java.lang.String fileArg, java.lang.String fileName, connect.Blob fileContent);
+	connect.api.Response syncRequest(java.lang.String method, java.lang.String url, connect.util.Dictionary headers, java.lang.String body, java.lang.String fileArg, java.lang.String fileName, connect.util.Blob fileContent);
 	
 }
 

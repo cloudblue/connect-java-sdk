@@ -16,7 +16,7 @@ public interface IUsageApi extends haxe.lang.IHxObject
 	
 	void deleteUsageFile(java.lang.String id);
 	
-	java.lang.String uploadUsageFile(java.lang.String id, connect.Blob file);
+	java.lang.String uploadUsageFile(java.lang.String id, connect.util.Blob file);
 	
 	java.lang.String submitUsageFileAction(java.lang.String id);
 	
@@ -28,7 +28,7 @@ public interface IUsageApi extends haxe.lang.IHxObject
 	
 	java.lang.String getProductSpecificUsageFileTemplate(java.lang.String productId);
 	
-	java.lang.String uploadReconciliationFileFromProvider(java.lang.String id, connect.Blob file);
+	java.lang.String uploadReconciliationFileFromProvider(java.lang.String id, connect.util.Blob file);
 	
 	java.lang.String reprocessProcessedFile(java.lang.String id);
 	

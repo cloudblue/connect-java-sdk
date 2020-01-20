@@ -8,7 +8,7 @@ public class Env extends connect.Base
 {
 	public Env(haxe.lang.EmptyObject empty)
 	{
-		//line 52 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 51 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
@@ -29,17 +29,17 @@ public class Env extends connect.Base
 	}
 	
 	
-	public static void initConfig(java.lang.String apiUrl, java.lang.String apiKey, connect.Collection<java.lang.String> products)
+	public static void initConfig(java.lang.String apiUrl, java.lang.String apiKey, connect.util.Collection<java.lang.String> products)
 	{
-		//line 63 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.config == null )) 
 		{
-			//line 64 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 63 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.config = new connect.Config(apiUrl, apiKey, products, null);
 		}
 		else
 		{
-			//line 66 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 65 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			throw haxe.lang.HaxeException.wrap("Config instance is already initialized.");
 		}
 		
@@ -48,33 +48,33 @@ public class Env extends connect.Base
 	
 	public static void loadConfig(java.lang.String filename)
 	{
-		//line 80 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 79 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.config == null )) 
 		{
-			//line 81 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 80 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			java.lang.String content = sys.io.File.getContent(filename);
+			//line 81 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			connect.util.Dictionary dict = connect.util.Dictionary.fromObject(new haxe.format.JsonParser(haxe.lang.Runtime.toString(content)).doParse());
 			//line 82 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
-			connect.Dictionary dict = connect.Dictionary.fromObject(new haxe.format.JsonParser(haxe.lang.Runtime.toString(content)).doParse());
-			//line 83 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			java.lang.String apiUrl = haxe.lang.Runtime.toString(dict.get("apiEndpoint"));
-			//line 84 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 83 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			java.lang.String apiKey = haxe.lang.Runtime.toString(dict.get("apiKey"));
-			//line 85 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 84 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			java.lang.Object configProducts = dict.get("products");
-			//line 86 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
-			connect.Collection<java.lang.String> products = ( (( configProducts instanceof connect.Collection )) ? (((connect.Collection<java.lang.String>) (configProducts) )) : (( (( configProducts instanceof java.lang.String )) ? (((connect.Collection<java.lang.String>) (connect.Collection._fromArray(((haxe.root.Array<java.lang.String>) (((haxe.root.Array) (new haxe.root.Array(new java.lang.Object[]{configProducts})) )) ))) )) : (null) )) );
-			//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 85 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			connect.util.Collection<java.lang.String> products = ( (( configProducts instanceof connect.util.Collection )) ? (((connect.util.Collection<java.lang.String>) (configProducts) )) : (( (( configProducts instanceof java.lang.String )) ? (((connect.util.Collection<java.lang.String>) (connect.util.Collection._fromArray(((haxe.root.Array<java.lang.String>) (((haxe.root.Array) (new haxe.root.Array(new java.lang.Object[]{configProducts})) )) ))) )) : (null) )) );
+			//line 90 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			dict.remove("apiEndpoint");
-			//line 92 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			dict.remove("apiKey");
-			//line 93 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 92 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			dict.remove("products");
-			//line 94 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 93 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.config = new connect.Config(apiUrl, apiKey, products, dict);
 		}
 		else
 		{
-			//line 96 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 95 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			throw haxe.lang.HaxeException.wrap("Config instance is already initialized.");
 		}
 		
@@ -83,22 +83,22 @@ public class Env extends connect.Base
 	
 	public static boolean isConfigInitialized()
 	{
-		//line 105 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return ( connect.Env.config != null );
 	}
 	
 	
 	public static void initLogger(connect.logger.LoggerConfig config)
 	{
-		//line 115 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 114 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.logger == null )) 
 		{
-			//line 116 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 115 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.logger = new connect.logger.Logger(((connect.logger.LoggerConfig) (config) ));
 		}
 		else
 		{
-			//line 118 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 117 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			throw haxe.lang.HaxeException.wrap("Logger instance is already initialized.");
 		}
 		
@@ -107,128 +107,128 @@ public class Env extends connect.Base
 	
 	public static boolean isLoggerInitialized()
 	{
-		//line 127 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 126 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return ( connect.Env.logger != null );
 	}
 	
 	
 	public static connect.Config getConfig()
 	{
-		//line 140 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 139 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if ( ! (connect.Env.isConfigInitialized()) ) 
 		{
-			//line 141 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 140 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.loadConfig("config.json");
 		}
 		
-		//line 143 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 142 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.config;
 	}
 	
 	
 	public static connect.logger.Logger getLogger()
 	{
-		//line 154 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 153 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if ( ! (connect.Env.isLoggerInitialized()) ) 
 		{
-			//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 154 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.initLogger(null);
 		}
 		
-		//line 157 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 156 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.logger;
 	}
 	
 	
 	public static connect.api.IApiClient getApiClient()
 	{
-		//line 166 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 165 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.apiClient == null )) 
 		{
-			//line 167 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 166 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.apiClient = ((connect.api.IApiClient) (connect.Env.createInstance("IApiClient")) );
 		}
 		
-		//line 169 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 168 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.apiClient;
 	}
 	
 	
 	public static connect.api.IFulfillmentApi getFulfillmentApi()
 	{
-		//line 180 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 179 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.fulfillmentApi == null )) 
 		{
-			//line 181 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 180 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.fulfillmentApi = ((connect.api.IFulfillmentApi) (connect.Env.createInstance("IFulfillmentApi")) );
 		}
 		
-		//line 183 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.fulfillmentApi;
 	}
 	
 	
 	public static connect.api.IUsageApi getUsageApi()
 	{
-		//line 193 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 192 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.usageApi == null )) 
 		{
-			//line 194 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 193 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.usageApi = ((connect.api.IUsageApi) (connect.Env.createInstance("IUsageApi")) );
 		}
 		
-		//line 196 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 195 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.usageApi;
 	}
 	
 	
 	public static connect.api.ITierApi getTierApi()
 	{
-		//line 206 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 205 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.tierApi == null )) 
 		{
-			//line 207 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 206 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.tierApi = ((connect.api.ITierApi) (connect.Env.createInstance("ITierApi")) );
 		}
 		
-		//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 208 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.tierApi;
 	}
 	
 	
 	public static connect.api.IGeneralApi getGeneralApi()
 	{
-		//line 219 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 218 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.generalApi == null )) 
 		{
-			//line 220 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 219 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			connect.Env.generalApi = ((connect.api.IGeneralApi) (connect.Env.createInstance("IGeneralApi")) );
 		}
 		
-		//line 222 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 221 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		return connect.Env.generalApi;
 	}
 	
 	
-	public static void _reset(connect.Dictionary deps)
+	public static void _reset(connect.util.Dictionary deps)
 	{
-		//line 228 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.config = null;
-		//line 229 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 228 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.logger = null;
-		//line 230 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 229 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.apiClient = null;
-		//line 231 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 230 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.fulfillmentApi = null;
-		//line 232 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 231 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.usageApi = null;
-		//line 233 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 232 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.tierApi = null;
-		//line 234 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 233 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.generalApi = null;
-		//line 235 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 234 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.dependencies = null;
-		//line 236 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 235 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.init(deps);
 	}
 	
@@ -247,37 +247,37 @@ public class Env extends connect.Base
 	
 	public static connect.api.IGeneralApi generalApi;
 	
-	public static connect.Dictionary defaultDependencies;
+	public static connect.util.Dictionary defaultDependencies;
 	
-	public static connect.Dictionary dependencies;
+	public static connect.util.Dictionary dependencies;
 	
-	public static void init(connect.Dictionary deps)
+	public static void init(connect.util.Dictionary deps)
 	{
-		//line 252 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 251 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.initDefaultDependencies();
-		//line 253 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 252 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.dependencies == null )) 
 		{
+			//line 253 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			connect.Env.dependencies = new connect.util.Dictionary();
 			//line 254 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
-			connect.Env.dependencies = new connect.Dictionary();
-			//line 255 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			if (( deps != null )) 
 			{
-				//line 256 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+				//line 255 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 				java.lang.Object keys = deps.keys();
-				//line 257 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+				//line 256 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 				{
-					//line 257 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+					//line 256 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 					java.lang.Object key = keys;
-					//line 257 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+					//line 256 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 					while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 					{
-						//line 257 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+						//line 256 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 						java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-						//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+						//line 257 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 						if (connect.Env.defaultDependencies.exists(key1)) 
 						{
-							//line 259 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+							//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 							connect.Env.dependencies.setString(key1, deps.getString(key1));
 						}
 						
@@ -294,11 +294,11 @@ public class Env extends connect.Base
 	
 	public static void initDefaultDependencies()
 	{
-		//line 268 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 267 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( connect.Env.defaultDependencies == null )) 
 		{
-			//line 269 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
-			connect.Env.defaultDependencies = new connect.Dictionary().setString("IApiClient", "connect.api.impl.ApiClientImpl").setString("IFulfillmentApi", "connect.api.impl.FulfillmentApiImpl").setString("IUsageApi", "connect.api.impl.UsageApiImpl").setString("ITierApi", "connect.api.impl.TierApiImpl").setString("IGeneralApi", "connect.api.impl.GeneralApiImpl");
+			//line 268 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			connect.Env.defaultDependencies = new connect.util.Dictionary().setString("IApiClient", "connect.api.impl.ApiClientImpl").setString("IFulfillmentApi", "connect.api.impl.FulfillmentApiImpl").setString("IUsageApi", "connect.api.impl.UsageApiImpl").setString("ITierApi", "connect.api.impl.TierApiImpl").setString("IGeneralApi", "connect.api.impl.GeneralApiImpl");
 		}
 		
 	}
@@ -306,21 +306,21 @@ public class Env extends connect.Base
 	
 	public static java.lang.Object createInstance(java.lang.String interfaceName)
 	{
-		//line 280 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 279 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		connect.Env.init(null);
-		//line 281 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 280 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		java.lang.String className = ( (connect.Env.dependencies.exists(interfaceName)) ? (connect.Env.dependencies.getString(interfaceName)) : (connect.Env.defaultDependencies.getString(interfaceName)) );
-		//line 284 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		java.lang.Class classObj = haxe.root.Type.resolveClass(className);
-		//line 285 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+		//line 284 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 		if (( ((java.lang.Object) (classObj) ) != ((java.lang.Object) (null) ) )) 
 		{
-			//line 286 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 285 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			return ((java.lang.Object) (haxe.root.Type.createInstance(((java.lang.Class) (classObj) ), ((haxe.root.Array) (new haxe.root.Array(new java.lang.Object[]{})) ))) );
 		}
 		else
 		{
-			//line 288 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
+			//line 287 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Env.hx"
 			throw haxe.lang.HaxeException.wrap(( ( "Cannot find class name \"" + className ) + "\"" ));
 		}
 		
