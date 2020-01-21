@@ -20,7 +20,7 @@ public class Logger_setFilename_61__Fun extends haxe.lang.Function
 		//line 61 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		boolean last = ( (( __fn_dyn2 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toBool(((java.lang.Boolean) (((java.lang.Object) (__fn_float2) )) ))) : (haxe.lang.Runtime.toBool(((java.lang.Boolean) (__fn_dyn2) ))) );
 		//line 61 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		connect.logger.LoggerOutput o = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (((connect.logger.LoggerOutput) (((java.lang.Object) (__fn_float1) )) )) : (((connect.logger.LoggerOutput) (__fn_dyn1) )) );
+		connect.logger.LoggerHandler o = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (((connect.logger.LoggerHandler) (((java.lang.Object) (__fn_float1) )) )) : (((connect.logger.LoggerHandler) (__fn_dyn1) )) );
 		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		if (last) 
 		{

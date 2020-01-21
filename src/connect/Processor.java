@@ -166,7 +166,7 @@ public class Processor extends connect.Base
 		//line 129 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
 		connect.Env.getLogger().closeSection();
 		//line 130 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
-		connect.Env.getLogger().setFilename(null);
+		connect.Env.getLogger().setFilename(prevLogName);
 	}
 	
 	

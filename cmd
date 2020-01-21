@@ -103,6 +103,7 @@ src/connect/models/UsageFile.java
 src/connect/Processor.java
 src/connect/models/UsageRecords.java
 src/connect/Base.java
+src/connect/logger/LoggerHandler.java
 src/haxe/Json.java
 src/haxe/ds/_Vector/Vector_Impl_.java
 src/connect/models/Configurations.java
@@ -135,7 +136,6 @@ src/connect/util/Diff_parse_174__Fun.java
 src/connect/util/Diff_parse_178__Fun.java
 src/connect/util/Diff_parse_182__Fun.java
 src/connect/api/IApiClient.java
-src/connect/logger/LoggerOutput.java
 src/haxe/crypto/BaseCode.java
 src/haxe/zip/Writer.java
 src/connect/models/Agreement.java
@@ -209,7 +209,7 @@ src/connect/storage/StepData.java
 src/haxe/io/BytesBuffer.java
 src/connect/Flow.java
 src/connect/Flow_process_352__Fun.java
-src/connect/Flow_getDataTable_577__Fun.java
+src/connect/Flow_getDataTable_592__Fun.java
 src/connect/_Flow/Step.java
 src/connect/api/impl/TierApiImpl.java
 src/haxe/ds/EnumValueMap.java

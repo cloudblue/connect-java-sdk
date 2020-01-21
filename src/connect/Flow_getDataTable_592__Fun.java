@@ -4,28 +4,28 @@ package connect;
 import haxe.root.*;
 
 @SuppressWarnings(value={"rawtypes", "unchecked"})
-public class Flow_getDataTable_577__Fun extends haxe.lang.Function
+public class Flow_getDataTable_592__Fun extends haxe.lang.Function
 {
-	public Flow_getDataTable_577__Fun(connect.util.Collection<connect.util.Collection<java.lang.String>> dataCol, connect.util.Dictionary data)
+	public Flow_getDataTable_592__Fun(connect.util.Collection<connect.util.Collection<java.lang.String>> dataCol, connect.util.Dictionary data)
 	{
-		//line 578 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 593 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		super(1, 0);
-		//line 578 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 593 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		this.dataCol = dataCol;
-		//line 578 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 593 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		this.data = data;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 577 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 592 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		java.lang.String key2 = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toString(__fn_float1)) : (haxe.lang.Runtime.toString(__fn_dyn1)) );
-		//line 579 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 594 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		connect.util.Collection<java.lang.String> tmp = new connect.util.Collection<java.lang.String>().push(key2).push(haxe.lang.Runtime.toString(this.data.get(key2)));
-		//line 578 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 593 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		this.dataCol.push(tmp);
-		//line 578 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 593 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
 		return null;
 	}
 	

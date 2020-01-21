@@ -32,12 +32,12 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 		//line 192 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		{
 			//line 192 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
-			java.util.Iterator<connect.logger.LoggerOutput> output = connect.Env.getLogger().getOutputs().iterator();
+			java.util.Iterator<connect.logger.LoggerHandler> output = connect.Env.getLogger().getOutputs().iterator();
 			//line 192 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			while (output.hasNext())
 			{
 				//line 192 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
-				connect.logger.LoggerOutput output1 = output.next();
+				connect.logger.LoggerHandler output1 = output.next();
 				//line 193 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				connect.logger.ILoggerFormatter fmt = output1.formatter;
 				//line 194 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
@@ -66,7 +66,7 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 				}
 				
 				//line 205 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
-				connect.Env.getLogger()._writeToOutput(level, fmt.formatBlock(( ( "" + firstMessage ) + fmt.formatList(requestList) )), output1);
+				connect.Env.getLogger()._writeToHandler(level, fmt.formatBlock(( ( "" + firstMessage ) + fmt.formatList(requestList) )), output1);
 			}
 			
 		}

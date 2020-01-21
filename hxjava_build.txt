@@ -376,6 +376,8 @@ M connect.models.UsageRecords
 C connect.models.UsageRecords
 M connect.Base
 C connect.Base
+M connect.logger.LoggerHandler
+C connect.logger.LoggerHandler
 M haxe.Json
 C haxe.Json
 M java.net.URI
@@ -444,8 +446,6 @@ C connect.util.Diff_parse_178__Fun
 C connect.util.Diff_parse_182__Fun
 M connect.api.IApiClient
 C connect.api.IApiClient
-M connect.logger.LoggerOutput
-C connect.logger.LoggerOutput
 M haxe.crypto.BaseCode
 C haxe.crypto.BaseCode
 M java.nio.ByteBuffer
@@ -668,7 +668,7 @@ M haxe.root.Enum
 M connect.Flow
 C connect.Flow
 C connect.Flow_process_352__Fun
-C connect.Flow_getDataTable_577__Fun
+C connect.Flow_getDataTable_592__Fun
 C connect._Flow.Step
 M connect.api.impl.TierApiImpl
 C connect.api.impl.TierApiImpl

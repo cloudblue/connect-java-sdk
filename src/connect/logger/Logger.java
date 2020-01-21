@@ -39,7 +39,7 @@ public class Logger extends connect.Base
 		//line 35 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		__hx_this.level = ((int) (java.lang.Math.min(java.lang.Math.max(((double) (config.level_) ), ((double) (connect.logger.Logger.LEVEL_ERROR) )), ((double) (connect.logger.Logger.LEVEL_DEBUG) ))) );
 		//line 36 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		__hx_this.outputs = config.outputs_.copy();
+		__hx_this.handlers = config.handlers_.copy();
 		//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		__hx_this.sections = new haxe.root.Array<connect.logger._Logger.LoggerSection>(new connect.logger._Logger.LoggerSection[]{});
 	}
@@ -70,7 +70,7 @@ public class Logger extends connect.Base
 		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		java.lang.String fullname = ( (( ( this.path != null ) && ( filename != null ) )) ? (( this.path + filename )) : (null) );
 		//line 61 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		boolean setFilenameResult = haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.root.Lambda.fold(((java.lang.Object) (this.outputs) ), ((haxe.lang.Function) (new connect.logger.Logger_setFilename_61__Fun(fullname)) ), ((java.lang.Object) (true) ))) ));
+		boolean setFilenameResult = haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.root.Lambda.fold(((java.lang.Object) (this.handlers) ), ((haxe.lang.Function) (new connect.logger.Logger_setFilename_61__Fun(fullname)) ), ((java.lang.Object) (true) ))) ));
 		//line 64 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		if (( setFilenameResult && ( fullname != null ) )) 
 		{
@@ -97,7 +97,7 @@ public class Logger extends connect.Base
 	public java.lang.String getFilename()
 	{
 		//line 74 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		connect.logger.ILoggerWriter firstWriter = ( (( this.outputs.length() > 0 )) ? (this.outputs.get(0).writer) : (null) );
+		connect.logger.ILoggerWriter firstWriter = ( (( this.handlers.length() > 0 )) ? (this.handlers.get(0).writer) : (null) );
 		//line 77 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		if (( firstWriter != null )) 
 		{
@@ -117,10 +117,10 @@ public class Logger extends connect.Base
 	}
 	
 	
-	public connect.util.Collection<connect.logger.LoggerOutput> getOutputs()
+	public connect.util.Collection<connect.logger.LoggerHandler> getOutputs()
 	{
 		//line 99 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		return this.outputs;
+		return this.handlers;
 	}
 	
 	
@@ -141,14 +141,14 @@ public class Logger extends connect.Base
 	public void writeBlock(int level, java.lang.String block)
 	{
 		//line 128 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		java.util.Iterator<connect.logger.LoggerOutput> output = this.outputs.iterator();
+		java.util.Iterator<connect.logger.LoggerHandler> output = this.handlers.iterator();
 		//line 128 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		while (output.hasNext())
 		{
 			//line 128 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			connect.logger.LoggerOutput output1 = output.next();
+			connect.logger.LoggerHandler output1 = output.next();
 			//line 129 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			this._writeToOutput(level, output1.formatter.formatBlock(block), output1);
+			this._writeToHandler(level, output1.formatter.formatBlock(block), output1);
 		}
 		
 	}
@@ -157,14 +157,14 @@ public class Logger extends connect.Base
 	public void writeCodeBlock(int level, java.lang.String code, java.lang.String language)
 	{
 		//line 142 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		java.util.Iterator<connect.logger.LoggerOutput> output = this.outputs.iterator();
+		java.util.Iterator<connect.logger.LoggerHandler> output = this.handlers.iterator();
 		//line 142 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		while (output.hasNext())
 		{
 			//line 142 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			connect.logger.LoggerOutput output1 = output.next();
+			connect.logger.LoggerHandler output1 = output.next();
 			//line 143 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			this._writeToOutput(level, output1.formatter.formatCodeBlock(code, language), output1);
+			this._writeToHandler(level, output1.formatter.formatCodeBlock(code, language), output1);
 		}
 		
 	}
@@ -173,14 +173,14 @@ public class Logger extends connect.Base
 	public void writeList(int level, connect.util.Collection<java.lang.String> list)
 	{
 		//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		java.util.Iterator<connect.logger.LoggerOutput> output = this.outputs.iterator();
+		java.util.Iterator<connect.logger.LoggerHandler> output = this.handlers.iterator();
 		//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		while (output.hasNext())
 		{
 			//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			connect.logger.LoggerOutput output1 = output.next();
+			connect.logger.LoggerHandler output1 = output.next();
 			//line 156 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			this._writeToOutput(level, output1.formatter.formatList(list), output1);
+			this._writeToHandler(level, output1.formatter.formatList(list), output1);
 		}
 		
 	}
@@ -189,14 +189,14 @@ public class Logger extends connect.Base
 	public void writeTable(int level, connect.util.Collection<connect.util.Collection<java.lang.String>> table)
 	{
 		//line 169 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		java.util.Iterator<connect.logger.LoggerOutput> output = this.outputs.iterator();
+		java.util.Iterator<connect.logger.LoggerHandler> output = this.handlers.iterator();
 		//line 169 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		while (output.hasNext())
 		{
 			//line 169 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			connect.logger.LoggerOutput output1 = output.next();
+			connect.logger.LoggerHandler output1 = output.next();
 			//line 170 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			this._writeToOutput(level, output1.formatter.formatTable(table), output1);
+			this._writeToHandler(level, output1.formatter.formatTable(table), output1);
 		}
 		
 	}
@@ -205,14 +205,14 @@ public class Logger extends connect.Base
 	public void write(int level, java.lang.String message)
 	{
 		//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		java.util.Iterator<connect.logger.LoggerOutput> output = this.outputs.iterator();
+		java.util.Iterator<connect.logger.LoggerHandler> output = this.handlers.iterator();
 		//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		while (output.hasNext())
 		{
 			//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			connect.logger.LoggerOutput output1 = output.next();
+			connect.logger.LoggerHandler output1 = output.next();
 			//line 183 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			this._writeToOutput(level, message, output1);
+			this._writeToHandler(level, message, output1);
 		}
 		
 	}
@@ -281,7 +281,7 @@ public class Logger extends connect.Base
 	}
 	
 	
-	public void _writeToOutput(int level, java.lang.String message, connect.logger.LoggerOutput output)
+	public void _writeToHandler(int level, java.lang.String message, connect.logger.LoggerHandler handler)
 	{
 		//line 245 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		if (( this.level >= level )) 
@@ -289,7 +289,7 @@ public class Logger extends connect.Base
 			//line 246 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 			this.writeSections();
 			//line 247 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-			output.writer.writeLine(message);
+			handler.writer.writeLine(message);
 		}
 		
 	}
@@ -299,7 +299,7 @@ public class Logger extends connect.Base
 	
 	public int level;
 	
-	public connect.util.Collection<connect.logger.LoggerOutput> outputs;
+	public connect.util.Collection<connect.logger.LoggerHandler> handlers;
 	
 	public haxe.root.Array<connect.logger._Logger.LoggerSection> sections;
 	
@@ -320,12 +320,12 @@ public class Logger extends connect.Base
 				//line 261 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 				{
 					//line 261 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-					java.util.Iterator<connect.logger.LoggerOutput> output = this.outputs.iterator();
+					java.util.Iterator<connect.logger.LoggerHandler> output = this.handlers.iterator();
 					//line 261 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 					while (output.hasNext())
 					{
 						//line 261 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-						connect.logger.LoggerOutput output1 = output.next();
+						connect.logger.LoggerHandler output1 = output.next();
 						//line 262 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 						java.lang.String section = output1.formatter.formatSection(( i + 1 ), this.sections.__get(i).name);
 						//line 263 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
@@ -442,15 +442,15 @@ public class Logger extends connect.Base
 					}
 					
 					
-					case -1106114670:
+					case 2069097:
 					{
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-						if (field.equals("outputs")) 
+						if (field.equals("handlers")) 
 						{
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-							this.outputs = ((connect.util.Collection<connect.logger.LoggerOutput>) (value) );
+							this.handlers = ((connect.util.Collection<connect.logger.LoggerHandler>) (value) );
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 							return value;
 						}
@@ -575,15 +575,15 @@ public class Logger extends connect.Base
 					}
 					
 					
-					case -1106114670:
+					case 2069097:
 					{
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-						if (field.equals("outputs")) 
+						if (field.equals("handlers")) 
 						{
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-							return this.outputs;
+							return this.handlers;
 						}
 						
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
@@ -671,15 +671,15 @@ public class Logger extends connect.Base
 					}
 					
 					
-					case -225293732:
+					case -890220209:
 					{
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-						if (field.equals("_writeToOutput")) 
+						if (field.equals("_writeToHandler")) 
 						{
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "_writeToOutput")) );
+							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "_writeToHandler")) );
 						}
 						
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
@@ -1057,15 +1057,15 @@ public class Logger extends connect.Base
 					}
 					
 					
-					case -225293732:
+					case -890220209:
 					{
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-						if (field.equals("_writeToOutput")) 
+						if (field.equals("_writeToHandler")) 
 						{
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
 							//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-							this._writeToOutput(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]), ((connect.logger.LoggerOutput) (dynargs[2]) ));
+							this._writeToHandler(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]), ((connect.logger.LoggerHandler) (dynargs[2]) ));
 						}
 						
 						//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
@@ -1416,7 +1416,7 @@ public class Logger extends connect.Base
 		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		baseArr.push("sections");
 		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
-		baseArr.push("outputs");
+		baseArr.push("handlers");
 		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
 		baseArr.push("level");
 		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
