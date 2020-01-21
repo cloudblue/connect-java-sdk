@@ -8,29 +8,29 @@ public class ProductConfigurationParam extends connect.models.Model
 {
 	public ProductConfigurationParam(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public ProductConfigurationParam()
 	{
-		//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		connect.models.ProductConfigurationParam.__hx_ctor_connect_models_ProductConfigurationParam(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_ProductConfigurationParam(connect.models.ProductConfigurationParam __hx_this)
 	{
-		//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		_g.set("parameter", "Param");
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
@@ -49,120 +49,120 @@ public class ProductConfigurationParam extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 				switch (field.hashCode())
 				{
 					case -1606703562:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("constraints")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							this.constraints = ((connect.models.Constraints) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 111972721:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("value")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							this.value = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case -1291329255:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("events")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							this.events = ((connect.models.Events) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 1954460585:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("parameter")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							this.parameter = ((connect.models.Param) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 3242771:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("item")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							this.item = ((connect.models.Item) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 300911179:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("marketplace")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							this.marketplace = ((connect.models.Marketplace) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
@@ -171,15 +171,15 @@ public class ProductConfigurationParam extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 				throw null;
 			}
 			
@@ -190,108 +190,108 @@ public class ProductConfigurationParam extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 				switch (field.hashCode())
 				{
 					case -1606703562:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("constraints")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return this.constraints;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 111972721:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("value")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return this.value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case -1291329255:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("events")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return this.events;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 1954460585:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("parameter")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return this.parameter;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 3242771:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("item")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return this.item;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
 					
 					case 300911179:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						if (field.equals("marketplace")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 							return this.marketplace;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 						break;
 					}
 					
@@ -300,15 +300,15 @@ public class ProductConfigurationParam extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 				throw null;
 			}
 			
@@ -319,19 +319,19 @@ public class ProductConfigurationParam extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		baseArr.push("constraints");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		baseArr.push("events");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		baseArr.push("item");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		baseArr.push("marketplace");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		baseArr.push("parameter");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		baseArr.push("value");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductConfigurationParam.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

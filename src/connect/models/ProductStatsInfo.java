@@ -8,23 +8,23 @@ public class ProductStatsInfo extends connect.models.Model
 {
 	public ProductStatsInfo(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public ProductStatsInfo()
 	{
-		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.ProductStatsInfo.__hx_ctor_connect_models_ProductStatsInfo(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_ProductStatsInfo(connect.models.ProductStatsInfo __hx_this)
 	{
-		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
 	}
 	
@@ -35,48 +35,48 @@ public class ProductStatsInfo extends connect.models.Model
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				switch (field.hashCode())
 				{
 					case 1746332184:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("sourcing")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							this.sourcing = ((int) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
 					
 					case -1580708220:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("distribution")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							this.distribution = ((int) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
@@ -85,15 +85,15 @@ public class ProductStatsInfo extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				throw null;
 			}
 			
@@ -104,48 +104,48 @@ public class ProductStatsInfo extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				switch (field.hashCode())
 				{
 					case 1746332184:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("sourcing")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							this.sourcing = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
 					
 					case -1580708220:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("distribution")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							this.distribution = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
@@ -154,15 +154,15 @@ public class ProductStatsInfo extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				throw null;
 			}
 			
@@ -173,44 +173,44 @@ public class ProductStatsInfo extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				switch (field.hashCode())
 				{
 					case 1746332184:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("sourcing")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return this.sourcing;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
 					
 					case -1580708220:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("distribution")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return this.distribution;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
@@ -219,15 +219,15 @@ public class ProductStatsInfo extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				throw null;
 			}
 			
@@ -238,44 +238,44 @@ public class ProductStatsInfo extends connect.models.Model
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				switch (field.hashCode())
 				{
 					case 1746332184:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("sourcing")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return ((double) (this.sourcing) );
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
 					
 					case -1580708220:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						if (field.equals("distribution")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 							return ((double) (this.distribution) );
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 						break;
 					}
 					
@@ -284,15 +284,15 @@ public class ProductStatsInfo extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 				throw null;
 			}
 			
@@ -303,11 +303,11 @@ public class ProductStatsInfo extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		baseArr.push("sourcing");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		baseArr.push("distribution");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/ProductStatsInfo.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
