@@ -8,49 +8,49 @@ public class Events extends connect.models.Model
 {
 	public Events(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Events()
 	{
-		//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		connect.models.Events.__hx_ctor_connect_models_Events(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Events(connect.models.Events __hx_this)
 	{
-		//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("created", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("inquired", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("pended", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("validated", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("updated", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("approved", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("uploaded", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("submitted", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("accepted", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("rejected", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		_g.set("closed", "Event");
-		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
@@ -79,210 +79,210 @@ public class Events extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 				switch (field.hashCode())
 				{
 					case -1357520532:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("closed")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.closed = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 1028554472:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("created")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.created = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -608496514:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("rejected")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.rejected = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 499035409:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("inquired")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.inquired = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -2146525273:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("accepted")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.accepted = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -991850422:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("pended")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.pended = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 348678395:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("submitted")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.submitted = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -1109784050:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("validated")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.validated = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 1563991648:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("uploaded")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.uploaded = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -234430277:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("updated")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.updated = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 1185244855:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("approved")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							this.approved = ((connect.models.Event) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
@@ -291,15 +291,15 @@ public class Events extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 				throw null;
 			}
 			
@@ -310,188 +310,188 @@ public class Events extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 				switch (field.hashCode())
 				{
 					case -1357520532:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("closed")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.closed;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 1028554472:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("created")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.created;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -608496514:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("rejected")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.rejected;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 499035409:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("inquired")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.inquired;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -2146525273:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("accepted")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.accepted;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -991850422:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("pended")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.pended;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 348678395:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("submitted")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.submitted;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -1109784050:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("validated")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.validated;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 1563991648:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("uploaded")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.uploaded;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case -234430277:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("updated")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.updated;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
 					
 					case 1185244855:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						if (field.equals("approved")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 							return this.approved;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 						break;
 					}
 					
@@ -500,15 +500,15 @@ public class Events extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 				throw null;
 			}
 			
@@ -519,29 +519,29 @@ public class Events extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("closed");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("rejected");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("accepted");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("submitted");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("uploaded");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("approved");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("updated");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("validated");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("pended");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("inquired");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		baseArr.push("created");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Events.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Events.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
