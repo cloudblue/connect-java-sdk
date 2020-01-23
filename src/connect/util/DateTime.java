@@ -13,130 +13,130 @@ public class DateTime extends haxe.lang.HxObject
 	
 	public DateTime(int year, int month, int day, int hour, int min, int sec)
 	{
-		//line 31 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 31 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		connect.util.DateTime.__hx_ctor_connect_util_DateTime(this, year, month, day, hour, min, sec);
 	}
 	
 	
 	protected static void __hx_ctor_connect_util_DateTime(connect.util.DateTime __hx_this, int year, int month, int day, int hour, int min, int sec)
 	{
-		//line 32 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 32 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		__hx_this.year = year;
-		//line 33 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 33 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		__hx_this.month = month;
-		//line 34 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 34 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		__hx_this.day = day;
-		//line 35 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 35 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		__hx_this.hours = hour;
-		//line 36 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 36 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		__hx_this.minutes = min;
-		//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		__hx_this.seconds = sec;
 	}
 	
 	
 	public static connect.util.DateTime now()
 	{
-		//line 43 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 43 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		haxe.root.Date date = haxe.root.Date.now();
-		//line 44 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 44 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return new connect.util.DateTime(date.dateUTC.get(((int) (java.util.Calendar.YEAR) )), date.dateUTC.get(((int) (java.util.Calendar.MONTH) )), date.dateUTC.get(((int) (java.util.Calendar.DAY_OF_MONTH) )), date.dateUTC.get(((int) (java.util.Calendar.HOUR_OF_DAY) )), date.dateUTC.get(((int) (java.util.Calendar.MINUTE) )), date.dateUTC.get(((int) (java.util.Calendar.SECOND) )));
 	}
 	
 	
 	public static connect.util.DateTime fromString(java.lang.String s)
 	{
-		//line 56 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 56 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		int plusIndex = haxe.lang.StringExt.lastIndexOf(s, "+", null);
-		//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String strippedOffset = ( (( plusIndex != -1 )) ? (haxe.lang.StringExt.substring(s, 0, plusIndex)) : (s) );
-		//line 60 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 60 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		haxe.root.Array<java.lang.String> dateTimeSplit = haxe.lang.StringExt.split(strippedOffset, "T");
-		//line 61 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 61 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		haxe.root.Array<java.lang.String> dateSplit = haxe.lang.StringExt.split(dateTimeSplit.__get(0), "-");
-		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		haxe.root.Array<java.lang.String> timeSplit = ( (( dateTimeSplit.length > 1 )) ? (haxe.lang.StringExt.split(dateTimeSplit.__get(1), ":")) : (haxe.lang.StringExt.split("00:00:00", ":")) );
-		//line 65 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 65 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.Object year = haxe.root.Std.parseInt(dateSplit.__get(0));
-		//line 66 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 66 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		if (haxe.lang.Runtime.eq(year, null)) 
 		{
-			//line 67 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 67 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			return null;
 		}
 		
-		//line 69 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 69 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		int month = ( (( dateSplit.length > 1 )) ? (( ((int) (haxe.lang.Runtime.toInt(haxe.root.Std.parseInt(dateSplit.__get(1)))) ) - ((int) (1) ) )) : (0) );
-		//line 72 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 72 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.Object day = ( (( dateSplit.length > 2 )) ? (haxe.root.Std.parseInt(dateSplit.__get(2))) : (1) );
-		//line 75 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 75 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.Object hour = haxe.root.Std.parseInt(timeSplit.__get(0));
-		//line 76 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 76 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.Object minute = ( (( timeSplit.length > 1 )) ? (haxe.root.Std.parseInt(timeSplit.__get(1))) : (0) );
-		//line 79 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 79 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.Object second = ( (( timeSplit.length > 2 )) ? (haxe.root.Std.parseInt(timeSplit.__get(2))) : (0) );
-		//line 82 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 82 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return new connect.util.DateTime(((int) (haxe.lang.Runtime.toInt(year)) ), month, ((int) (haxe.lang.Runtime.toInt(day)) ), ((int) (haxe.lang.Runtime.toInt(hour)) ), ((int) (haxe.lang.Runtime.toInt(minute)) ), ((int) (haxe.lang.Runtime.toInt(second)) ));
 	}
 	
 	
 	public int getYear()
 	{
-		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return this.year;
 	}
 	
 	
 	public int getMonth()
 	{
-		//line 97 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 97 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return this.month;
 	}
 	
 	
 	public int getDay()
 	{
-		//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return this.day;
 	}
 	
 	
 	public int getHours()
 	{
-		//line 111 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 111 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return this.hours;
 	}
 	
 	
 	public int getMinutes()
 	{
-		//line 119 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 119 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return this.minutes;
 	}
 	
 	
 	public int getSeconds()
 	{
-		//line 125 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 125 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return this.seconds;
 	}
 	
 	
 	@Override public java.lang.String toString()
 	{
-		//line 134 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 134 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String year = haxe.root.StringTools.lpad(haxe.root.Std.string(this.year), "0", 4);
-		//line 135 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 135 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String month = haxe.root.StringTools.lpad(haxe.root.Std.string(( this.month + 1 )), "0", 2);
-		//line 136 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 136 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String day = haxe.root.StringTools.lpad(haxe.root.Std.string(this.day), "0", 2);
-		//line 137 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 137 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String hour = haxe.root.StringTools.lpad(haxe.root.Std.string(this.hours), "0", 2);
-		//line 138 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 138 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String minute = haxe.root.StringTools.lpad(haxe.root.Std.string(this.minutes), "0", 2);
-		//line 139 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 139 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		java.lang.String second = haxe.root.StringTools.lpad(haxe.root.Std.string(this.seconds), "0", 2);
-		//line 140 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 140 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		return ( ( ( ( ( ( ( ( ( ( ( ( "" + year ) + "-" ) + month ) + "-" ) + day ) + "T" ) + hour ) + ":" ) + minute ) + ":" ) + second ) + "+00:00" );
 	}
 	
@@ -155,120 +155,120 @@ public class DateTime extends haxe.lang.HxObject
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				switch (field.hashCode())
 				{
 					case 1970096767:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("seconds")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.seconds = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 3704893:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("year")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.year = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1064901855:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("minutes")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.minutes = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 104080000:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("month")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.month = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99469071:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("hours")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.hours = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99228:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("day")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.day = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
@@ -277,15 +277,15 @@ public class DateTime extends haxe.lang.HxObject
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				throw null;
 			}
 			
@@ -296,120 +296,120 @@ public class DateTime extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				switch (field.hashCode())
 				{
 					case 1970096767:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("seconds")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.seconds = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 3704893:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("year")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.year = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1064901855:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("minutes")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.minutes = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 104080000:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("month")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.month = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99469071:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("hours")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.hours = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99228:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("day")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							this.day = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
@@ -418,15 +418,15 @@ public class DateTime extends haxe.lang.HxObject
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				throw null;
 			}
 			
@@ -437,220 +437,220 @@ public class DateTime extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				switch (field.hashCode())
 				{
 					case 1970096767:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("seconds")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.seconds;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -74977101:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getYear")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getYear")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1064901855:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("minutes")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.minutes;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1959905482:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getMonth")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getMonth")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99469071:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("hours")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.hours;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -1249364890:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getDay")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getDay")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99228:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("day")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.day;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1955294553:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getHours")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getHours")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 104080000:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("month")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.month;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 2101762217:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getMinutes")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getMinutes")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 3704893:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("year")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.year;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -1288010167:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getSeconds")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getSeconds")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -1776922004:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("toString")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "toString")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
@@ -659,15 +659,15 @@ public class DateTime extends haxe.lang.HxObject
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				throw null;
 			}
 			
@@ -678,108 +678,108 @@ public class DateTime extends haxe.lang.HxObject
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				switch (field.hashCode())
 				{
 					case 1970096767:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("seconds")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((double) (this.seconds) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 3704893:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("year")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((double) (this.year) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1064901855:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("minutes")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((double) (this.minutes) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 104080000:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("month")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((double) (this.month) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99469071:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("hours")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((double) (this.hours) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 99228:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("day")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return ((double) (this.day) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
@@ -788,15 +788,15 @@ public class DateTime extends haxe.lang.HxObject
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				throw null;
 			}
 			
@@ -807,124 +807,124 @@ public class DateTime extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				switch (field.hashCode())
 				{
 					case -1776922004:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("toString")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.toString();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -74977101:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getYear")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.getYear();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -1288010167:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getSeconds")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.getSeconds();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1959905482:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getMonth")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.getMonth();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 2101762217:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getMinutes")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.getMinutes();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case -1249364890:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getDay")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.getDay();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
 					
 					case 1955294553:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						if (field.equals("getHours")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 							return this.getHours();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 						break;
 					}
 					
@@ -933,15 +933,15 @@ public class DateTime extends haxe.lang.HxObject
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 				throw null;
 			}
 			
@@ -952,19 +952,19 @@ public class DateTime extends haxe.lang.HxObject
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		baseArr.push("seconds");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		baseArr.push("minutes");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		baseArr.push("hours");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		baseArr.push("day");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		baseArr.push("month");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		baseArr.push("year");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/DateTime.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/DateTime.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

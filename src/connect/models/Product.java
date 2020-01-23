@@ -8,63 +8,63 @@ public class Product extends connect.models.IdModel
 {
 	public Product(haxe.lang.EmptyObject empty)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Product()
 	{
-		//line 445 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 445 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 445 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 445 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		connect.models.Product.__hx_ctor_connect_models_Product(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Product(connect.models.Product __hx_this)
 	{
-		//line 445 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 445 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		connect.models.IdModel.__hx_ctor_connect_models_IdModel(__hx_this);
-		//line 446 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 446 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 446 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 446 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		_g.set("publishedAt", "DateTime");
-		//line 446 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 446 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		_g.set("owner", "Account");
-		//line 446 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 446 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		_g.set("stats", "ProductStats");
-		//line 446 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 446 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
 	
 	public static connect.util.Collection<connect.models.Product> list(connect.api.Query filters)
 	{
-		//line 95 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 95 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		java.lang.String products = connect.Env.getGeneralApi().listProducts(filters);
-		//line 96 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 96 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		return ((connect.util.Collection<connect.models.Product>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Product.class) ), haxe.lang.Runtime.toString(products))) )) );
 	}
 	
 	
 	public static connect.models.Product get(java.lang.String id)
 	{
-		//line 102 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 102 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String product = connect.Env.getGeneralApi().getProduct(id);
-			//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Product) (connect.models.Model.parse(((java.lang.Class) (connect.models.Product.class) ), haxe.lang.Runtime.toString(product))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 102 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 102 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 106 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 106 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 106 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 106 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -100,21 +100,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Action> listActions(connect.api.Query filters)
 	{
-		//line 119 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 119 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String actions = connect.Env.getGeneralApi().listProductActions(this.id, filters);
-			//line 121 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 121 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Action>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Action.class) ), haxe.lang.Runtime.toString(actions))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 119 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 119 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 123 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 123 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 123 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 123 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Action>();
 		}
 		
@@ -124,21 +124,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Action getAction(java.lang.String actionId)
 	{
-		//line 132 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 132 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 133 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 133 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String action = connect.Env.getGeneralApi().getProductAction(this.id, actionId);
-			//line 134 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 134 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Action) (connect.models.Model.parse(((java.lang.Class) (connect.models.Action.class) ), haxe.lang.Runtime.toString(action))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 132 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 132 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 136 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 136 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 136 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 136 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -148,19 +148,19 @@ public class Product extends connect.models.IdModel
 	
 	public java.lang.String getActionLink(java.lang.String actionId)
 	{
-		//line 147 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 147 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 147 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 147 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return connect.Env.getGeneralApi().getProductActionLink(this.id, actionId);
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 146 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 146 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 149 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 149 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 149 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 149 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return "";
 		}
 		
@@ -170,21 +170,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Connection> getConnections()
 	{
-		//line 158 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 158 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 159 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 159 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String connections = connect.Env.getGeneralApi().getProductConnections(this.id);
-			//line 160 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 160 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Connection>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Connection.class) ), haxe.lang.Runtime.toString(connections))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 158 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 158 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 162 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 162 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 162 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 162 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Connection>();
 		}
 		
@@ -194,21 +194,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Item> getItems()
 	{
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 172 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 172 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String items = connect.Env.getGeneralApi().getProductItems(this.id);
-			//line 173 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 173 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Item>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Item.class) ), haxe.lang.Runtime.toString(items))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 175 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 175 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 175 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 175 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Item>();
 		}
 		
@@ -218,21 +218,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Param> getParameters()
 	{
-		//line 184 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 184 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 185 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 185 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String params = connect.Env.getGeneralApi().getProductParameters(this.id);
-			//line 186 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 186 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Param>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Param.class) ), haxe.lang.Runtime.toString(params))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 184 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 184 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 188 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 188 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 188 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 188 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Param>();
 		}
 		
@@ -242,21 +242,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Template> getTemplates()
 	{
-		//line 197 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 197 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 198 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 198 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String templates = connect.Env.getGeneralApi().getProductTemplates(this.id);
-			//line 199 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 199 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Template>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Template.class) ), haxe.lang.Runtime.toString(templates))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 197 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 197 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 201 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 201 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 201 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 201 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Template>();
 		}
 		
@@ -266,21 +266,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Product> getVersions()
 	{
-		//line 210 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 210 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 211 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 211 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String versions = connect.Env.getGeneralApi().getProductVersions(this.id);
-			//line 212 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 212 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Product>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Product.class) ), haxe.lang.Runtime.toString(versions))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 210 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 210 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 214 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 214 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 214 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 214 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Product>();
 		}
 		
@@ -290,21 +290,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Product getVersion(int version)
 	{
-		//line 223 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 223 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 224 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 224 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String version1 = connect.Env.getGeneralApi().getProductVersion(this.id, version);
-			//line 225 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 225 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Product) (connect.models.Model.parse(((java.lang.Class) (connect.models.Product.class) ), haxe.lang.Runtime.toString(version1))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 223 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 223 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -314,21 +314,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Action> getVersionActions(int version)
 	{
-		//line 236 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 236 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 237 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 237 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String actions = connect.Env.getGeneralApi().getProductVersionActions(this.id, version);
-			//line 239 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 239 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Action>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Action.class) ), haxe.lang.Runtime.toString(actions))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 236 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 236 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 241 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 241 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 241 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 241 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Action>();
 		}
 		
@@ -338,21 +338,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Action getVersionAction(int version, java.lang.String actionId)
 	{
-		//line 250 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 250 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 251 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 251 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String action = connect.Env.getGeneralApi().getProductVersionAction(this.id, version, actionId);
-			//line 253 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 253 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Action) (connect.models.Model.parse(((java.lang.Class) (connect.models.Action.class) ), haxe.lang.Runtime.toString(action))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 250 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 250 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 255 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 255 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 255 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 255 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -362,19 +362,19 @@ public class Product extends connect.models.IdModel
 	
 	public java.lang.String getVersionActionLink(int version, java.lang.String actionId)
 	{
-		//line 266 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 266 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 266 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 266 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return connect.Env.getGeneralApi().getProductVersionActionLink(this.id, version, actionId);
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 265 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 265 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 269 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 269 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 269 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 269 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return "";
 		}
 		
@@ -384,21 +384,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Item> getVersionItems(int version)
 	{
-		//line 278 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 278 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 279 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 279 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String items = connect.Env.getGeneralApi().getProductVersionItems(this.id, version);
-			//line 280 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 280 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Item>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Item.class) ), haxe.lang.Runtime.toString(items))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 278 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 278 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 282 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 282 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 282 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 282 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Item>();
 		}
 		
@@ -408,21 +408,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Param> getVersionParameters(int version)
 	{
-		//line 291 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 291 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 292 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 292 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String params = connect.Env.getGeneralApi().getProductVersionParameters(this.id, version);
-			//line 293 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 293 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Param>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Param.class) ), haxe.lang.Runtime.toString(params))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 291 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 291 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 295 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 295 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 295 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 295 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Param>();
 		}
 		
@@ -432,21 +432,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Template> getVersionTemplates(int version)
 	{
-		//line 304 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 304 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 305 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 305 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String templates = connect.Env.getGeneralApi().getProductVersionTemplates(this.id, version);
-			//line 306 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 306 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Template>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Template.class) ), haxe.lang.Runtime.toString(templates))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 304 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 304 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 308 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 308 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 308 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 308 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Template>();
 		}
 		
@@ -456,21 +456,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.ProductConfigurationParam> listConfigurations(connect.api.Query filters)
 	{
-		//line 328 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 328 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 329 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 329 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String templates = connect.Env.getGeneralApi().listProductConfigurations(this.id, filters);
-			//line 330 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 330 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.ProductConfigurationParam>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.ProductConfigurationParam.class) ), haxe.lang.Runtime.toString(templates))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 328 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 328 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 332 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 332 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 332 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 332 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.ProductConfigurationParam>();
 		}
 		
@@ -480,21 +480,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.ProductConfigurationParam setConfigurationParam(connect.models.ProductConfigurationParam param)
 	{
-		//line 344 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 344 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 345 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 345 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String param1 = connect.Env.getGeneralApi().setProductConfigurationParam(this.id, param.toString());
-			//line 346 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 346 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.ProductConfigurationParam) (connect.models.Model.parse(((java.lang.Class) (connect.models.ProductConfigurationParam.class) ), haxe.lang.Runtime.toString(param1))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 344 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 344 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 348 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 348 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 348 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 348 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -504,21 +504,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Agreement> listAgreements(connect.api.Query filters)
 	{
-		//line 357 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 357 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 358 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 358 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String agreements = connect.Env.getGeneralApi().listProductAgreements(this.id, filters);
-			//line 359 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 359 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Agreement>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Agreement.class) ), haxe.lang.Runtime.toString(agreements))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 357 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 357 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 361 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 361 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 361 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 361 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Agreement>();
 		}
 		
@@ -528,21 +528,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.util.Collection<connect.models.Media> listMedia(connect.api.Query filters)
 	{
-		//line 377 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 377 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 378 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 378 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String media = connect.Env.getGeneralApi().listProductMedia(this.id, filters);
-			//line 379 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 379 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.util.Collection<connect.models.Media>) (((connect.util.Collection) (connect.models.Model.parseArray(((java.lang.Class) (connect.models.Media.class) ), haxe.lang.Runtime.toString(media))) )) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 377 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 377 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 381 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 381 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 381 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 381 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return new connect.util.Collection<connect.models.Media>();
 		}
 		
@@ -552,21 +552,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Media createMedia()
 	{
-		//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 393 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 393 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String media = connect.Env.getGeneralApi().createProductMedia(this.id);
-			//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Media) (connect.models.Model.parse(((java.lang.Class) (connect.models.Media.class) ), haxe.lang.Runtime.toString(media))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 396 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 396 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 396 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 396 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -576,21 +576,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Media getMedia(java.lang.String mediaId)
 	{
-		//line 405 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 405 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 406 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 406 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String media = connect.Env.getGeneralApi().getProductMedia(this.id, mediaId);
-			//line 407 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 407 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Media) (connect.models.Model.parse(((java.lang.Class) (connect.models.Media.class) ), haxe.lang.Runtime.toString(media))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 405 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 405 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 409 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 409 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 409 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 409 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -600,21 +600,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Media updateMedia(connect.models.Media media)
 	{
-		//line 420 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 420 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 421 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 421 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String updated = connect.Env.getGeneralApi().updateProductMedia(this.id, media.id, media.toString());
-			//line 422 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 422 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Media) (connect.models.Model.parse(((java.lang.Class) (connect.models.Media.class) ), haxe.lang.Runtime.toString(updated))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 420 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 420 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 424 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 424 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 424 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 424 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -624,21 +624,21 @@ public class Product extends connect.models.IdModel
 	
 	public connect.models.Media deleteMedia(java.lang.String mediaId)
 	{
-		//line 435 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 435 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		try 
 		{
-			//line 436 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 436 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.String media = connect.Env.getGeneralApi().deleteProductMedia(this.id, mediaId);
-			//line 437 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 437 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return ((connect.models.Media) (connect.models.Model.parse(((java.lang.Class) (connect.models.Media.class) ), haxe.lang.Runtime.toString(media))) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 435 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 435 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 439 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 439 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 439 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 439 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			return null;
 		}
 		
@@ -648,30 +648,30 @@ public class Product extends connect.models.IdModel
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				switch (field.hashCode())
 				{
 					case 351608024:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("version")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.version = ((int) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
@@ -680,15 +680,15 @@ public class Product extends connect.models.IdModel
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				throw null;
 			}
 			
@@ -699,246 +699,246 @@ public class Product extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				switch (field.hashCode())
 				{
 					case -892481550:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("status")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.status = haxe.lang.Runtime.toString(value);
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 3373707:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("name")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.name = haxe.lang.Runtime.toString(value);
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 109757599:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("stats")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.stats = ((connect.models.ProductStats) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 3226745:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("icon")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.icon = haxe.lang.Runtime.toString(value);
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1109880953:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("latest")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.latest = haxe.lang.Runtime.toBool(((java.lang.Boolean) (value) ));
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1951089120:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("shortDescription")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.shortDescription = haxe.lang.Runtime.toString(value);
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 106164915:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("owner")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.owner = ((connect.models.Account) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 631179564:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("detailedDescription")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.detailedDescription = haxe.lang.Runtime.toString(value);
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 50511102:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("category")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.category = ((connect.models.Category) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 351608024:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("version")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.version = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 129169749:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("customerUiSettings")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.customerUiSettings = ((connect.models.CustomerUiSettings) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -614144319:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("publishedAt")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.publishedAt = ((connect.util.DateTime) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -214226371:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("configurations")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							this.configurations = ((connect.models.Configurations) (value) );
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return value;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
@@ -947,15 +947,15 @@ public class Product extends connect.models.IdModel
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				throw null;
 			}
 			
@@ -966,588 +966,588 @@ public class Product extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				switch (field.hashCode())
 				{
 					case -1138897671:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("deleteMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "deleteMedia")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 3373707:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("name")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.name;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -590521189:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("updateMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "updateMedia")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 3226745:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("icon")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.icon;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1959597614:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getMedia")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1951089120:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("shortDescription")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.shortDescription;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -510649272:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("createMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "createMedia")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 631179564:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("detailedDescription")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.detailedDescription;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1241153050:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "listMedia")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 351608024:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("version")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.version;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1953509657:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listAgreements")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "listAgreements")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -614144319:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("publishedAt")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.publishedAt;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -642105031:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("setConfigurationParam")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setConfigurationParam")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -214226371:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("configurations")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.configurations;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -961791365:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listConfigurations")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "listConfigurations")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 129169749:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("customerUiSettings")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.customerUiSettings;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1785405623:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionTemplates")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersionTemplates")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 50511102:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("category")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.category;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1332276180:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionParameters")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersionParameters")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 106164915:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("owner")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.owner;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1503704126:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionItems")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersionItems")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1109880953:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("latest")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.latest;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 60615058:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionActionLink")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersionActionLink")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 109757599:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("stats")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.stats;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -874102408:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionAction")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersionAction")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -892481550:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("status")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.status;
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1327370757:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionActions")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersionActions")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -849747329:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listActions")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "listActions")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1388468386:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersion")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersion")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 273064236:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getAction")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getAction")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 92847121:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersions")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getVersions")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1553878854:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getActionLink")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getActionLink")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1972122755:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getTemplates")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getTemplates")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1084335135:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getConnections")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getConnections")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 160987616:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getParameters")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getParameters")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1956351498:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getItems")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getItems")) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
@@ -1556,15 +1556,15 @@ public class Product extends connect.models.IdModel
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				throw null;
 			}
 			
@@ -1575,28 +1575,28 @@ public class Product extends connect.models.IdModel
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				switch (field.hashCode())
 				{
 					case 351608024:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("version")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return ((double) (this.version) );
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
@@ -1605,15 +1605,15 @@ public class Product extends connect.models.IdModel
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				throw null;
 			}
 			
@@ -1624,380 +1624,380 @@ public class Product extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		{
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			boolean __temp_executeDef1 = true;
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (( field != null )) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				switch (field.hashCode())
 				{
 					case -1138897671:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("deleteMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.deleteMedia(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -849747329:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listActions")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.listActions(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -590521189:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("updateMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.updateMedia(((connect.models.Media) (dynargs[0]) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 273064236:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getAction")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getAction(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1959597614:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getMedia(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1553878854:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getActionLink")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getActionLink(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -510649272:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("createMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.createMedia();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1084335135:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getConnections")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getConnections();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1241153050:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listMedia")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.listMedia(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1956351498:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getItems")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getItems();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1953509657:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listAgreements")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.listAgreements(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 160987616:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getParameters")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getParameters();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -642105031:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("setConfigurationParam")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.setConfigurationParam(((connect.models.ProductConfigurationParam) (dynargs[0]) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1972122755:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getTemplates")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getTemplates();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -961791365:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("listConfigurations")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.listConfigurations(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 92847121:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersions")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersions();
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1785405623:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionTemplates")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersionTemplates(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1388468386:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersion")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersion(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1332276180:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionParameters")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersionParameters(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -1327370757:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionActions")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersionActions(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 1503704126:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionItems")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersionItems(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case -874102408:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionAction")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersionAction(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
 					
 					case 60615058:
 					{
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						if (field.equals("getVersionActionLink")) 
 						{
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							__temp_executeDef1 = false;
-							//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+							//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 							return this.getVersionActionLink(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]));
 						}
 						
-						//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+						//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 						break;
 					}
 					
@@ -2006,15 +2006,15 @@ public class Product extends connect.models.IdModel
 				
 			}
 			
-			//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+			//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			else
 			{
-				//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+				//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 				throw null;
 			}
 			
@@ -2025,33 +2025,33 @@ public class Product extends connect.models.IdModel
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("status");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("stats");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("latest");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("owner");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("category");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("customerUiSettings");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("configurations");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("publishedAt");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("version");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("detailedDescription");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("shortDescription");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("icon");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		baseArr.push("name");
-		//line 20 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Product.hx"
+		//line 20 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Product.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

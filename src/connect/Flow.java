@@ -8,31 +8,31 @@ public class Flow extends connect.Base
 {
 	static
 	{
-		//line 331 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 331 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Flow.STEP_PARAM_ID = "__sdk_processor_step";
 	}
 	
 	public Flow(haxe.lang.EmptyObject empty)
 	{
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		super(((haxe.lang.EmptyObject) (haxe.lang.EmptyObject.EMPTY) ));
 	}
 	
 	
 	public Flow(java.util.function.Function<connect.models.IdModel, java.lang.Object> filterFunc)
 	{
-		//line 46 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 46 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Flow.__hx_ctor_connect_Flow(this, filterFunc);
 	}
 	
 	
 	protected static void __hx_ctor_connect_Flow(connect.Flow __hx_this, java.util.function.Function<connect.models.IdModel, java.lang.Object> filterFunc)
 	{
-		//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		__hx_this.filterFunc = filterFunc;
-		//line 48 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 48 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		__hx_this.steps = new haxe.root.Array<connect._Flow.Step>(new connect._Flow.Step[]{});
-		//line 49 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 49 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		__hx_this.data = new connect.util.Dictionary();
 	}
 	
@@ -41,35 +41,35 @@ public class Flow extends connect.Base
 	
 	public static java.lang.String getFormattedRequest(java.lang.String request, java.lang.String lastRequest, connect.logger.ILoggerFormatter fmt)
 	{
-		//line 542 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 542 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if ( ! (haxe.lang.Runtime.valEq(request, lastRequest)) ) 
 		{
-			//line 543 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 543 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( connect.Env.getLogger().getLevel() == connect.logger.Logger.LEVEL_DEBUG )) 
 			{
-				//line 544 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 544 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.Object lastRequestObj = ( (connect.util.Util.isJsonObject(lastRequest)) ? (new haxe.format.JsonParser(haxe.lang.Runtime.toString(lastRequest)).doParse()) : (null) );
-				//line 547 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 547 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.Object requestObj = ( (( connect.util.Util.isJsonObject(request) && ( ! (( lastRequestObj == null )) ) )) ? (new haxe.format.JsonParser(haxe.lang.Runtime.toString(request)).doParse()) : (null) );
-				//line 550 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 550 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.Object diff = ( (( ( ! (( lastRequestObj == null )) ) && ( ! (( requestObj == null )) ) )) ? (connect.util.Util.createObjectDiff(requestObj, lastRequestObj)) : (null) );
-				//line 553 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 553 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.String requestStr = ( (( ! (( diff == null )) )) ? (connect.util.Util.beautifyObject(diff, false)) : (request) );
-				//line 556 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 556 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.String requestTitle = ( (( ! (( diff == null )) )) ? ("Request (changes):") : ("Request:") );
-				//line 559 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 559 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return ( ( "" + requestTitle ) + fmt.formatCodeBlock(requestStr, "json") );
 			}
 			else
 			{
-				//line 561 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 561 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return ( "Request (id): " + request );
 			}
 			
 		}
 		else
 		{
-			//line 564 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 564 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return "Request: Same as in previous step.";
 		}
 		
@@ -78,54 +78,54 @@ public class Flow extends connect.Base
 	
 	public static java.lang.String getFormattedData(java.lang.String data, java.lang.String lastData, connect.util.Dictionary dataDict, connect.logger.ILoggerFormatter fmt)
 	{
-		//line 571 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 571 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if ( ! (haxe.lang.Runtime.valEq(data, "{}")) ) 
 		{
-			//line 572 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 572 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if ( ! (haxe.lang.Runtime.valEq(data, lastData)) ) 
 			{
-				//line 573 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 573 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( connect.Env.getLogger().getLevel() == connect.logger.Logger.LEVEL_DEBUG )) 
 				{
-					//line 574 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 574 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					return ( "Data:" + connect.Flow.getDataTable(dataDict, fmt) );
 				}
 				else
 				{
-					//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-					//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					{
-						//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						java.lang.Object key = dataDict.keys();
-						//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 						{
-							//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-							//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							_g.push(key1);
 						}
 						
 					}
 					
-					//line 576 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 576 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					java.lang.String keysStr = _g.join(", ");
-					//line 577 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 577 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					return ( ( "Data (keys): " + keysStr ) + "." );
 				}
 				
 			}
 			else
 			{
-				//line 580 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 580 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return "Data: Same as in previous step.";
 			}
 			
 		}
 		else
 		{
-			//line 583 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 583 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return "Data: Empty.";
 		}
 		
@@ -134,32 +134,32 @@ public class Flow extends connect.Base
 	
 	public static java.lang.String getDataTable(connect.util.Dictionary data, connect.logger.ILoggerFormatter fmt)
 	{
-		//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object key = data.keys();
-			//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 			{
-				//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-				//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				_g.push(key1);
 			}
 			
 		}
 		
-		//line 589 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 589 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		haxe.root.Array<java.lang.String> dataKeys = _g;
-		//line 590 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 590 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.util.Collection<connect.util.Collection<java.lang.String>> dataCol = new connect.util.Collection<connect.util.Collection<java.lang.String>>().push(new connect.util.Collection<java.lang.String>().push("Key").push("Value"));
-		//line 592 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 592 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (dataKeys) ), ((haxe.lang.Function) (new connect.Flow_getDataTable_592__Fun(dataCol, data)) ));
-		//line 592 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 592 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 599 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 599 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return fmt.formatTable(dataCol);
 	}
 	
@@ -171,28 +171,28 @@ public class Flow extends connect.Base
 	
 	public connect.Flow step(java.lang.String description, java.util.function.Consumer<connect.Flow> func)
 	{
-		//line 77 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 77 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.steps.push(new connect._Flow.Step(description, func));
-		//line 78 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 78 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return this;
 	}
 	
 	
 	public connect.models.AssetRequest getAssetRequest()
 	{
-		//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		try 
 		{
-			//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return ((connect.models.AssetRequest) (this.model) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 90 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 90 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 93 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 93 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 93 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 93 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		
@@ -202,19 +202,19 @@ public class Flow extends connect.Base
 	
 	public connect.models.TierConfigRequest getTierConfigRequest()
 	{
-		//line 107 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 107 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		try 
 		{
-			//line 107 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 107 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return ((connect.models.TierConfigRequest) (this.model) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 106 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 106 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 109 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 109 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 109 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 109 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		
@@ -224,19 +224,19 @@ public class Flow extends connect.Base
 	
 	public connect.models.UsageFile getUsageFile()
 	{
-		//line 123 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 123 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		try 
 		{
-			//line 123 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 123 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return ((connect.models.UsageFile) (this.model) );
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 122 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 122 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 125 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 125 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 125 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 125 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		
@@ -246,60 +246,60 @@ public class Flow extends connect.Base
 	
 	public connect.Flow setData(java.lang.String key, java.lang.Object value)
 	{
-		//line 146 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 146 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.data.set(key, value);
-		//line 147 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 147 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return this;
 	}
 	
 	
 	public java.lang.Object getData(java.lang.String key)
 	{
-		//line 157 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 157 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return this.data.get(key);
 	}
 	
 	
 	public void approveByTemplate(java.lang.String id)
 	{
-		//line 170 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 170 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.AssetRequest request = this.getAssetRequestChanges();
-		//line 171 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 171 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.TierConfigRequest tcr = this.getTierConfigRequestChanges();
-		//line 172 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 172 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( request != null )) 
 		{
-			//line 173 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 173 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.storage.StepStorage.removeStepData(request.id, this.getStepParam());
-			//line 174 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 174 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( request.asset != null )) 
 			{
-				//line 175 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 175 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				request.update();
 			}
 			
-			//line 177 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 177 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			request.approveByTemplate(id);
-			//line 178 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 178 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abort("");
 		}
 		else
 		{
-			//line 179 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 179 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( tcr != null )) 
 			{
-				//line 180 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 180 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StepStorage.removeStepData(tcr.id, this.getStepParam());
-				//line 181 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 181 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( tcr.params != null )) 
 				{
-					//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 182 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					tcr.update();
 				}
 				
-				//line 184 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 184 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				tcr.approveByTemplate(id);
-				//line 185 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 185 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.abort("");
 			}
 			
@@ -310,44 +310,44 @@ public class Flow extends connect.Base
 	
 	public void approveByTile(java.lang.String text)
 	{
-		//line 199 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 199 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.AssetRequest request = this.getAssetRequestChanges();
-		//line 200 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 200 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.TierConfigRequest tcr = this.getTierConfigRequestChanges();
-		//line 201 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 201 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( request != null )) 
 		{
-			//line 202 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 202 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.storage.StepStorage.removeStepData(request.id, this.getStepParam());
-			//line 203 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 203 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( request.asset != null )) 
 			{
-				//line 204 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 204 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				request.update();
 			}
 			
-			//line 206 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 206 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			request.approveByTile(text);
-			//line 207 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 207 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abort("");
 		}
 		else
 		{
-			//line 208 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 208 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( tcr != null )) 
 			{
-				//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StepStorage.removeStepData(tcr.id, this.getStepParam());
-				//line 210 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 210 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( tcr.params != null )) 
 				{
-					//line 211 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 211 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					tcr.update();
 				}
 				
-				//line 213 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 213 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				tcr.approveByTile(text);
-				//line 214 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 214 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.abort("");
 			}
 			
@@ -358,44 +358,44 @@ public class Flow extends connect.Base
 	
 	public void fail(java.lang.String reason)
 	{
-		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.AssetRequest request = this.getAssetRequestChanges();
-		//line 228 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 228 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.TierConfigRequest tcr = this.getTierConfigRequestChanges();
-		//line 229 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 229 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( request != null )) 
 		{
-			//line 230 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 230 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.storage.StepStorage.removeStepData(request.id, this.getStepParam());
-			//line 231 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 231 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( request.asset != null )) 
 			{
-				//line 232 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 232 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				request.update();
 			}
 			
-			//line 234 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 234 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			request.fail(reason);
-			//line 235 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 235 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abort("Failing request");
 		}
 		else
 		{
-			//line 236 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 236 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( tcr != null )) 
 			{
-				//line 237 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 237 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StepStorage.removeStepData(tcr.id, this.getStepParam());
-				//line 238 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 238 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( tcr.params != null )) 
 				{
-					//line 239 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 239 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					tcr.update();
 				}
 				
-				//line 241 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 241 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				tcr.fail(reason);
-				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.abort("Failing request");
 			}
 			
@@ -406,44 +406,44 @@ public class Flow extends connect.Base
 	
 	public void inquire(java.lang.String templateId)
 	{
-		//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 258 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.AssetRequest request = this.getAssetRequestChanges();
-		//line 259 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 259 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.TierConfigRequest tcr = this.getTierConfigRequestChanges();
-		//line 260 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 260 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( request != null )) 
 		{
-			//line 261 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 261 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.storage.StepStorage.removeStepData(request.id, this.getStepParam());
-			//line 262 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 262 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( request.asset != null )) 
 			{
-				//line 263 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 263 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				request.update();
 			}
 			
-			//line 265 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 265 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			request.inquire(templateId);
-			//line 266 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 266 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abort("Inquiring request");
 		}
 		else
 		{
-			//line 267 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 267 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( tcr != null )) 
 			{
-				//line 268 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 268 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StepStorage.removeStepData(tcr.id, this.getStepParam());
-				//line 269 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 269 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( tcr.params != null )) 
 				{
-					//line 270 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 270 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					tcr.update();
 				}
 				
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				tcr.inquire();
-				//line 273 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 273 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.abort("Inquiring request");
 			}
 			
@@ -454,44 +454,44 @@ public class Flow extends connect.Base
 	
 	public void pend()
 	{
-		//line 286 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 286 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.AssetRequest request = this.getAssetRequestChanges();
-		//line 287 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 287 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.TierConfigRequest tcr = this.getTierConfigRequestChanges();
-		//line 288 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 288 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( request != null )) 
 		{
-			//line 289 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 289 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.storage.StepStorage.removeStepData(request.id, this.getStepParam());
-			//line 290 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 290 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( request.asset != null )) 
 			{
-				//line 291 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 291 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				request.update();
 			}
 			
-			//line 293 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 293 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			request.pend();
-			//line 294 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 294 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abort("Pending request");
 		}
 		else
 		{
-			//line 295 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 295 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( tcr != null )) 
 			{
-				//line 296 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 296 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StepStorage.removeStepData(tcr.id, this.getStepParam());
-				//line 297 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 297 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( tcr.params != null )) 
 				{
-					//line 298 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 298 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					tcr.update();
 				}
 				
-				//line 300 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 300 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				tcr.update();
-				//line 301 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 301 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.abort("Pending request");
 			}
 			
@@ -502,36 +502,36 @@ public class Flow extends connect.Base
 	
 	public <T> void _run(connect.util.Collection<T> list)
 	{
-		//line 308 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 308 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Env.getLogger().openSection(( ( ( "Running " + this.getClassName() ) + " on " ) + haxe.root.Std.string(connect.util.DateTime.now()) ));
-		//line 307 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 307 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Flow _gthis = this;
-		//line 312 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 312 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.util.Collection<T> filteredList = null;
-		//line 312 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 312 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( this.filterFunc != null )) 
 		{
-			//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.root.Array<T> _this = list.toArray();
-			//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.root.Array<T> ret = new haxe.root.Array<T>(( (T[]) (new java.lang.Object[] {}) ));
-			//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			{
-				//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				int _g = 0;
-				//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				int _g1 = _this.length;
-				//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				while (( _g < _g1 ))
 				{
-					//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					int i = _g++;
-					//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					T elt = _this.__get(i);
-					//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					if (haxe.lang.Runtime.toBool(((java.lang.Boolean) (_gthis.filterFunc.apply(((connect.models.IdModel) (((java.lang.Object) (elt) )) ))) ))) 
 					{
-						//line 313 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 313 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						ret.push(elt);
 					}
 					
@@ -539,31 +539,31 @@ public class Flow extends connect.Base
 				
 			}
 			
-			//line 312 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 312 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			filteredList = ((connect.util.Collection<T>) (connect.util.Collection._fromArray(((haxe.root.Array<T>) (ret) ))) );
 		}
 		else
 		{
-			//line 312 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 312 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			filteredList = list;
 		}
 		
-		//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.util.Iterator<T> model = filteredList.iterator();
-			//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			while (model.hasNext())
 			{
-				//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				T model1 = model.next();
-				//line 324 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 324 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.process(((connect.models.IdModel) (((java.lang.Object) (model1) )) ));
 			}
 			
 		}
 		
-		//line 327 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 327 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Env.getLogger().closeSection();
 	}
 	
@@ -584,42 +584,42 @@ public class Flow extends connect.Base
 	
 	public void process(connect.models.IdModel model)
 	{
-		//line 343 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 343 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Flow _gthis = this;
-		//line 344 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 344 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (this.prepareRequestAndOpenLogSection(model)) 
 		{
-			//line 345 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 345 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (this.processSetup()) 
 			{
-				//line 346 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 346 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StepData stepData = this.loadStepDataIfStored();
-				//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				haxe.root.Array<connect._Flow.Step> _g = new haxe.root.Array<connect._Flow.Step>(new connect._Flow.Step[]{});
-				//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				{
-					//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					int _g1 = stepData.firstIndex;
-					//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					int _g2 = this.steps.length;
-					//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					while (( _g1 < _g2 ))
 					{
-						//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						int i = _g1++;
-						//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						_g.push(this.steps.__get(i));
 					}
 					
 				}
 				
-				//line 347 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 347 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				haxe.root.Array<connect._Flow.Step> steps = _g;
-				//line 350 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 350 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.Object __temp_expr1 = ((java.lang.Object) (haxe.root.Lambda.fold(((java.lang.Object) (steps) ), ((haxe.lang.Function) (new connect.Flow_process_352__Fun(stepData, _gthis)) ), ((java.lang.Object) (new haxe.lang.DynamicObject(new java.lang.String[]{"lastDataStr", "lastRequestStr"}, new java.lang.Object[]{"{}", ""}, new java.lang.String[]{"nextIndex"}, new double[]{((double) (((double) (0) )) )})) ))) );
 			}
 			
-			//line 361 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 361 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().closeSection();
 		}
 		
@@ -628,74 +628,74 @@ public class Flow extends connect.Base
 	
 	public boolean processSetup()
 	{
-		//line 367 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 367 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Env.getLogger().openSection("Setup");
-		//line 369 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 369 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		try 
 		{
-			//line 369 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 369 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.setup();
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 368 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 368 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 370 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 370 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-			//line 371 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 371 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.String exStr = haxe.root.Std.string(ex);
-			//line 372 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 372 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().writeCodeBlock(connect.logger.Logger.LEVEL_ERROR, exStr, "");
-			//line 373 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 373 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( this.getAssetRequest() != null )) 
 			{
-				//line 374 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 374 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.getAssetRequest()._updateConversation(( "Skipping request because an exception was thrown: " + exStr ));
 			}
 			
-			//line 376 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 376 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().closeSection();
-			//line 377 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 377 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return false;
 		}
 		
 		
-		//line 379 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 379 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Env.getLogger().closeSection();
-		//line 380 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 380 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return true;
 	}
 	
 	
 	public connect.storage.StepData loadStepDataIfStored()
 	{
-		//line 385 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 385 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.storage.StepData stepData = connect.storage.StepStorage.load(this.model.id, this.getStepParam());
-		//line 386 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 386 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.data = stepData.data;
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( stepData.storage != connect.storage.StorageType.FailedStorage )) 
 		{
-			//line 388 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 388 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, ( ( ( ( "Resuming request from step " + (( stepData.firstIndex + 1 )) ) + " with " ) + haxe.root.Std.string(stepData.storage) ) + "." ));
 		}
 		
-		//line 391 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 391 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return stepData;
 	}
 	
 	
 	public connect.models.Param getStepParam()
 	{
-		//line 396 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 396 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( this.getAssetRequest() != null )) 
 		{
-			//line 397 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 397 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return this.getAssetRequest().asset.getParamById(connect.Flow.STEP_PARAM_ID);
 		}
 		else
 		{
-			//line 398 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 398 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		
@@ -704,94 +704,94 @@ public class Flow extends connect.Base
 	
 	public java.lang.Object processStep(connect._Flow.Step step, int index, java.lang.String lastRequestStr, java.lang.String lastDataStr)
 	{
-		//line 404 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 404 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		java.lang.String requestStr = connect.util.Util.beautifyObject(this.model.toObject(), ( connect.Env.getLogger().getLevel() != connect.logger.Logger.LEVEL_DEBUG ));
-		//line 406 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 406 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		java.lang.String dataStr = haxe.root.Std.string(this.data);
-		//line 408 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 408 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Env.getLogger().openSection(( ( haxe.root.Std.string(( index + 1 )) + ". " ) + step.description ));
-		//line 410 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 410 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.logStepData(connect.logger.Logger.LEVEL_INFO, requestStr, dataStr, lastRequestStr, lastDataStr);
-		//line 415 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 415 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		try 
 		{
-			//line 415 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 415 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			step.func.accept(((connect.Flow) (this) ));
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 413 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 413 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 419 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 419 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			{
-				//line 419 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 419 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-				//line 420 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 420 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( connect.Env.getLogger().getLevel() == connect.logger.Logger.LEVEL_ERROR )) 
 				{
-					//line 421 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 421 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					this.logStepData(connect.logger.Logger.LEVEL_ERROR, requestStr, dataStr, lastRequestStr, lastDataStr);
 				}
 				
-				//line 423 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 423 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				java.lang.String exStr = haxe.root.Std.string(ex);
-				//line 424 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 424 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.Env.getLogger().writeCodeBlock(connect.logger.Logger.LEVEL_ERROR, exStr, "");
-				//line 425 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 425 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( this.getAssetRequest() != null )) 
 				{
-					//line 426 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 426 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					this.getAssetRequest()._updateConversation(( "Skipping request because an exception was thrown: " + exStr ));
 				}
 				
-				//line 428 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 428 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				this.abort(null);
 			}
 			
 		}
 		
 		
-		//line 431 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 431 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return this.processAbortAndCloseLogSection(index, requestStr, dataStr);
 	}
 	
 	
 	public boolean prepareRequestAndOpenLogSection(connect.models.IdModel model)
 	{
-		//line 436 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 436 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.model = model;
-		//line 437 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 437 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.originalModelStr = model.toString();
-		//line 439 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 439 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.AssetRequest assetRequest = this.getAssetRequest();
-		//line 440 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 440 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.TierConfigRequest tierConfigRequest = this.getTierConfigRequest();
-		//line 441 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 441 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.UsageFile usageFile = this.getUsageFile();
-		//line 444 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 444 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.models.Product product = ( (( assetRequest != null )) ? (assetRequest.asset.product) : (( (( tierConfigRequest != null )) ? (tierConfigRequest.product) : (( (( usageFile != null )) ? (usageFile.product) : (null) )) )) );
-		//line 450 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 450 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		java.lang.String productPath = ( (( product != null )) ? (( product.id + "/" )) : ("") );
-		//line 455 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 455 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( assetRequest != null )) 
 		{
-			//line 456 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 456 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().setFilename(( ( ( "" + productPath ) + assetRequest.asset.id ) + ".md" ));
 		}
 		else
 		{
-			//line 457 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 457 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( tierConfigRequest != null )) 
 			{
-				//line 458 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 458 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.Env.getLogger().setFilename(( ( ( "" + productPath ) + tierConfigRequest.configuration.id ) + ".md" ));
 			}
 			else
 			{
-				//line 459 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 459 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if (( usageFile != null )) 
 				{
-					//line 460 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 460 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					connect.Env.getLogger().setFilename(( ( ( "" + productPath ) + usageFile.id ) + ".md" ));
 				}
 				
@@ -799,25 +799,25 @@ public class Flow extends connect.Base
 			
 		}
 		
-		//line 464 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 464 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		connect.Env.getLogger().openSection(( ( ( "Processing request \"" + this.model.id ) + "\" on " ) + haxe.root.Std.string(connect.util.DateTime.now()) ));
-		//line 467 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 467 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( ( assetRequest != null ) && assetRequest.needsMigration(null) )) 
 		{
-			//line 468 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 468 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, "Skipping request because it is pending migration.");
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().closeSection();
-			//line 471 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 471 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return false;
 		}
 		else
 		{
-			//line 473 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 473 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abortRequested = false;
-			//line 474 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 474 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			this.abortMessage = null;
-			//line 475 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 475 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return true;
 		}
 		
@@ -826,44 +826,44 @@ public class Flow extends connect.Base
 	
 	public java.lang.Object processAbortAndCloseLogSection(int index, java.lang.String requestStr, java.lang.String dataStr)
 	{
-		//line 482 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 482 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (this.abortRequested) 
 		{
-			//line 483 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 483 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( this.abortMessage == null )) 
 			{
-				//line 484 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 484 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.models.Param param = ( (( this.getAssetRequest() != null )) ? (this.getAssetRequest().asset.getParamById(connect.Flow.STEP_PARAM_ID)) : (null) );
-				//line 489 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 489 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, "Skipping request. Trying to save step data.");
-				//line 491 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 491 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				connect.storage.StorageType saveResult = connect.storage.StepStorage.save(this.model, new connect.storage.StepData(index, this.data, connect.storage.StorageType.ConnectStorage), param, haxe.lang.Runtime.getField(this.model, "update", false));
-				//line 495 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 495 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				switch (saveResult.index)
 				{
 					case 0:
 					{
-						//line 497 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 497 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, "Step data saved in Connect.");
-						//line 497 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 497 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1:
 					{
-						//line 499 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 499 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, "Step data saved locally.");
-						//line 499 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 499 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 2:
 					{
-						//line 501 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 501 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, "Step data could not be saved.");
-						//line 501 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 501 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
@@ -873,25 +873,25 @@ public class Flow extends connect.Base
 			}
 			else
 			{
-				//line 504 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 504 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				if ( ! (haxe.lang.Runtime.valEq(this.abortMessage, "")) ) 
 				{
-					//line 505 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+					//line 505 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 					connect.Env.getLogger().write(connect.logger.Logger.LEVEL_INFO, this.abortMessage);
 				}
 				
 			}
 			
-			//line 509 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 509 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().closeSection();
-			//line 510 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 510 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		else
 		{
-			//line 512 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 512 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger().closeSection();
-			//line 513 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 513 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return new haxe.lang.DynamicObject(new java.lang.String[]{"lastDataStr", "lastRequestStr"}, new java.lang.Object[]{dataStr, requestStr}, new java.lang.String[]{"nextIndex"}, new double[]{((double) (((double) (( index + 1 )) )) )});
 		}
 		
@@ -900,25 +900,25 @@ public class Flow extends connect.Base
 	
 	public void abort(java.lang.String message)
 	{
-		//line 524 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 524 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.abortRequested = true;
-		//line 525 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 525 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		this.abortMessage = message;
 	}
 	
 	
 	public void logStepData(int level, java.lang.String request, java.lang.String data, java.lang.String lastRequest, java.lang.String lastData)
 	{
-		//line 531 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 531 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		java.util.Iterator<connect.logger.LoggerHandler> output = connect.Env.getLogger().getOutputs().iterator();
-		//line 531 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 531 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		while (output.hasNext())
 		{
-			//line 531 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 531 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.logger.LoggerHandler output1 = output.next();
-			//line 532 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 532 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.util.Collection<java.lang.String> list = new connect.util.Collection<java.lang.String>().push(connect.Flow.getFormattedRequest(request, lastRequest, output1.formatter)).push(connect.Flow.getFormattedData(data, lastData, this.data, output1.formatter));
-			//line 535 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 535 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			connect.Env.getLogger()._writeToHandler(level, output1.formatter.formatList(list), output1);
 		}
 		
@@ -927,23 +927,23 @@ public class Flow extends connect.Base
 	
 	public connect.models.AssetRequest getAssetRequestChanges()
 	{
-		//line 604 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 604 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( this.getAssetRequest() != null )) 
 		{
-			//line 605 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 605 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object originalModel = new haxe.format.JsonParser(haxe.lang.Runtime.toString(this.originalModelStr)).doParse();
-			//line 606 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 606 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object diff = connect.util.Util.createObjectDiff(this.model.toObject(), originalModel);
-			//line 607 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 607 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Function replacer = null;
-			//line 607 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 607 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.String space = null;
-			//line 607 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 607 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return ((connect.models.AssetRequest) (connect.models.Model.parse(((java.lang.Class) (connect.models.AssetRequest.class) ), haxe.lang.Runtime.toString(haxe.format.JsonPrinter.print(((java.lang.Object) (diff) ), replacer, space)))) );
 		}
 		else
 		{
-			//line 609 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 609 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		
@@ -952,23 +952,23 @@ public class Flow extends connect.Base
 	
 	public connect.models.TierConfigRequest getTierConfigRequestChanges()
 	{
-		//line 615 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 615 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		if (( this.getTierConfigRequest() != null )) 
 		{
-			//line 616 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 616 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object originalModel = new haxe.format.JsonParser(haxe.lang.Runtime.toString(this.originalModelStr)).doParse();
-			//line 617 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 617 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.Object diff = connect.util.Util.createObjectDiff(this.model.toObject(), originalModel);
-			//line 618 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 618 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			haxe.lang.Function replacer = null;
-			//line 618 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 618 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			java.lang.String space = null;
-			//line 618 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 618 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return ((connect.models.TierConfigRequest) (connect.models.Model.parse(((java.lang.Class) (connect.models.TierConfigRequest.class) ), haxe.lang.Runtime.toString(haxe.format.JsonPrinter.print(((java.lang.Object) (diff) ), replacer, space)))) );
 		}
 		else
 		{
-			//line 620 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 620 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			return null;
 		}
 		
@@ -977,145 +977,145 @@ public class Flow extends connect.Base
 	
 	public java.lang.String getClassName()
 	{
-		//line 637 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 637 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return haxe.root.Type.getClassName(((java.lang.Class) (haxe.root.Type.getClass(((connect.Flow) (this) ))) ));
 	}
 	
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			boolean __temp_executeDef1 = true;
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( field != null )) 
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				switch (field.hashCode())
 				{
 					case -1973846345:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("abortMessage")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.abortMessage = haxe.lang.Runtime.toString(value);
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1553471908:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("filterFunc")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.filterFunc = ((java.util.function.Function<connect.models.IdModel, java.lang.Object>) (value) );
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -651810274:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("abortRequested")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.abortRequested = haxe.lang.Runtime.toBool(((java.lang.Boolean) (value) ));
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 109761319:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("steps")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.steps = ((haxe.root.Array<connect._Flow.Step>) (value) );
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3076010:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("data")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.data = ((connect.util.Dictionary) (value) );
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 104069929:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("model")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.model = ((connect.models.IdModel) (value) );
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1972593863:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("originalModelStr")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.originalModelStr = haxe.lang.Runtime.toString(value);
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return value;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
@@ -1124,15 +1124,15 @@ public class Flow extends connect.Base
 				
 			}
 			
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				throw null;
 			}
 			
@@ -1143,524 +1143,524 @@ public class Flow extends connect.Base
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			boolean __temp_executeDef1 = true;
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( field != null )) 
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				switch (field.hashCode())
 				{
 					case -19493523:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getClassName")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getClassName")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 109329021:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("setup")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setup")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 308125582:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getTierConfigRequestChanges")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getTierConfigRequestChanges")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3540684:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("step")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "step")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 121538830:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getAssetRequestChanges")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getAssetRequestChanges")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 546046965:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getAssetRequest")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getAssetRequest")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1126914054:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("logStepData")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "logStepData")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1084146315:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getTierConfigRequest")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getTierConfigRequest")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 92611376:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("abort")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "abort")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 764125191:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getUsageFile")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getUsageFile")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1228044323:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("processAbortAndCloseLogSection")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "processAbortAndCloseLogSection")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1984503596:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("setData")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "setData")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -887220230:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("prepareRequestAndOpenLogSection")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "prepareRequestAndOpenLogSection")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -75605984:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getData")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getData")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 202492379:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("processStep")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "processStep")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1640376034:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("approveByTemplate")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "approveByTemplate")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1321005675:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getStepParam")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "getStepParam")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 735924562:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("approveByTile")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "approveByTile")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -829807908:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("loadStepDataIfStored")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "loadStepDataIfStored")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3135262:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("fail")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "fail")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1981864270:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("processSetup")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "processSetup")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1955760563:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("inquire")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "inquire")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -309518737:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("process")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "process")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3437163:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("pend")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "pend")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1973846345:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("abortMessage")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.abortMessage;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 2943436:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("_run")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "_run")) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -651810274:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("abortRequested")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.abortRequested;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1553471908:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("filterFunc")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.filterFunc;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3076010:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("data")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.data;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 109761319:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("steps")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.steps;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1972593863:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("originalModelStr")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.originalModelStr;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 104069929:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("model")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.model;
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
@@ -1669,15 +1669,15 @@ public class Flow extends connect.Base
 				
 			}
 			
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				throw null;
 			}
 			
@@ -1688,414 +1688,414 @@ public class Flow extends connect.Base
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		{
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			boolean __temp_executeDef1 = true;
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (( field != null )) 
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				switch (field.hashCode())
 				{
 					case -19493523:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getClassName")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getClassName();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 109329021:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("setup")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.setup();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 308125582:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getTierConfigRequestChanges")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getTierConfigRequestChanges();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3540684:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("step")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.step(haxe.lang.Runtime.toString(dynargs[0]), ((java.util.function.Consumer<connect.Flow>) (dynargs[1]) ));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 121538830:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getAssetRequestChanges")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getAssetRequestChanges();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 546046965:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getAssetRequest")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getAssetRequest();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1126914054:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("logStepData")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.logStepData(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]), haxe.lang.Runtime.toString(dynargs[2]), haxe.lang.Runtime.toString(dynargs[3]), haxe.lang.Runtime.toString(dynargs[4]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1084146315:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getTierConfigRequest")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getTierConfigRequest();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 92611376:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("abort")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.abort(haxe.lang.Runtime.toString(( (( dynargs.length > 0 )) ? (dynargs[0]) : (null) )));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 764125191:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getUsageFile")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getUsageFile();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1228044323:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("processAbortAndCloseLogSection")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.processAbortAndCloseLogSection(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]), haxe.lang.Runtime.toString(dynargs[2]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1984503596:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("setData")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.setData(haxe.lang.Runtime.toString(dynargs[0]), dynargs[1]);
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -887220230:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("prepareRequestAndOpenLogSection")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.prepareRequestAndOpenLogSection(((connect.models.IdModel) (dynargs[0]) ));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -75605984:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getData")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getData(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 202492379:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("processStep")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.processStep(((connect._Flow.Step) (dynargs[0]) ), ((int) (haxe.lang.Runtime.toInt(dynargs[1])) ), haxe.lang.Runtime.toString(dynargs[2]), haxe.lang.Runtime.toString(dynargs[3]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -1640376034:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("approveByTemplate")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.approveByTemplate(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1321005675:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("getStepParam")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.getStepParam();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 735924562:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("approveByTile")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.approveByTile(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -829807908:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("loadStepDataIfStored")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.loadStepDataIfStored();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3135262:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("fail")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.fail(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1981864270:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("processSetup")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return this.processSetup();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 1955760563:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("inquire")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.inquire(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case -309518737:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("process")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.process(((connect.models.IdModel) (dynargs[0]) ));
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 3437163:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("pend")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this.pend();
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
 					
 					case 2943436:
 					{
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						if (field.equals("_run")) 
 						{
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							__temp_executeDef1 = false;
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							this._run(((connect.util.Collection<java.lang.Object>) (dynargs[0]) ));
-							//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+							//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 							return ((java.lang.Object) (null) );
 						}
 						
-						//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+						//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 						break;
 					}
 					
@@ -2104,37 +2104,37 @@ public class Flow extends connect.Base
 				
 			}
 			
-			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+				//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			
 		}
 		
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		return null;
 	}
 	
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("abortMessage");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("abortRequested");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("data");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("originalModelStr");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("model");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("steps");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		baseArr.push("filterFunc");
-		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Flow.hx"
+		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Flow.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
