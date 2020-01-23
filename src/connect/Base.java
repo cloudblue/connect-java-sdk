@@ -13,7 +13,7 @@ public class Base extends haxe.lang.HxObject
 	
 	public Base()
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Base.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Base.hx"
 		connect.Base.__hx_ctor_connect_Base(this);
 	}
 	

@@ -8,24 +8,24 @@ public class ApiClientImpl_syncRequestStd_176__Fun extends haxe.lang.Function
 {
 	public ApiClientImpl_syncRequestStd_176__Fun(java.lang.Object[] status, haxe.io.BytesOutput responseBytes)
 	{
-		//line 176 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 176 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		super(1, 0);
-		//line 176 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 176 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		this.status = status;
-		//line 176 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 176 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		this.responseBytes = responseBytes;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 176 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 176 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		java.lang.String msg = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toString(__fn_float1)) : (haxe.lang.Runtime.toString(__fn_dyn1)) );
-		//line 177 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 177 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		this.status[0] = -1;
-		//line 178 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 178 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		this.responseBytes.writeString(msg, null);
-		//line 176 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 176 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		return null;
 	}
 	

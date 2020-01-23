@@ -13,38 +13,38 @@ public class Diff extends haxe.lang.HxObject
 	
 	public Diff(java.lang.Object first, java.lang.Object second)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff.__hx_ctor_connect_util_Diff(this, first, second);
 	}
 	
 	
 	protected static void __hx_ctor_connect_util_Diff(connect.util.Diff __hx_this, java.lang.Object first, java.lang.Object second)
 	{
-		//line 12 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 12 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff _gthis = __hx_this;
-		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff.checkStructs(first, second);
-		//line 14 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 14 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> firstFields = haxe.root.Reflect.fields(first);
-		//line 15 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 15 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> secondFields = haxe.root.Reflect.fields(second);
-		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g1 = 0;
-			//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g1 < secondFields.length ))
 			{
-				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String f = secondFields.__get(_g1);
-				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				 ++ _g1;
-				//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				if ( ! (haxe.root.Reflect.hasField(first, f)) ) 
 				{
-					//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+					//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 					_g.push(f);
 				}
 				
@@ -52,25 +52,25 @@ public class Diff extends haxe.lang.HxObject
 			
 		}
 		
-		//line 16 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 16 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> addedFields = _g;
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g2 = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g3 = 0;
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g3 < firstFields.length ))
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String f1 = firstFields.__get(_g3);
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				 ++ _g3;
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				if ( ! (haxe.root.Reflect.hasField(second, f1)) ) 
 				{
-					//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+					//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 					_g2.push(f1);
 				}
 				
@@ -78,25 +78,25 @@ public class Diff extends haxe.lang.HxObject
 			
 		}
 		
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> deletedFields = _g2;
-		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g4 = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g5 = 0;
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g5 < firstFields.length ))
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String f2 = firstFields.__get(_g5);
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				 ++ _g5;
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				if (haxe.root.Reflect.hasField(second, f2)) 
 				{
-					//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+					//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 					_g4.push(f2);
 				}
 				
@@ -104,27 +104,27 @@ public class Diff extends haxe.lang.HxObject
 			
 		}
 		
-		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> commonFields = _g4;
-		//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> ret = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g6 = 0;
-			//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g11 = commonFields.length;
-			//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g6 < _g11 ))
 			{
-				//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				int i = _g6++;
-				//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String elt = commonFields.__get(i);
-				//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				if ( ! (connect.util.Diff.areEqual(haxe.root.Reflect.field(first, elt), haxe.root.Reflect.field(second, elt))) ) 
 				{
-					//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+					//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 					ret.push(elt);
 				}
 				
@@ -132,228 +132,228 @@ public class Diff extends haxe.lang.HxObject
 			
 		}
 		
-		//line 19 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 19 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> changedFields = ret;
-		//line 24 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 24 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		__hx_this.a = new haxe.ds.StringMap();
-		//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (addedFields) ), ((haxe.lang.Function) (new connect.util.Diff___hx_ctor_connect_util_Diff_25__Fun(second, _gthis)) ));
-		//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 28 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 28 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		__hx_this.d = new haxe.ds.StringMap();
-		//line 29 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (deletedFields) ), ((haxe.lang.Function) (new connect.util.Diff___hx_ctor_connect_util_Diff_29__Fun(first, _gthis)) ));
-		//line 29 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr2 = ((java.lang.Object) (null) );
-		//line 32 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 32 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		__hx_this.c = new haxe.ds.StringMap();
-		//line 33 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 33 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (changedFields) ), ((haxe.lang.Function) (new connect.util.Diff___hx_ctor_connect_util_Diff_33__Fun(second, first, _gthis)) ));
-		//line 33 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 33 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr3 = ((java.lang.Object) (null) );
 	}
 	
 	
 	public static haxe.root.Array applyArray(haxe.root.Array obj, haxe.root.Array<haxe.root.Array> arr)
 	{
-		//line 129 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 129 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array slice = obj.slice(0, ( obj.length - arr.__get(1).length ));
-		//line 130 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 130 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array deleted = ( (( slice != null )) ? (slice) : (new haxe.root.Array(new java.lang.Object[]{})) );
-		//line 133 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 133 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array added = deleted.concat(arr.__get(0));
-		//line 136 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 136 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array out = added;
-		//line 137 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 137 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (arr.__get(2)) ), ((haxe.lang.Function) (new connect.util.Diff_applyArray_137__Fun(out)) ));
-		//line 137 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 137 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 148 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 148 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return out;
 	}
 	
 	
 	public static haxe.root.Array<haxe.root.Array> swapArray(haxe.root.Array<haxe.root.Array> arr)
 	{
-		//line 153 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 153 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array additions = arr.__get(1);
-		//line 154 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 154 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array deletions = arr.__get(0);
-		//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array _this = arr.__get(2);
-		//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array<haxe.root.Array<haxe.root.Array>>> ret = ((haxe.root.Array<haxe.root.Array<haxe.root.Array<haxe.root.Array>>>) (((haxe.root.Array) (haxe.root.Array.alloc(((int) (_this.length) ))) )) );
-		//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g = 0;
-			//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g1 = _this.length;
-			//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g < _g1 ))
 			{
-				//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				int i = _g++;
-				//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array change = ((haxe.root.Array) (_this.__get(i)) );
-				//line 156 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 156 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array<haxe.root.Array> i1 = ((haxe.root.Array<haxe.root.Array>) (change.__get(0)) );
-				//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				ret.__set(i, ( (( change.length == 3 )) ? (new haxe.root.Array<haxe.root.Array<haxe.root.Array>>(new haxe.root.Array[]{i1, ((haxe.root.Array<haxe.root.Array>) (change.__get(2)) ), ((haxe.root.Array<haxe.root.Array>) (change.__get(1)) )})) : (( (( change.__get(1) instanceof haxe.root.Array )) ? (new haxe.root.Array<haxe.root.Array<haxe.root.Array>>(new haxe.root.Array[]{i1, connect.util.Diff.swapArray(((haxe.root.Array<haxe.root.Array>) (change.__get(1)) ))})) : (new haxe.root.Array<haxe.root.Array<haxe.root.Array>>(new haxe.root.Array[]{i1, ((haxe.root.Array<haxe.root.Array>) (((java.lang.Object) (haxe.lang.Runtime.callField(change.__get(1), "swap", null)) )) )})) )) ));
 			}
 			
 		}
 		
-		//line 155 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 155 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array<haxe.root.Array<haxe.root.Array>>> changes = ret;
-		//line 163 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 163 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return new haxe.root.Array<haxe.root.Array>(new haxe.root.Array[]{additions, deletions, ((haxe.root.Array) (changes) )});
 	}
 	
 	
 	public static connect.util.Diff parse(java.lang.Object obj)
 	{
-		//line 173 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 173 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap additions = new haxe.ds.StringMap();
-		//line 174 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 174 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (haxe.root.Reflect.fields(haxe.lang.Runtime.getField(obj, "a", true))) ), ((haxe.lang.Function) (new connect.util.Diff_parse_174__Fun(obj, additions)) ));
-		//line 174 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 174 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 177 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 177 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap deletions = new haxe.ds.StringMap();
-		//line 178 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 178 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (haxe.root.Reflect.fields(haxe.lang.Runtime.getField(obj, "d", true))) ), ((haxe.lang.Function) (new connect.util.Diff_parse_178__Fun(obj, deletions)) ));
-		//line 178 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 178 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr2 = ((java.lang.Object) (null) );
-		//line 181 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 181 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap changes = new haxe.ds.StringMap();
-		//line 182 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (haxe.root.Reflect.fields(haxe.lang.Runtime.getField(obj, "c", true))) ), ((haxe.lang.Function) (new connect.util.Diff_parse_182__Fun(obj, changes)) ));
-		//line 182 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 182 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr3 = ((java.lang.Object) (null) );
-		//line 198 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 198 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff diff = new connect.util.Diff(haxe.lang.EmptyObject.EMPTY);
-		//line 199 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 199 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap __temp_expr4 = ((haxe.ds.StringMap) (haxe.lang.Runtime.setField(diff, "a", additions)) );
-		//line 200 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 200 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap __temp_expr5 = ((haxe.ds.StringMap) (haxe.lang.Runtime.setField(diff, "d", deletions)) );
-		//line 201 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 201 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap __temp_expr6 = ((haxe.ds.StringMap) (haxe.lang.Runtime.setField(diff, "c", changes)) );
-		//line 202 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 202 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return diff;
 	}
 	
 	
 	public static haxe.root.Array<haxe.root.Array> parseArray(haxe.root.Array<haxe.root.Array> arr)
 	{
-		//line 207 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 207 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array additions = arr.__get(0);
-		//line 208 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 208 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array deletions = arr.__get(1);
-		//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array _this = arr.__get(2);
-		//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> ret = ((haxe.root.Array<haxe.root.Array>) (((haxe.root.Array) (haxe.root.Array.alloc(((int) (_this.length) ))) )) );
-		//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g = 0;
-			//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g1 = _this.length;
-			//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g < _g1 ))
 			{
-				//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				int i = _g++;
-				//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array<haxe.root.Array<haxe.root.Array>> el = ((haxe.root.Array<haxe.root.Array<haxe.root.Array>>) (_this.__get(i)) );
-				//line 210 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 210 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array<haxe.root.Array> i1 = el.__get(0);
-				//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				ret.__set(i, ( (( el.length == 3 )) ? (new haxe.root.Array(new java.lang.Object[]{i1, el.__get(1), el.__get(2)})) : (( (haxe.root.Std.is(el.__get(1), haxe.root.Array.class)) ? (new haxe.root.Array(new java.lang.Object[]{i1, connect.util.Diff.parseArray(el.__get(1))})) : (new haxe.root.Array(new java.lang.Object[]{i1, connect.util.Diff.parse(el.__get(1))})) )) ));
 			}
 			
 		}
 		
-		//line 209 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 209 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> changes = ret;
-		//line 219 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 219 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return new haxe.root.Array<haxe.root.Array>(new haxe.root.Array[]{additions, deletions, ((haxe.root.Array) (changes) )});
 	}
 	
 	
 	public static haxe.root.Array<haxe.root.Array> compareArrays(haxe.root.Array first, haxe.root.Array second)
 	{
-		//line 224 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 224 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array fixedFirst = ( (( first.length <= second.length )) ? (first) : (first.slice(0, second.length)) );
-		//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		int i = 0;
-		//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> _g = new haxe.root.Array<haxe.root.Array>(new haxe.root.Array[]{});
-		//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			java.lang.Object x = ((java.lang.Object) (new _Array.ArrayIterator(((haxe.root.Array<java.lang.Object>) (fixedFirst) ))) );
-			//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(x, "hasNext", null)) )))
 			{
-				//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array x1 = ((haxe.root.Array) (haxe.lang.Runtime.callField(x, "next", null)) );
-				//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				int i1 = i++;
-				//line 228 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 228 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array a = x1;
-				//line 229 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 229 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array b = ((haxe.root.Array) (second.__get(i1)) );
-				//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				_g.push(( (connect.util.Diff.areEqual(a, b)) ? (null) : (( (( connect.util.Util.isStruct(a) && connect.util.Util.isStruct(b) )) ? (new haxe.root.Array(new java.lang.Object[]{i1, new connect.util.Diff(a, b)})) : (( (( connect.util.Util.isArray(a) && connect.util.Util.isArray(b) )) ? (new haxe.root.Array(new java.lang.Object[]{i1, connect.util.Diff.compareArrays(a, b)})) : (new haxe.root.Array(new java.lang.Object[]{i1, a, b})) )) )) ));
 			}
 			
 		}
 		
-		//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> changeList = _g;
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> _g1 = new haxe.root.Array<haxe.root.Array>(new haxe.root.Array[]{});
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g11 = 0;
-			//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g11 < changeList.length ))
 			{
-				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array el = changeList.__get(_g11);
-				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				 ++ _g11;
-				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				_g1.push(el);
 			}
 			
 		}
 		
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> _this = _g1;
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> ret = new haxe.root.Array<haxe.root.Array>(new haxe.root.Array[]{});
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g2 = 0;
-			//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			int _g12 = _this.length;
-			//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (( _g2 < _g12 ))
 			{
-				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				int i2 = _g2++;
-				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				haxe.root.Array elt = _this.__get(i2);
-				//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				if (( elt != null )) 
 				{
-					//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+					//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 					ret.push(elt);
 				}
 				
@@ -361,24 +361,24 @@ public class Diff extends haxe.lang.HxObject
 			
 		}
 		
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<haxe.root.Array> changes = ret;
-		//line 243 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 243 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return new haxe.root.Array<haxe.root.Array>(new haxe.root.Array[]{second.slice(first.length, null), first.slice(second.length, null), ((haxe.root.Array) (changes) )});
 	}
 	
 	
 	public static boolean areEqual(java.lang.Object first, java.lang.Object second)
 	{
-		//line 252 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 252 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		if (haxe.lang.Runtime.valEq(haxe.root.Std.string(haxe.root.Type.typeof(first)), haxe.root.Std.string(haxe.root.Type.typeof(second)))) 
 		{
-			//line 253 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 253 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			return haxe.lang.Runtime.valEq(haxe.root.Std.string(first), haxe.root.Std.string(second));
 		}
 		else
 		{
-			//line 252 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 252 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			return false;
 		}
 		
@@ -387,19 +387,19 @@ public class Diff extends haxe.lang.HxObject
 	
 	public static boolean isSupported(java.lang.Object v)
 	{
-		//line 258 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Class cls = ((java.lang.Class) (haxe.root.Type.getClass(((java.lang.Object) (v) ))) );
-		//line 259 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 259 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		boolean isSimple = ( ( ( ((java.lang.Object) (cls) ) == ((java.lang.Object) (null) ) ) || ( haxe.root.Type.getClassName(cls) == null ) ) || ( v instanceof java.lang.String ) );
-		//line 260 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 260 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		if ( ! ((( isSimple || connect.util.Util.isArray(v) ))) ) 
 		{
-			//line 260 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 260 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			return connect.util.Util.isStruct(v);
 		}
 		else
 		{
-			//line 260 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 260 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			return true;
 		}
 		
@@ -408,10 +408,10 @@ public class Diff extends haxe.lang.HxObject
 	
 	public static void checkStructs(java.lang.Object first, java.lang.Object second)
 	{
-		//line 265 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 265 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		if ((  ! (connect.util.Util.isStruct(first))  ||  ! (connect.util.Util.isStruct(second))  )) 
 		{
-			//line 266 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 266 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			throw haxe.lang.HaxeException.wrap(( "Unsupported types in Diff. Values must be structs. " + (( ( ( "Got: " + haxe.root.Std.string(haxe.root.Type.typeof(first)) ) + ", " ) + haxe.root.Std.string(haxe.root.Type.typeof(second)) )) ));
 		}
 		
@@ -420,137 +420,137 @@ public class Diff extends haxe.lang.HxObject
 	
 	public java.lang.Object apply(java.lang.Object obj)
 	{
-		//line 50 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 50 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff _gthis = this;
-		//line 51 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 51 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object out = ((java.lang.Object) (haxe.root.Reflect.copy(((java.lang.Object) (obj) ))) );
-		//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			java.lang.Object k = new haxe.ds._StringMap.StringMapKeyIterator(((haxe.ds.StringMap<java.lang.Object>) (this.a) ));
-			//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(k, "hasNext", null)) )))
 			{
-				//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String k1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(k, "next", null));
-				//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				_g.push(k1);
 			}
 			
 		}
 		
-		//line 54 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 54 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> addedKeys = _g;
-		//line 55 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 55 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (addedKeys) ), ((haxe.lang.Function) (new connect.util.Diff_apply_55__Fun(out, _gthis)) ));
-		//line 55 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 55 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g1 = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			java.lang.Object k3 = new haxe.ds._StringMap.StringMapKeyIterator(((haxe.ds.StringMap<java.lang.Object>) (this.d) ));
-			//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(k3, "hasNext", null)) )))
 			{
-				//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String k4 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(k3, "next", null));
-				//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				_g1.push(k4);
 			}
 			
 		}
 		
-		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> deletedKeys = _g1;
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (deletedKeys) ), ((haxe.lang.Function) (new connect.util.Diff_apply_59__Fun(out)) ));
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr2 = ((java.lang.Object) (null) );
-		//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g2 = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			java.lang.Object k6 = new haxe.ds._StringMap.StringMapKeyIterator(((haxe.ds.StringMap<java.lang.Object>) (this.c) ));
-			//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(k6, "hasNext", null)) )))
 			{
-				//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String k7 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(k6, "next", null));
-				//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				_g2.push(k7);
 			}
 			
 		}
 		
-		//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> changedKeys = _g2;
-		//line 63 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 63 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (changedKeys) ), ((haxe.lang.Function) (new connect.util.Diff_apply_63__Fun(out, _gthis)) ));
-		//line 63 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 63 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr3 = ((java.lang.Object) (null) );
-		//line 83 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 83 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return out;
 	}
 	
 	
 	public connect.util.Diff swap()
 	{
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap additions = this.d;
-		//line 89 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 89 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap deletions = this.a;
-		//line 90 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 90 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap changes = new haxe.ds.StringMap();
-		//line 87 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 87 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff _gthis = this;
-		//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			java.lang.Object k = new haxe.ds._StringMap.StringMapKeyIterator(((haxe.ds.StringMap<java.lang.Object>) (this.c) ));
-			//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(k, "hasNext", null)) )))
 			{
-				//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				java.lang.String k1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(k, "next", null));
-				//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				_g.push(k1);
 			}
 			
 		}
 		
-		//line 91 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 91 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Array<java.lang.String> changedKeys = _g;
-		//line 92 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 92 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (changedKeys) ), ((haxe.lang.Function) (new connect.util.Diff_swap_92__Fun(changes, _gthis)) ));
-		//line 92 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 92 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 108 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 108 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		connect.util.Diff diff = new connect.util.Diff(haxe.lang.EmptyObject.EMPTY);
-		//line 109 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 109 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap __temp_expr2 = ((haxe.ds.StringMap) (haxe.lang.Runtime.setField(diff, "a", additions)) );
-		//line 110 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 110 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap __temp_expr3 = ((haxe.ds.StringMap) (haxe.lang.Runtime.setField(diff, "d", deletions)) );
-		//line 111 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 111 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.ds.StringMap __temp_expr4 = ((haxe.ds.StringMap) (haxe.lang.Runtime.setField(diff, "c", changes)) );
-		//line 112 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 112 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return diff;
 	}
 	
 	
 	@Override public java.lang.String toString()
 	{
-		//line 117 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 117 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		haxe.lang.Function replacer = null;
-		//line 117 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 117 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		java.lang.String space = null;
-		//line 117 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 117 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		return haxe.format.JsonPrinter.print(((java.lang.Object) (new haxe.lang.DynamicObject(new java.lang.String[]{"a", "c", "d"}, new java.lang.Object[]{this.a, this.c, this.d}, new java.lang.String[]{}, new double[]{})) ), replacer, space);
 	}
 	
@@ -563,66 +563,66 @@ public class Diff extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				switch (field.hashCode())
 				{
 					case 99:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("c")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							this.c = ((haxe.ds.StringMap) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 97:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("a")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							this.a = ((haxe.ds.StringMap) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 100:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("d")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							this.d = ((haxe.ds.StringMap) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
@@ -631,15 +631,15 @@ public class Diff extends haxe.lang.HxObject
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				throw null;
 			}
 			
@@ -650,108 +650,108 @@ public class Diff extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				switch (field.hashCode())
 				{
 					case 99:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("c")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return this.c;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 93029230:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("apply")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "apply")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 100:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("d")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return this.d;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 3543443:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("swap")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "swap")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 97:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("a")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return this.a;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case -1776922004:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("toString")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "toString")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
@@ -760,15 +760,15 @@ public class Diff extends haxe.lang.HxObject
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				throw null;
 			}
 			
@@ -779,60 +779,60 @@ public class Diff extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				switch (field.hashCode())
 				{
 					case -1776922004:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("toString")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return this.toString();
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 93029230:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("apply")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return this.apply(dynargs[0]);
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
 					
 					case 3543443:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						if (field.equals("swap")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 							return this.swap();
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 						break;
 					}
 					
@@ -841,15 +841,15 @@ public class Diff extends haxe.lang.HxObject
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 				throw null;
 			}
 			
@@ -860,13 +860,13 @@ public class Diff extends haxe.lang.HxObject
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		baseArr.push("c");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		baseArr.push("d");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		baseArr.push("a");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/util/Diff.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/util/Diff.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
