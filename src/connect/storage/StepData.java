@@ -63,16 +63,30 @@ public class StepData extends haxe.lang.HxObject
 				//line 42 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
 				java.lang.String fieldName = fieldSplit.slice(0, -1).join("::");
 				//line 43 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
-				java.lang.String fieldClass = fieldSplit.slice(-1, null).__get(0);
+				java.lang.String fieldClassName = fieldSplit.slice(-1, null).__get(0);
 				//line 44 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
-				haxe.lang.Function replacer = null;
-				//line 44 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
-				java.lang.String space = null;
-				//line 44 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
-				java.lang.String value1 = haxe.format.JsonPrinter.print(haxe.root.Reflect.field(data, field), replacer, space);
-				//line 45 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
-				java.lang.String parsedValue = ( ( ! (haxe.lang.Runtime.valEq(fieldClass, "")) ) ? (haxe.lang.Runtime.toString(connect.models.Model.parse(((java.lang.Class) (haxe.root.Type.resolveClass(fieldClass)) ), haxe.lang.Runtime.toString(value1)))) : (value1) );
+				java.lang.Class fieldClass = ( ( ! (haxe.lang.Runtime.valEq(fieldClassName, "")) ) ? (haxe.root.Type.resolveClass(fieldClassName)) : (null) );
+				//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+				java.lang.Object value1 = haxe.root.Reflect.field(data, field);
 				//line 48 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+				java.lang.Object parsedValue = null;
+				//line 48 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+				if (( ((java.lang.Object) (fieldClass) ) != ((java.lang.Object) (null) ) )) 
+				{
+					//line 49 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+					haxe.lang.Function replacer = null;
+					//line 49 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+					java.lang.String space = null;
+					//line 48 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+					parsedValue = ((java.lang.Object) (connect.models.Model.parse(((java.lang.Class) (fieldClass) ), haxe.lang.Runtime.toString(haxe.format.JsonPrinter.print(((java.lang.Object) (value1) ), replacer, space)))) );
+				}
+				else
+				{
+					//line 48 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
+					parsedValue = value1;
+				}
+				
+				//line 51 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/storage/StepData.hx"
 				__hx_this.data.set(fieldName, parsedValue);
 			}
 			

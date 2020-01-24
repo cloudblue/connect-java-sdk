@@ -185,6 +185,8 @@ C connect.models.Renewal
 M connect.models.Tiers
 C connect.models.Tiers
 M java.lang.ThreadGroup
+M haxe.root.Connect
+C haxe.root.Connect
 M haxe.zip.Tools
 C haxe.zip.Tools
 M connect.models.PhoneNumber
@@ -596,8 +598,6 @@ M java.io.OutputStream
 M connect.models.Asset
 C connect.models.Asset
 M java.io.PrintStream
-M haxe.root.Packager
-C haxe.root.Packager
 M java.util.Enumeration
 M java.util.zip.Inflater
 M java.security.cert.CertificateException
@@ -735,7 +735,7 @@ M haxe.root.StringBuf
 C haxe.root.StringBuf
 end modules
 begin main
-haxe.root.Packager
+haxe.root.Connect
 end main
 begin resources
 end resources

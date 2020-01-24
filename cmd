@@ -44,6 +44,7 @@ src/haxe/ds/TreeNode.java
 src/connect/util/Dictionary.java
 src/connect/models/Renewal.java
 src/connect/models/Tiers.java
+src/haxe/root/Connect.java
 src/haxe/zip/Tools.java
 src/connect/models/PhoneNumber.java
 src/haxe/io/_UInt8Array/UInt8Array_Impl_.java
@@ -187,7 +188,6 @@ src/connect/api/impl/ApiClientImpl_getHeadersTable_220__Fun.java
 src/connect/models/HubStats.java
 src/connect/models/Event.java
 src/connect/models/Asset.java
-src/haxe/root/Packager.java
 src/connect/api/impl/FulfillmentApiImpl.java
 src/haxe/root/IntIterator.java
 src/haxe/iterators/StringKeyValueIterator.java
