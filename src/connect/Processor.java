@@ -8,57 +8,57 @@ public class Processor extends connect.Base
 {
 	public Processor(haxe.lang.EmptyObject empty)
 	{
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Processor()
 	{
-		//line 42 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 42 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		connect.Processor.__hx_ctor_connect_Processor(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_Processor(connect.Processor __hx_this)
 	{
-		//line 43 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 43 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		__hx_this.flows = new haxe.root.Array<connect.Flow>(new connect.Flow[]{});
 	}
 	
 	
 	public connect.Processor flow(connect.Flow flow)
 	{
-		//line 56 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 56 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		this.flows.push(flow);
-		//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		return this;
 	}
 	
 	
 	public void processAssetRequests(connect.api.Query filters)
 	{
-		//line 69 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 69 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		this.run(((java.lang.Class) (connect.models.AssetRequest.class) ), ((connect.api.Query) (filters) ));
-		//line 69 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 69 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
 	}
 	
 	
 	public void processTierConfigRequests(connect.api.Query filters)
 	{
-		//line 81 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 81 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		this.run(((java.lang.Class) (connect.models.TierConfigRequest.class) ), ((connect.api.Query) (filters) ));
-		//line 81 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 81 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
 	}
 	
 	
 	public void processUsageFiles(connect.api.Query filters)
 	{
-		//line 93 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 93 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		this.run(((java.lang.Class) (connect.models.UsageFile.class) ), ((connect.api.Query) (filters) ));
-		//line 93 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 93 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
 	}
 	
@@ -67,23 +67,23 @@ public class Processor extends connect.Base
 	
 	public <T> void run(java.lang.Class modelClass, connect.api.Query filters)
 	{
-		//line 102 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 102 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		{
-			//line 102 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 102 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			haxe.root.ValueType _g = haxe.root.Type.typeof(modelClass);
-			//line 102 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 102 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			switch (_g.index)
 			{
 				case 6:
 				{
-					//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					{
-						//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						java.lang.Class __temp_switch1 = (((java.lang.Class) (_g.params[0]) ));
-						//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (( ((java.lang.Object) (__temp_switch1) ) == ((java.lang.Object) (java.lang.String.class) ) )) 
 						{
-							//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							modelClass = haxe.root.Type.resolveClass(haxe.lang.Runtime.toString(modelClass));
 						}
 						else
@@ -92,14 +92,14 @@ public class Processor extends connect.Base
 						
 					}
 					
-					//line 103 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 103 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					break;
 				}
 				
 				
 				default:
 				{
-					//line 105 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 105 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					break;
 				}
 				
@@ -107,39 +107,39 @@ public class Processor extends connect.Base
 			
 		}
 		
-		//line 108 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 108 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		java.lang.String prevLogName = connect.Env.getLogger().getFilename();
-		//line 109 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 109 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		connect.Env.getLogger().setFilename(null);
-		//line 110 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 110 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		connect.Env.getLogger().openSection(( "Running Processor on " + haxe.root.Std.string(connect.util.DateTime.now()) ));
-		//line 112 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 112 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		try 
 		{
-			//line 114 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 114 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			connect.Env.getLogger().openSection(( "Listing requests on " + haxe.root.Std.string(connect.util.DateTime.now()) ));
-			//line 115 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 115 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			java.lang.Object listMethod = haxe.lang.Runtime.getField(modelClass, "list", false);
-			//line 116 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 116 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			connect.util.Collection list = ((connect.util.Collection) (haxe.root.Reflect.callMethod(modelClass, listMethod, new haxe.root.Array(new java.lang.Object[]{filters}))) );
-			//line 117 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 117 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			connect.Env.getLogger().closeSection();
-			//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			{
-				//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				int _g2 = 0;
-				//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				haxe.root.Array<connect.Flow> _g3 = this.flows;
-				//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				while (( _g2 < _g3.length ))
 				{
-					//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					connect.Flow flow = _g3.__get(_g2);
-					//line 120 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 120 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					 ++ _g2;
-					//line 121 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 121 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					flow._run(((connect.util.Collection<java.lang.Object>) (list) ));
-					//line 121 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+					//line 121 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 					java.lang.Object __temp_expr2 = ((java.lang.Object) (null) );
 				}
 				
@@ -148,54 +148,54 @@ public class Processor extends connect.Base
 		}
 		catch (java.lang.Throwable catchallException)
 		{
-			//line 112 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 112 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			haxe.lang.Exceptions.setException(catchallException);
-			//line 123 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 123 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			{
-				//line 123 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 123 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				java.lang.Object ex = ( (haxe.root.Std.is(catchallException, haxe.lang.HaxeException.class)) ? (((haxe.lang.HaxeException) (catchallException) ).obj) : (catchallException) );
-				//line 125 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 125 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				connect.Env.getLogger().writeCodeBlock(connect.logger.Logger.LEVEL_ERROR, haxe.root.Std.string(ex), "");
-				//line 126 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 126 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				connect.Env.getLogger().closeSection();
 			}
 			
 		}
 		
 		
-		//line 129 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 129 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		connect.Env.getLogger().closeSection();
-		//line 130 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 130 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		connect.Env.getLogger().setFilename(prevLogName);
 	}
 	
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		{
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			boolean __temp_executeDef1 = true;
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			if (( field != null )) 
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				switch (field.hashCode())
 				{
 					case 97527045:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("flows")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							this.flows = ((haxe.root.Array<connect.Flow>) (value) );
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return value;
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
@@ -204,15 +204,15 @@ public class Processor extends connect.Base
 				
 			}
 			
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				throw null;
 			}
 			
@@ -223,108 +223,108 @@ public class Processor extends connect.Base
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		{
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			boolean __temp_executeDef1 = true;
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			if (( field != null )) 
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				switch (field.hashCode())
 				{
 					case 113291:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("run")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "run")) );
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case 3146030:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("flow")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "flow")) );
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case 97527045:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("flows")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return this.flows;
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case -1886258011:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("processAssetRequests")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "processAssetRequests")) );
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case -1981635291:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("processUsageFiles")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "processUsageFiles")) );
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case 802147447:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("processTierConfigRequests")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "processTierConfigRequests")) );
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
@@ -333,15 +333,15 @@ public class Processor extends connect.Base
 				
 			}
 			
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				throw null;
 			}
 			
@@ -352,94 +352,94 @@ public class Processor extends connect.Base
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		{
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			boolean __temp_executeDef1 = true;
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			if (( field != null )) 
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				switch (field.hashCode())
 				{
 					case 113291:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("run")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							this.run(((java.lang.Class) (dynargs[0]) ), ((connect.api.Query) (dynargs[1]) ));
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return ((java.lang.Object) (null) );
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case 3146030:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("flow")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							return this.flow(((connect.Flow) (dynargs[0]) ));
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case -1981635291:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("processUsageFiles")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							this.processUsageFiles(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case -1886258011:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("processAssetRequests")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							this.processAssetRequests(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
 					
 					case 802147447:
 					{
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						if (field.equals("processTierConfigRequests")) 
 						{
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							__temp_executeDef1 = false;
-							//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+							//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 							this.processTierConfigRequests(((connect.api.Query) (dynargs[0]) ));
 						}
 						
-						//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+						//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 						break;
 					}
 					
@@ -448,25 +448,25 @@ public class Processor extends connect.Base
 				
 			}
 			
-			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+				//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			
 		}
 		
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		return null;
 	}
 	
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		baseArr.push("flows");
-		//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/Processor.hx"
+		//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/Processor.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

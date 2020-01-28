@@ -13,16 +13,16 @@ public class LoggerSection extends haxe.lang.HxObject
 	
 	public LoggerSection(java.lang.String name)
 	{
-		//line 276 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 276 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		connect.logger._Logger.LoggerSection.__hx_ctor_connect_logger__Logger_LoggerSection(this, name);
 	}
 	
 	
 	protected static void __hx_ctor_connect_logger__Logger_LoggerSection(connect.logger._Logger.LoggerSection __hx_this, java.lang.String name)
 	{
-		//line 277 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 277 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		__hx_this.name = name;
-		//line 278 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 278 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		__hx_this.written = false;
 	}
 	
@@ -33,48 +33,48 @@ public class LoggerSection extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		{
-			//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 			boolean __temp_executeDef1 = true;
-			//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 			if (( field != null )) 
 			{
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 				switch (field.hashCode())
 				{
 					case 1603019031:
 					{
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						if (field.equals("written")) 
 						{
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							this.written = haxe.lang.Runtime.toBool(((java.lang.Boolean) (value) ));
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							return value;
 						}
 						
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						break;
 					}
 					
 					
 					case 3373707:
 					{
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						if (field.equals("name")) 
 						{
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							this.name = haxe.lang.Runtime.toString(value);
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							return value;
 						}
 						
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						break;
 					}
 					
@@ -83,15 +83,15 @@ public class LoggerSection extends haxe.lang.HxObject
 				
 			}
 			
-			//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 				throw null;
 			}
 			
@@ -102,44 +102,44 @@ public class LoggerSection extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		{
-			//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 			boolean __temp_executeDef1 = true;
-			//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 			if (( field != null )) 
 			{
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 				switch (field.hashCode())
 				{
 					case 1603019031:
 					{
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						if (field.equals("written")) 
 						{
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							return this.written;
 						}
 						
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						break;
 					}
 					
 					
 					case 3373707:
 					{
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						if (field.equals("name")) 
 						{
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							__temp_executeDef1 = false;
-							//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+							//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 							return this.name;
 						}
 						
-						//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+						//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 						break;
 					}
 					
@@ -148,15 +148,15 @@ public class LoggerSection extends haxe.lang.HxObject
 				
 			}
 			
-			//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+			//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+				//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 				throw null;
 			}
 			
@@ -167,11 +167,11 @@ public class LoggerSection extends haxe.lang.HxObject
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		baseArr.push("written");
-		//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		baseArr.push("name");
-		//line 272 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/Logger.hx"
+		//line 272 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/Logger.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
