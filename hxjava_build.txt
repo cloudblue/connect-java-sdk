@@ -1,4 +1,4 @@
-/home/travis/build/JaviCerveraIngram/connect-haxe-sdk
+/home/travis/build/cloudblue/connect-haxe-sdk
 begin defines
 dce
 haxe
@@ -439,13 +439,15 @@ C connect.util.Diff_apply_55__Fun
 C connect.util.Diff_apply_59__Fun
 C connect.util.Diff_apply_63__Fun
 C connect.util.Diff_swap_92__Fun
+C connect.util.Diff_toObject_133__Fun
 C connect.util.Diff___hx_ctor_connect_util_Diff_25__Fun
 C connect.util.Diff___hx_ctor_connect_util_Diff_29__Fun
 C connect.util.Diff___hx_ctor_connect_util_Diff_33__Fun
-C connect.util.Diff_applyArray_137__Fun
-C connect.util.Diff_parse_174__Fun
-C connect.util.Diff_parse_178__Fun
-C connect.util.Diff_parse_182__Fun
+C connect.util.Diff_applyArray_161__Fun
+C connect.util.Diff_parse_205__Fun
+C connect.util.Diff_parse_209__Fun
+C connect.util.Diff_parse_213__Fun
+C connect.util.Diff_mapToObject_306__Fun
 M connect.api.IApiClient
 C connect.api.IApiClient
 M haxe.crypto.BaseCode
@@ -580,9 +582,9 @@ M java.io.ObjectStreamException
 M java.security.Permission
 M connect.api.impl.ApiClientImpl
 C connect.api.impl.ApiClientImpl
-C connect.api.impl.ApiClientImpl_syncRequestStd_175__Fun
-C connect.api.impl.ApiClientImpl_syncRequestStd_176__Fun
-C connect.api.impl.ApiClientImpl_getHeadersTable_220__Fun
+C connect.api.impl.ApiClientImpl_syncRequestStd_241__Fun
+C connect.api.impl.ApiClientImpl_syncRequestStd_242__Fun
+C connect.api.impl.ApiClientImpl_getHeadersTable_286__Fun
 M java.net.InterfaceAddress
 M java.StdTypes
 M connect.models.HubStats
@@ -667,8 +669,8 @@ M java.util.concurrent.Executor
 M haxe.root.Enum
 M connect.Flow
 C connect.Flow
-C connect.Flow_process_352__Fun
-C connect.Flow_getDataTable_592__Fun
+C connect.Flow_process_357__Fun
+C connect.Flow_getDataTable_599__Fun
 C connect._Flow.Step
 M connect.api.impl.TierApiImpl
 C connect.api.impl.TierApiImpl

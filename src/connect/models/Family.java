@@ -8,23 +8,23 @@ public class Family extends connect.models.IdModel
 {
 	public Family(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Family()
 	{
-		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Family.__hx_ctor_connect_models_Family(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Family(connect.models.Family __hx_this)
 	{
-		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.IdModel.__hx_ctor_connect_models_IdModel(__hx_this);
 	}
 	
@@ -33,30 +33,30 @@ public class Family extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 				switch (field.hashCode())
 				{
 					case 3373707:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 						if (field.equals("name")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 							this.name = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 						break;
 					}
 					
@@ -65,15 +65,15 @@ public class Family extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 				throw null;
 			}
 			
@@ -84,28 +84,28 @@ public class Family extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 				switch (field.hashCode())
 				{
 					case 3373707:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 						if (field.equals("name")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 							return this.name;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 						break;
 					}
 					
@@ -114,15 +114,15 @@ public class Family extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 				throw null;
 			}
 			
@@ -133,9 +133,9 @@ public class Family extends connect.models.IdModel
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 		baseArr.push("name");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Family.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Family.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

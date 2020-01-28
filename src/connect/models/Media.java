@@ -8,23 +8,23 @@ public class Media extends connect.models.IdModel
 {
 	public Media(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Media()
 	{
-		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Media.__hx_ctor_connect_models_Media(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Media(connect.models.Media __hx_this)
 	{
-		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.IdModel.__hx_ctor_connect_models_IdModel(__hx_this);
 	}
 	
@@ -39,30 +39,30 @@ public class Media extends connect.models.IdModel
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				switch (field.hashCode())
 				{
 					case 747804969:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("position")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							this.position = ((int) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
@@ -71,15 +71,15 @@ public class Media extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				throw null;
 			}
 			
@@ -90,84 +90,84 @@ public class Media extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				switch (field.hashCode())
 				{
 					case 116079:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("url")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							this.url = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
 					
 					case 747804969:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("position")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							this.position = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
 					
 					case 1330532588:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("thumbnail")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							this.thumbnail = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
 					
 					case 3575610:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("type")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							this.type = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
@@ -176,15 +176,15 @@ public class Media extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				throw null;
 			}
 			
@@ -195,76 +195,76 @@ public class Media extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				switch (field.hashCode())
 				{
 					case 116079:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("url")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return this.url;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
 					
 					case 747804969:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("position")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return this.position;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
 					
 					case 1330532588:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("thumbnail")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return this.thumbnail;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
 					
 					case 3575610:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("type")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return this.type;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
@@ -273,15 +273,15 @@ public class Media extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				throw null;
 			}
 			
@@ -292,28 +292,28 @@ public class Media extends connect.models.IdModel
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				switch (field.hashCode())
 				{
 					case 747804969:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						if (field.equals("position")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 							return ((double) (this.position) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 						break;
 					}
 					
@@ -322,15 +322,15 @@ public class Media extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 				throw null;
 			}
 			
@@ -341,15 +341,15 @@ public class Media extends connect.models.IdModel
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		baseArr.push("url");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		baseArr.push("thumbnail");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		baseArr.push("type");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		baseArr.push("position");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Media.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Media.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
