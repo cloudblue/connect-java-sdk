@@ -8,14 +8,14 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 {
 	public MarkdownLoggerFormatter(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public MarkdownLoggerFormatter()
 	{
-		//line 57 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 57 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		connect.logger.MarkdownLoggerFormatter.__hx_ctor_connect_logger_MarkdownLoggerFormatter(this);
 	}
 	
@@ -27,97 +27,97 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 	
 	public static haxe.root.Array<java.lang.String> getLines(java.lang.String text)
 	{
-		//line 61 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 61 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		java.lang.String windowsReplaced = haxe.root.StringTools.replace(text, "\r\n", "\n");
-		//line 62 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 62 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		java.lang.String macosReplaced = haxe.root.StringTools.replace(windowsReplaced, "\r", "\n");
-		//line 63 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 63 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		return haxe.lang.StringExt.split(macosReplaced, "\n");
 	}
 	
 	
 	public java.lang.String formatSection(int level, java.lang.String text)
 	{
-		//line 13 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 13 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		java.lang.String hashes = haxe.root.StringTools.rpad("", "#", level);
-		//line 14 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 14 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		java.lang.String prefix = ( ( ! (haxe.lang.Runtime.valEq(hashes, "")) ) ? (( hashes + " " )) : ("") );
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		return ( ( ( "\n" + prefix ) + text ) + "\n" );
 	}
 	
 	
 	public java.lang.String formatBlock(java.lang.String text)
 	{
-		//line 22 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 22 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		haxe.root.Array<java.lang.String> lines = connect.logger.MarkdownLoggerFormatter.getLines(text);
-		//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		{
-			//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			int _g1 = 0;
-			//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			while (( _g1 < lines.length ))
 			{
-				//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				java.lang.String line = lines.__get(_g1);
-				//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				 ++ _g1;
-				//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				_g.push(( "> " + line ));
 			}
 			
 		}
 		
-		//line 23 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 23 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		haxe.root.Array<java.lang.String> prefixedLines = _g;
-		//line 24 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 24 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		return ( ( "\n" + prefixedLines.join("\n") ) + "\n" );
 	}
 	
 	
 	public java.lang.String formatCodeBlock(java.lang.String text, java.lang.String language)
 	{
-		//line 29 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 29 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		java.lang.String header = ( ( "\n```" + language ) + "\n" );
-		//line 30 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 30 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		java.lang.String footer = "\n```\n";
-		//line 31 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 31 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		return ( ( header + text ) + footer );
 	}
 	
 	
 	public java.lang.String formatList(connect.util.Collection<java.lang.String> lines)
 	{
-		//line 36 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 36 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		if (( lines.length() > 0 )) 
 		{
-			//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-			//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			{
-				//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				java.util.Iterator<java.lang.String> line = lines.iterator();
-				//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				while (line.hasNext())
 				{
-					//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+					//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 					java.lang.String line1 = line.next();
-					//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+					//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 					_g.push(( "* " + line1 ));
 				}
 				
 			}
 			
-			//line 37 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 37 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			haxe.root.Array<java.lang.String> lines1 = _g;
-			//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			return ( ( "\n" + lines1.join("\n") ) + "\n" );
 		}
 		else
 		{
-			//line 40 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 40 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			return "\n\n";
 		}
 		
@@ -126,38 +126,38 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 	
 	public java.lang.String formatTable(connect.util.Collection<connect.util.Collection<java.lang.String>> table)
 	{
-		//line 46 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 46 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		if (( table.length() > 0 )) 
 		{
-			//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-			//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			{
-				//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				java.util.Iterator<connect.util.Collection<java.lang.String>> row = table.iterator();
-				//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				while (row.hasNext())
 				{
-					//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+					//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 					connect.util.Collection<java.lang.String> row1 = row.next();
-					//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+					//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 					_g.push(( ( "| " + row1.join(" | ") ) + " |" ));
 				}
 				
 			}
 			
-			//line 47 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 47 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			haxe.root.Array<java.lang.String> rows = _g;
-			//line 48 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 48 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			java.lang.String header = rows.__get(0);
-			//line 49 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 49 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			haxe.root.Array<java.lang.String> rest = rows.slice(1, null);
-			//line 50 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 50 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			return ( ( ( ( "\n" + header ) + "\n| --- | --- |\n" ) + rest.join("\n") ) + "\n" );
 		}
 		else
 		{
-			//line 52 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 52 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			return "\n\n";
 		}
 		
@@ -166,92 +166,92 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				switch (field.hashCode())
 				{
 					case 1447867927:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatTable")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "formatTable")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case -940143890:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatSection")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "formatSection")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case 323569973:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatList")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "formatList")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case 1431584470:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatBlock")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "formatBlock")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case -2010447767:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatCodeBlock")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "formatCodeBlock")) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
@@ -260,15 +260,15 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				throw null;
 			}
 			
@@ -279,92 +279,92 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				switch (field.hashCode())
 				{
 					case 1447867927:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatTable")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return this.formatTable(((connect.util.Collection<connect.util.Collection<java.lang.String>>) (dynargs[0]) ));
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case -940143890:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatSection")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return this.formatSection(((int) (haxe.lang.Runtime.toInt(dynargs[0])) ), haxe.lang.Runtime.toString(dynargs[1]));
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case 323569973:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatList")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return this.formatList(((connect.util.Collection<java.lang.String>) (dynargs[0]) ));
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case 1431584470:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatBlock")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return this.formatBlock(haxe.lang.Runtime.toString(dynargs[0]));
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
 					
 					case -2010447767:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						if (field.equals("formatCodeBlock")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 							return this.formatCodeBlock(haxe.lang.Runtime.toString(dynargs[0]), haxe.lang.Runtime.toString(dynargs[1]));
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 						break;
 					}
 					
@@ -373,15 +373,15 @@ public class MarkdownLoggerFormatter extends connect.Base implements connect.log
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/logger/MarkdownLoggerFormatter.hx"
 				throw null;
 			}
 			

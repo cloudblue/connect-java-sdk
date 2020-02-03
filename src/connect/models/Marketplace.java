@@ -8,31 +8,31 @@ public class Marketplace extends connect.models.IdModel
 {
 	public Marketplace(haxe.lang.EmptyObject empty)
 	{
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Marketplace()
 	{
-		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		connect.models.Marketplace.__hx_ctor_connect_models_Marketplace(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Marketplace(connect.models.Marketplace __hx_this)
 	{
-		//line 58 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 58 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		connect.models.IdModel.__hx_ctor_connect_models_IdModel(__hx_this);
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		_g.set("hubs", "ExtIdHub");
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		_g.set("countries", "Country");
-		//line 59 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 59 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
@@ -57,30 +57,30 @@ public class Marketplace extends connect.models.IdModel
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		{
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			boolean __temp_executeDef1 = true;
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (( field != null )) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				switch (field.hashCode())
 				{
 					case 40319291:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("activeContracts")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.activeContracts = ((int) (value) );
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
@@ -89,15 +89,15 @@ public class Marketplace extends connect.models.IdModel
 				
 			}
 			
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				throw null;
 			}
 			
@@ -108,174 +108,174 @@ public class Marketplace extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		{
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			boolean __temp_executeDef1 = true;
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (( field != null )) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				switch (field.hashCode())
 				{
 					case 1746332184:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("sourcing")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.sourcing = haxe.lang.Runtime.toBool(((java.lang.Boolean) (value) ));
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3373707:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("name")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.name = haxe.lang.Runtime.toString(value);
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 1352637108:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("countries")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.countries = ((haxe.ds.List<connect.models.Country>) (value) );
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("description")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.description = haxe.lang.Runtime.toString(value);
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3744684:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("zone")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.zone = haxe.lang.Runtime.toString(value);
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 40319291:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("activeContracts")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.activeContracts = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3213854:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("hubs")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.hubs = ((connect.util.Collection<connect.models.ExtIdHub>) (value) );
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3226745:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("icon")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.icon = haxe.lang.Runtime.toString(value);
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 106164915:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("owner")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							this.owner = ((connect.models.Account) (value) );
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return value;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
@@ -284,15 +284,15 @@ public class Marketplace extends connect.models.IdModel
 				
 			}
 			
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				throw null;
 			}
 			
@@ -303,156 +303,156 @@ public class Marketplace extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		{
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			boolean __temp_executeDef1 = true;
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (( field != null )) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				switch (field.hashCode())
 				{
 					case 1746332184:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("sourcing")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.sourcing;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3373707:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("name")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.name;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 1352637108:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("countries")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.countries;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("description")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.description;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3744684:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("zone")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.zone;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 40319291:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("activeContracts")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.activeContracts;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3213854:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("hubs")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.hubs;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 3226745:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("icon")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.icon;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
 					
 					case 106164915:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("owner")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return this.owner;
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
@@ -461,15 +461,15 @@ public class Marketplace extends connect.models.IdModel
 				
 			}
 			
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				throw null;
 			}
 			
@@ -480,28 +480,28 @@ public class Marketplace extends connect.models.IdModel
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		{
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			boolean __temp_executeDef1 = true;
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (( field != null )) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				switch (field.hashCode())
 				{
 					case 40319291:
 					{
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						if (field.equals("activeContracts")) 
 						{
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							__temp_executeDef1 = false;
-							//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+							//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 							return ((double) (this.activeContracts) );
 						}
 						
-						//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+						//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 						break;
 					}
 					
@@ -510,15 +510,15 @@ public class Marketplace extends connect.models.IdModel
 				
 			}
 			
-			//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+			//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+				//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 				throw null;
 			}
 			
@@ -529,25 +529,25 @@ public class Marketplace extends connect.models.IdModel
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("sourcing");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("countries");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("zone");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("hubs");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("owner");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("icon");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("activeContracts");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("description");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		baseArr.push("name");
-		//line 17 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Marketplace.hx"
+		//line 17 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Marketplace.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

@@ -8,41 +8,41 @@ public class Agreement extends connect.models.IdModel
 {
 	public Agreement(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Agreement()
 	{
-		//line 87 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 87 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 87 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 87 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		connect.models.Agreement.__hx_ctor_connect_models_Agreement(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Agreement(connect.models.Agreement __hx_this)
 	{
-		//line 87 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 87 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		connect.models.IdModel.__hx_ctor_connect_models_IdModel(__hx_this);
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("created", "DateTime");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("updated", "DateTime");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("owner", "Account");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("stats", "AgreementStats");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("author", "User");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("versionCreated", "DateTime");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		_g.set("parent", "Agreement");
-		//line 88 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 88 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
@@ -83,48 +83,48 @@ public class Agreement extends connect.models.IdModel
 	
 	@Override public double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				switch (field.hashCode())
 				{
 					case 887162793:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("versionContracts")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.versionContracts = ((int) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 351608024:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("version")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.version = ((int) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
@@ -133,15 +133,15 @@ public class Agreement extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				throw null;
 			}
 			
@@ -152,318 +152,318 @@ public class Agreement extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				switch (field.hashCode())
 				{
 					case 3373707:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("name")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.name = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 3575610:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("type")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.type = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 300911179:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("marketplace")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.marketplace = ((connect.models.Marketplace) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 110371416:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("title")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.title = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -995424086:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("parent")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.parent = ((connect.models.Agreement) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("description")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.description = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 184610729:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("agreements")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.agreements = ((connect.util.Collection<connect.models.Agreement>) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 1028554472:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("created")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.created = ((connect.util.DateTime) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 887162793:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("versionContracts")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.versionContracts = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -234430277:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("updated")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.updated = ((connect.util.DateTime) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 1155028720:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("versionCreated")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.versionCreated = ((connect.util.DateTime) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 106164915:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("owner")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.owner = ((connect.models.Account) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 3321850:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("link")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.link = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 109757599:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("stats")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.stats = ((connect.models.AgreementStats) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -1422950650:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("active")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.active = haxe.lang.Runtime.toBool(((java.lang.Boolean) (value) ));
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -1406328437:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("author")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.author = ((connect.models.User) (value) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 351608024:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("version")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							this.version = ((int) (haxe.lang.Runtime.toInt(value)) );
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
@@ -472,15 +472,15 @@ public class Agreement extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				throw null;
 			}
 			
@@ -491,284 +491,284 @@ public class Agreement extends connect.models.IdModel
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				switch (field.hashCode())
 				{
 					case 3373707:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("name")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.name;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 3575610:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("type")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.type;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 300911179:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("marketplace")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.marketplace;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 110371416:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("title")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.title;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -995424086:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("parent")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.parent;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -1724546052:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("description")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.description;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 184610729:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("agreements")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.agreements;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 1028554472:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("created")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.created;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 887162793:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("versionContracts")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.versionContracts;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -234430277:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("updated")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.updated;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 1155028720:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("versionCreated")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.versionCreated;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 106164915:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("owner")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.owner;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 3321850:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("link")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.link;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 109757599:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("stats")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.stats;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -1422950650:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("active")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.active;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case -1406328437:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("author")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.author;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 351608024:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("version")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return this.version;
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
@@ -777,15 +777,15 @@ public class Agreement extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				throw null;
 			}
 			
@@ -796,44 +796,44 @@ public class Agreement extends connect.models.IdModel
 	
 	@Override public double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		{
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				switch (field.hashCode())
 				{
 					case 887162793:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("versionContracts")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return ((double) (this.versionContracts) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
 					
 					case 351608024:
 					{
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						if (field.equals("version")) 
 						{
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 							return ((double) (this.version) );
 						}
 						
-						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 						break;
 					}
 					
@@ -842,15 +842,15 @@ public class Agreement extends connect.models.IdModel
 				
 			}
 			
-			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 				throw null;
 			}
 			
@@ -861,41 +861,41 @@ public class Agreement extends connect.models.IdModel
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("name");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("marketplace");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("parent");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("agreements");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("versionContracts");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("versionCreated");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("link");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("active");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("version");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("author");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("stats");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("owner");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("updated");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("created");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("description");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("title");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		baseArr.push("type");
-		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Agreement.hx"
+		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Agreement.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

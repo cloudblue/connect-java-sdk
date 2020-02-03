@@ -8,14 +8,14 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 {
 	public ApiClientImpl(haxe.lang.EmptyObject empty)
 	{
-		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public ApiClientImpl()
 	{
-		//line 46 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 46 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		connect.api.impl.ApiClientImpl.__hx_ctor_connect_api_impl_ApiClientImpl(this);
 	}
 	
@@ -27,45 +27,45 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 	
 	public static void logRequest(int level, java.lang.String method, java.lang.String url, connect.util.Dictionary headers, java.lang.String body, connect.api.Response response)
 	{
-		//line 257 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 257 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		java.lang.String firstMessage = ( ( ( "Http " + method.toUpperCase() ) + " request to " ) + url );
-		//line 258 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		{
-			//line 258 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.util.Iterator<connect.logger.LoggerHandler> output = connect.Env.getLogger().getOutputs().iterator();
-			//line 258 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			while (output.hasNext())
 			{
-				//line 258 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 258 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				connect.logger.LoggerHandler output1 = output.next();
-				//line 259 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 259 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				connect.logger.ILoggerFormatter fmt = output1.formatter;
-				//line 260 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 260 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				connect.util.Collection<java.lang.String> requestList = new connect.util.Collection<java.lang.String>();
-				//line 261 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 261 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				if (( headers != null )) 
 				{
-					//line 262 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 262 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					requestList.push(( "Headers:" + connect.api.impl.ApiClientImpl.getHeadersTable(headers, fmt) ));
 				}
 				
-				//line 264 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 264 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				if (( body != null )) 
 				{
-					//line 265 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 265 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					requestList.push(connect.api.impl.ApiClientImpl.getFormattedData(body, "Body", fmt));
 				}
 				
-				//line 267 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 267 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				if (( response.status != -1 )) 
 				{
-					//line 268 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 268 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					requestList.push(( "Status: " + response.status ));
-					//line 269 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 269 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					requestList.push(connect.api.impl.ApiClientImpl.getFormattedData(response.text, "Response", fmt));
 				}
 				
-				//line 271 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 271 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				connect.Env.getLogger()._writeToHandler(level, fmt.formatBlock(( ( "" + firstMessage ) + fmt.formatList(requestList) )), output1);
 			}
 			
@@ -76,68 +76,68 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 	
 	public static java.lang.String getHeadersTable(connect.util.Dictionary headers, connect.logger.ILoggerFormatter fmt)
 	{
-		//line 280 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 280 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		connect.util.Dictionary fixedHeaders = ( (( connect.Env.getLogger().getLevel() == connect.logger.Logger.LEVEL_DEBUG )) ? (headers) : (connect.api.impl.ApiClientImpl.maskHeaders(headers)) );
-		//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		haxe.root.Array<java.lang.String> _g = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		{
-			//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.lang.Object key = fixedHeaders.keys();
-			//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 			{
-				//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-				//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				_g.push(key1);
 			}
 			
 		}
 		
-		//line 283 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 283 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		haxe.root.Array<java.lang.String> headerKeys = _g;
-		//line 284 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 284 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		connect.util.Collection<connect.util.Collection<java.lang.String>> headersCol = new connect.util.Collection<connect.util.Collection<java.lang.String>>().push(new connect.util.Collection<java.lang.String>().push("Name").push("Value"));
-		//line 286 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 286 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		haxe.root.Lambda.iter(((java.lang.Object) (headerKeys) ), ((haxe.lang.Function) (new connect.api.impl.ApiClientImpl_getHeadersTable_286__Fun(headersCol, fixedHeaders)) ));
-		//line 286 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 286 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		java.lang.Object __temp_expr1 = ((java.lang.Object) (null) );
-		//line 293 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 293 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		return fmt.formatTable(headersCol);
 	}
 	
 	
 	public static connect.util.Dictionary maskHeaders(connect.util.Dictionary headers)
 	{
-		//line 298 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 298 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		connect.util.Dictionary masked = new connect.util.Dictionary();
-		//line 299 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 299 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		{
-			//line 299 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 299 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.lang.Object key = headers.keys();
-			//line 299 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 299 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 			{
-				//line 299 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 299 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-				//line 300 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 300 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				if (haxe.lang.Runtime.valEq(key1, "Authorization")) 
 				{
-					//line 301 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 301 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					java.lang.String auth = haxe.root.Std.string(headers.get("Authorization"));
-					//line 302 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 302 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					haxe.root.Array<java.lang.String> parts = haxe.lang.StringExt.split(auth, ":");
-					//line 303 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 303 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					java.lang.String join = ( (( parts.length > 1 )) ? (parts.slice(1, null).join(":")) : ("") );
-					//line 304 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 304 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					java.lang.String maskedAuth = ( (((java.lang.String) (((java.lang.Object) (auth) )) ).startsWith(haxe.lang.Runtime.toString("ApiKey "))) ? (( (( parts.length > 1 )) ? (( ( parts.__get(0) + ":" ) + haxe.root.StringTools.lpad(haxe.lang.StringExt.substr(join, ( join.length() - 4 ), null), "*", join.length()) )) : (( "ApiKey " + haxe.root.StringTools.lpad(haxe.lang.StringExt.substr(auth, ( auth.length() - 4 ), null), "*", ( auth.length() - 7 )) )) )) : (haxe.root.StringTools.lpad(haxe.lang.StringExt.substr(auth, ( auth.length() - 4 ), null), "*", auth.length())) );
-					//line 309 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 309 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					masked.set("Authorization", maskedAuth);
 				}
 				else
 				{
-					//line 311 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+					//line 311 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 					masked.set(key1, headers.get(key1));
 				}
 				
@@ -145,30 +145,30 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 			
 		}
 		
-		//line 314 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 314 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		return masked;
 	}
 	
 	
 	public static java.lang.String getFormattedData(java.lang.String data, java.lang.String title, connect.logger.ILoggerFormatter fmt)
 	{
-		//line 320 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 320 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		if (connect.util.Util.isJson(data)) 
 		{
-			//line 321 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 321 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			boolean compact = ( connect.Env.getLogger().getLevel() != connect.logger.Logger.LEVEL_DEBUG );
-			//line 322 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 322 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.lang.String prefix = ( (compact) ? (( ( "" + title ) + " (compact):" )) : (( ( "" + title ) + ":" )) );
-			//line 323 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 323 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.lang.String block = fmt.formatCodeBlock(connect.util.Util.beautify(data, compact), "json");
-			//line 324 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 324 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			return ( ( ( "" + prefix ) + " " ) + block );
 		}
 		else
 		{
-			//line 326 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 326 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.lang.String fixedBody = haxe.root.StringTools.lpad(haxe.lang.StringExt.substr(data, ( data.length() - 4 ), null), "*", data.length());
-			//line 327 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 327 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			return ( ( ( "" + title ) + ": " ) + fixedBody );
 		}
 		
@@ -177,21 +177,21 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 	
 	public connect.api.Response syncRequest(java.lang.String method, java.lang.String url, connect.util.Dictionary headers, java.lang.String body, java.lang.String fileArg, java.lang.String fileName, connect.util.Blob fileContent)
 	{
-		//line 30 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 30 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		connect.api.Response response = this.syncRequestStd(method, url, headers, body, fileArg, fileName, fileContent);
-		//line 33 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 33 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		int level = ( (( ( response.status >= 400 ) || ( response.status == -1 ) )) ? (connect.logger.Logger.LEVEL_ERROR) : (connect.logger.Logger.LEVEL_INFO) );
-		//line 36 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 36 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		connect.api.impl.ApiClientImpl.logRequest(level, method, url, headers, body, response);
-		//line 38 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 38 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		if (( response.status != -1 )) 
 		{
-			//line 39 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 39 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			return response;
 		}
 		else
 		{
-			//line 41 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 41 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			throw haxe.lang.HaxeException.wrap(response.text);
 		}
 		
@@ -200,104 +200,104 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 	
 	public connect.api.Response syncRequestStd(java.lang.String method, java.lang.String url, connect.util.Dictionary headers, java.lang.String body, java.lang.String fileArg, java.lang.String fileName, connect.util.Blob fileContent)
 	{
-		//line 215 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 215 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		java.lang.Object[] status = new java.lang.Object[]{null};
-		//line 216 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 216 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		haxe.io.BytesOutput responseBytes = new haxe.io.BytesOutput();
-		//line 218 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 218 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		sys.Http http = new sys.Http(haxe.lang.Runtime.toString(url));
-		//line 219 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 219 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		http.cnxTimeout = ((double) (300) );
-		//line 221 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 221 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		if (( headers != null )) 
 		{
-			//line 222 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 222 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			java.lang.Object key = headers.keys();
-			//line 222 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 222 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			while (haxe.lang.Runtime.toBool(((java.lang.Boolean) (haxe.lang.Runtime.callField(key, "hasNext", null)) )))
 			{
-				//line 222 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 222 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				java.lang.String key1 = haxe.lang.Runtime.toString(haxe.lang.Runtime.callField(key, "next", null));
-				//line 223 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 223 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				http.setHeader(key1, haxe.lang.Runtime.toString(headers.get(key1)));
 			}
 			
 		}
 		
-		//line 227 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 227 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		if (( body != null )) 
 		{
-			//line 228 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 228 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			http.setPostData(body);
 		}
 		
-		//line 231 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 231 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		if (( ( ( fileArg != null ) && ( fileName != null ) ) && ( fileContent != null ) )) 
 		{
-			//line 232 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 232 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			http.fileTransfer(fileArg, fileName, new haxe.io.BytesInput(fileContent._getBytes(), null, null), fileContent.length(), "multipart/form-data");
 		}
 		
-		//line 241 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 241 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		http.onStatus = new connect.api.impl.ApiClientImpl_syncRequestStd_241__Fun(status);
-		//line 242 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 242 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		http.onError = new connect.api.impl.ApiClientImpl_syncRequestStd_242__Fun(status, responseBytes);
-		//line 246 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 246 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		java.lang.String tmp = method.toUpperCase();
-		//line 246 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 246 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		http.customRequest(false, responseBytes, null, tmp);
-		//line 248 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 248 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		while (haxe.lang.Runtime.eq(status[0], null))
 		{
 		}
 		
-		//line 249 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 249 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		haxe.io.Bytes bytes = responseBytes.getBytes();
-		//line 250 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 250 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		return new connect.api.Response(((int) (haxe.lang.Runtime.toInt(status[0])) ), bytes.toString(), connect.util.Blob._fromBytes(bytes));
 	}
 	
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		{
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			boolean __temp_executeDef1 = true;
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			if (( field != null )) 
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				switch (field.hashCode())
 				{
 					case -1906457073:
 					{
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						if (field.equals("syncRequestStd")) 
 						{
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							__temp_executeDef1 = false;
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "syncRequestStd")) );
 						}
 						
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						break;
 					}
 					
 					
 					case -545891468:
 					{
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						if (field.equals("syncRequest")) 
 						{
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							__temp_executeDef1 = false;
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "syncRequest")) );
 						}
 						
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						break;
 					}
 					
@@ -306,15 +306,15 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 				
 			}
 			
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				throw null;
 			}
 			
@@ -325,44 +325,44 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+		//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 		{
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			boolean __temp_executeDef1 = true;
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			if (( field != null )) 
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				switch (field.hashCode())
 				{
 					case -1906457073:
 					{
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						if (field.equals("syncRequestStd")) 
 						{
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							__temp_executeDef1 = false;
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							return this.syncRequestStd(haxe.lang.Runtime.toString(dynargs[0]), haxe.lang.Runtime.toString(dynargs[1]), ((connect.util.Dictionary) (dynargs[2]) ), haxe.lang.Runtime.toString(dynargs[3]), haxe.lang.Runtime.toString(dynargs[4]), haxe.lang.Runtime.toString(dynargs[5]), ((connect.util.Blob) (dynargs[6]) ));
 						}
 						
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						break;
 					}
 					
 					
 					case -545891468:
 					{
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						if (field.equals("syncRequest")) 
 						{
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							__temp_executeDef1 = false;
-							//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+							//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 							return this.syncRequest(haxe.lang.Runtime.toString(dynargs[0]), haxe.lang.Runtime.toString(dynargs[1]), ((connect.util.Dictionary) (dynargs[2]) ), haxe.lang.Runtime.toString(dynargs[3]), haxe.lang.Runtime.toString(dynargs[4]), haxe.lang.Runtime.toString(dynargs[5]), ((connect.util.Blob) (dynargs[6]) ));
 						}
 						
-						//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+						//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 						break;
 					}
 					
@@ -371,15 +371,15 @@ public class ApiClientImpl extends connect.Base implements connect.api.IApiClien
 				
 			}
 			
-			//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+			//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			else
 			{
-				//line 18 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
+				//line 18 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/impl/ApiClientImpl.hx"
 				throw null;
 			}
 			
