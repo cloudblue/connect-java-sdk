@@ -8,33 +8,33 @@ public class Tiers extends connect.models.Model
 {
 	public Tiers(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public Tiers()
 	{
-		//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		connect.models.Tiers.__hx_ctor_connect_models_Tiers(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_Tiers(connect.models.Tiers __hx_this)
 	{
-		//line 25 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 25 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
-		//line 26 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 26 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		haxe.ds.StringMap<java.lang.String> _g = new haxe.ds.StringMap<java.lang.String>();
-		//line 26 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 26 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		_g.set("customer", "TierAccount");
-		//line 26 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 26 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		_g.set("tier1", "TierAccount");
-		//line 26 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 26 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		_g.set("tier2", "TierAccount");
-		//line 26 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 26 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		__hx_this._setFieldClassNames(((haxe.ds.StringMap<java.lang.String>) (_g) ));
 	}
 	
@@ -47,66 +47,66 @@ public class Tiers extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 				switch (field.hashCode())
 				{
 					case 110357136:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						if (field.equals("tier2")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							this.tier2 = ((connect.models.TierAccount) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						break;
 					}
 					
 					
 					case 606175198:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						if (field.equals("customer")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							this.customer = ((connect.models.TierAccount) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						break;
 					}
 					
 					
 					case 110357135:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						if (field.equals("tier1")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							this.tier1 = ((connect.models.TierAccount) (value) );
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						break;
 					}
 					
@@ -115,15 +115,15 @@ public class Tiers extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 				throw null;
 			}
 			
@@ -134,60 +134,60 @@ public class Tiers extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 				switch (field.hashCode())
 				{
 					case 110357136:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						if (field.equals("tier2")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							return this.tier2;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						break;
 					}
 					
 					
 					case 606175198:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						if (field.equals("customer")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							return this.customer;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						break;
 					}
 					
 					
 					case 110357135:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						if (field.equals("tier1")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 							return this.tier1;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 						break;
 					}
 					
@@ -196,15 +196,15 @@ public class Tiers extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 				throw null;
 			}
 			
@@ -215,13 +215,13 @@ public class Tiers extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		baseArr.push("tier2");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		baseArr.push("tier1");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		baseArr.push("customer");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Tiers.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Tiers.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

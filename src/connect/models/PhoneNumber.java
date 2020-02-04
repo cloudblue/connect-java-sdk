@@ -8,23 +8,23 @@ public class PhoneNumber extends connect.models.Model
 {
 	public PhoneNumber(haxe.lang.EmptyObject empty)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
 	}
 	
 	
 	public PhoneNumber()
 	{
-		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
 		super(haxe.lang.EmptyObject.EMPTY);
-		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.PhoneNumber.__hx_ctor_connect_models_PhoneNumber(this);
 	}
 	
 	
 	protected static void __hx_ctor_connect_models_PhoneNumber(connect.models.PhoneNumber __hx_this)
 	{
-		//line 104 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/Model.hx"
+		//line 104 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/Model.hx"
 		connect.models.Model.__hx_ctor_connect_models_Model(__hx_this);
 	}
 	
@@ -39,84 +39,84 @@ public class PhoneNumber extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 				switch (field.hashCode())
 				{
 					case -612557761:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("extension")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							this.extension = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
 					
 					case -1477067101:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("countryCode")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							this.countryCode = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
 					
 					case -1192969641:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("phoneNumber")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							this.phoneNumber = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
 					
 					case -1666653158:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("areaCode")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							this.areaCode = haxe.lang.Runtime.toString(value);
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return value;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
@@ -125,15 +125,15 @@ public class PhoneNumber extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 				throw null;
 			}
 			
@@ -144,76 +144,76 @@ public class PhoneNumber extends connect.models.Model
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		{
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 			boolean __temp_executeDef1 = true;
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 			if (( field != null )) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 				switch (field.hashCode())
 				{
 					case -612557761:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("extension")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return this.extension;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
 					
 					case -1477067101:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("countryCode")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return this.countryCode;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
 					
 					case -1192969641:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("phoneNumber")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return this.phoneNumber;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
 					
 					case -1666653158:
 					{
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						if (field.equals("areaCode")) 
 						{
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							__temp_executeDef1 = false;
-							//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+							//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 							return this.areaCode;
 						}
 						
-						//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+						//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 						break;
 					}
 					
@@ -222,15 +222,15 @@ public class PhoneNumber extends connect.models.Model
 				
 			}
 			
-			//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+			//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+				//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 				throw null;
 			}
 			
@@ -241,15 +241,15 @@ public class PhoneNumber extends connect.models.Model
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		baseArr.push("extension");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		baseArr.push("phoneNumber");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		baseArr.push("areaCode");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		baseArr.push("countryCode");
-		//line 11 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/models/PhoneNumber.hx"
+		//line 11 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/models/PhoneNumber.hx"
 		super.__hx_getFields(baseArr);
 	}
 	
