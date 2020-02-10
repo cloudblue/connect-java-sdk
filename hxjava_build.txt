@@ -696,6 +696,13 @@ M java.util.Locale
 M java.util.Map
 M connect.api.Query
 C connect.api.Query
+C connect.api.Query_toObject_323__Fun
+C connect.api.Query_fromObject_372__Fun
+C connect.api.Query_fromObject_377__Fun
+C connect.api.Query_fromObject_382__Fun
+C connect.api.Query_fromObject_387__Fun
+C connect.api.Query_fromObject_392__Fun
+C connect.api.Query_stringMapToObject_447__Fun
 C connect.api._Query.KeyValue
 M haxe.io.BytesInput
 C haxe.io.BytesInput

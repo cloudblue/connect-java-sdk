@@ -220,6 +220,13 @@ src/haxe/zip/FlushMode.java
 src/connect/models/Configuration.java
 src/connect/models/Media.java
 src/connect/api/Query.java
+src/connect/api/Query_toObject_323__Fun.java
+src/connect/api/Query_fromObject_372__Fun.java
+src/connect/api/Query_fromObject_377__Fun.java
+src/connect/api/Query_fromObject_382__Fun.java
+src/connect/api/Query_fromObject_387__Fun.java
+src/connect/api/Query_fromObject_392__Fun.java
+src/connect/api/Query_stringMapToObject_447__Fun.java
 src/connect/api/_Query/KeyValue.java
 src/haxe/io/BytesInput.java
 src/connect/models/User.java
