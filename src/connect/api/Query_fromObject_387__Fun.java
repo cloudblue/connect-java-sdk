@@ -8,22 +8,22 @@ public class Query_fromObject_387__Fun extends haxe.lang.Function
 {
 	public Query_fromObject_387__Fun(connect.api.Query rql, java.lang.Object out)
 	{
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		super(1, 0);
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.rql = rql;
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.out = out;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		java.lang.String field3 = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toString(__fn_float1)) : (haxe.lang.Runtime.toString(__fn_dyn1)) );
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.rql.out_.set(field3, ((haxe.root.Array<java.lang.String>) (haxe.root.Reflect.field(this.out, field3)) ));
-		//line 387 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 387 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		return null;
 	}
 	

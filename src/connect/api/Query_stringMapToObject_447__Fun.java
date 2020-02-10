@@ -8,24 +8,24 @@ public class Query_stringMapToObject_447__Fun extends haxe.lang.Function
 {
 	public Query_stringMapToObject_447__Fun(java.lang.Object obj, haxe.ds.StringMap map)
 	{
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		super(1, 0);
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.obj = obj;
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.map = map;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		java.lang.String f = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toString(__fn_float1)) : (haxe.lang.Runtime.toString(__fn_dyn1)) );
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		java.lang.Object tmp = connect.api.Query.valueToObject(this.map.get(f));
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		haxe.root.Reflect.setField(this.obj, f, tmp);
-		//line 447 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 447 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		return null;
 	}
 	

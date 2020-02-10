@@ -8,47 +8,47 @@ public class Query_fromObject_392__Fun extends haxe.lang.Function
 {
 	public Query_fromObject_392__Fun(connect.api.Query rql, java.lang.Object relOps)
 	{
-		//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		super(1, 0);
-		//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.rql = rql;
-		//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		this.relOps = relOps;
 	}
 	
 	
 	@Override public java.lang.Object __hx_invoke1_o(double __fn_float1, java.lang.Object __fn_dyn1)
 	{
-		//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		java.lang.String field4 = ( (( __fn_dyn1 == haxe.lang.Runtime.undefined )) ? (haxe.lang.Runtime.toString(__fn_float1)) : (haxe.lang.Runtime.toString(__fn_dyn1)) );
-		//line 393 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 393 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		haxe.root.Array array = ((haxe.root.Array) (haxe.root.Reflect.field(this.relOps, field4)) );
-		//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		haxe.ds.StringMap<haxe.root.Array<connect.api._Query.KeyValue>> rql1 = this.rql.relOps;
-		//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		haxe.root.Array<connect.api._Query.KeyValue> ret = ((haxe.root.Array<connect.api._Query.KeyValue>) (((haxe.root.Array) (haxe.root.Array.alloc(((int) (array.length) ))) )) );
-		//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		{
-			//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			int _g = 0;
-			//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			int _g1 = array.length;
-			//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			while (( _g < _g1 ))
 			{
-				//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				int i = _g++;
-				//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				java.lang.Object kv = ((java.lang.Object) (array.__get(i)) );
-				//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				ret.__set(i, new connect.api._Query.KeyValue(haxe.lang.Runtime.toString(haxe.lang.Runtime.getField(kv, "key", true)), haxe.lang.Runtime.toString(haxe.lang.Runtime.getField(kv, "value", true))));
 			}
 			
 		}
 		
-		//line 394 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 394 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		rql1.set(field4, ret);
-		//line 392 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 392 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		return null;
 	}
 	

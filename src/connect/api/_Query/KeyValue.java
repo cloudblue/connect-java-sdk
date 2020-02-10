@@ -13,16 +13,16 @@ public class KeyValue extends haxe.lang.HxObject
 	
 	public KeyValue(java.lang.String key, java.lang.String value)
 	{
-		//line 475 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 475 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		connect.api._Query.KeyValue.__hx_ctor_connect_api__Query_KeyValue(this, key, value);
 	}
 	
 	
 	protected static void __hx_ctor_connect_api__Query_KeyValue(connect.api._Query.KeyValue __hx_this, java.lang.String key, java.lang.String value)
 	{
-		//line 476 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 476 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		__hx_this.key = key;
-		//line 477 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 477 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		__hx_this.value = value;
 	}
 	
@@ -33,55 +33,55 @@ public class KeyValue extends haxe.lang.HxObject
 	
 	public java.lang.Object toObject()
 	{
-		//line 482 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 482 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		return new haxe.lang.DynamicObject(new java.lang.String[]{"key", "value"}, new java.lang.Object[]{this.key, this.value}, new java.lang.String[]{}, new double[]{});
 	}
 	
 	
 	@Override public java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
-		//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		{
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			boolean __temp_executeDef1 = true;
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			if (( field != null )) 
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				switch (field.hashCode())
 				{
 					case 111972721:
 					{
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						if (field.equals("value")) 
 						{
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							__temp_executeDef1 = false;
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							this.value = haxe.lang.Runtime.toString(value);
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							return value;
 						}
 						
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						break;
 					}
 					
 					
 					case 106079:
 					{
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						if (field.equals("key")) 
 						{
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							__temp_executeDef1 = false;
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							this.key = haxe.lang.Runtime.toString(value);
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							return value;
 						}
 						
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						break;
 					}
 					
@@ -90,15 +90,15 @@ public class KeyValue extends haxe.lang.HxObject
 				
 			}
 			
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				return super.__hx_setField(field, value, handleProperties);
 			}
 			else
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				throw null;
 			}
 			
@@ -109,60 +109,60 @@ public class KeyValue extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
-		//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		{
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			boolean __temp_executeDef1 = true;
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			if (( field != null )) 
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				switch (field.hashCode())
 				{
 					case -1908304486:
 					{
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						if (field.equals("toObject")) 
 						{
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							__temp_executeDef1 = false;
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							return ((haxe.lang.Function) (new haxe.lang.Closure(this, "toObject")) );
 						}
 						
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						break;
 					}
 					
 					
 					case 106079:
 					{
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						if (field.equals("key")) 
 						{
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							__temp_executeDef1 = false;
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							return this.key;
 						}
 						
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						break;
 					}
 					
 					
 					case 111972721:
 					{
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						if (field.equals("value")) 
 						{
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							__temp_executeDef1 = false;
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							return this.value;
 						}
 						
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						break;
 					}
 					
@@ -171,15 +171,15 @@ public class KeyValue extends haxe.lang.HxObject
 				
 			}
 			
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
 			else
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				throw null;
 			}
 			
@@ -190,28 +190,28 @@ public class KeyValue extends haxe.lang.HxObject
 	
 	@Override public java.lang.Object __hx_invokeField(java.lang.String field, java.lang.Object[] dynargs)
 	{
-		//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		{
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			boolean __temp_executeDef1 = true;
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			if (( field != null )) 
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				switch (field.hashCode())
 				{
 					case -1908304486:
 					{
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						if (field.equals("toObject")) 
 						{
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							__temp_executeDef1 = false;
-							//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+							//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 							return this.toObject();
 						}
 						
-						//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+						//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 						break;
 					}
 					
@@ -220,15 +220,15 @@ public class KeyValue extends haxe.lang.HxObject
 				
 			}
 			
-			//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+			//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 			if (__temp_executeDef1) 
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				return super.__hx_invokeField(field, dynargs);
 			}
 			else
 			{
-				//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+				//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 				throw null;
 			}
 			
@@ -239,11 +239,11 @@ public class KeyValue extends haxe.lang.HxObject
 	
 	@Override public void __hx_getFields(haxe.root.Array<java.lang.String> baseArr)
 	{
-		//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		baseArr.push("value");
-		//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		baseArr.push("key");
-		//line 470 "/home/travis/build/cloudblue/connect-haxe-sdk/connect/api/Query.hx"
+		//line 470 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/connect/api/Query.hx"
 		super.__hx_getFields(baseArr);
 	}
 	

@@ -23,7 +23,7 @@ public class Connect extends haxe.lang.HxObject
 	
 	public Connect()
 	{
-		//line 64 "/home/travis/build/cloudblue/connect-haxe-sdk/Connect.hx"
+		//line 64 "/home/travis/build/JaviCerveraIngram/connect-haxe-sdk/Connect.hx"
 		haxe.root.Connect.__hx_ctor__Connect(this);
 	}
 	
